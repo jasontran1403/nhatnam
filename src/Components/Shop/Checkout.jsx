@@ -329,7 +329,7 @@ const Checkout = () => {
                         </div>
 
                         {/* Shipping Different Address */}
-                        <div className="col-lg-6">
+                        {/* <div className="col-lg-6">
                             <p id="ship-to-different-address">
                                 <input
                                     id="ship-to-different-address-checkbox"
@@ -391,7 +391,7 @@ const Checkout = () => {
                                     </div>
                                 </div>
                             )}
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* Summary Order */}
