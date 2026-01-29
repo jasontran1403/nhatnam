@@ -505,7 +505,7 @@ const SellerProductManagement = () => {
                           <td>
                             {ing.imageUrl && (
                               <img
-                                src={`${API_BASE}/api/auth${ing.imageUrl}`}
+                                src={`${BASE_URL}/api/auth${ing.imageUrl}`}
                                 alt={ing.name}
                                 style={{ width: '50px', height: '50px', objectFit: 'cover', borderRadius: '8px' }}
                               />
@@ -588,7 +588,7 @@ const SellerProductManagement = () => {
                   {uploadingImages['ingredient'] && <div className="mt-2 text-primary small">Đang tải ảnh...</div>}
                   {ingredientForm.imageUrl && (
                     <img
-                      src={`${API_BASE}/api/auth${ingredientForm.imageUrl}`}
+                      src={`${BASE_URL}/api/auth${ingredientForm.imageUrl}`}
                       alt="preview"
                       className="mt-3 rounded shadow-sm"
                       style={{ maxHeight: '180px', objectFit: 'contain' }}
@@ -655,7 +655,7 @@ const SellerProductManagement = () => {
                   {productForm.imageUrl && (
                     <div className="mt-3 text-center">
                       <img
-                        src={`${API_BASE}/api/auth${productForm.imageUrl}`}
+                        src={`${BASE_URL}/api/auth${productForm.imageUrl}`}
                         alt="Ảnh sản phẩm"
                         className="img-fluid rounded shadow"
                         style={{ maxHeight: '280px', objectFit: 'contain' }}
@@ -766,7 +766,7 @@ const SellerProductManagement = () => {
                             {uploadingImages[`variant-${vIdx}`] && <small className="text-primary">Đang tải...</small>}
                             {variant.imageUrl && (
                               <img
-                                src={`${API_BASE}/api/auth${variant.imageUrl}`}
+                                src={`${BASE_URL}/api/auth${variant.imageUrl}`}
                                 alt="variant"
                                 className="mt-2 rounded"
                                 style={{ maxWidth: '180px', objectFit: 'contain' }}
