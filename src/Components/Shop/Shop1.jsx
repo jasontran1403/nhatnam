@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import ShopCard from "../Card/ShopCard";
 import { ProductService, STATUS_CODE } from "../../Utils/MainService";
 import "../../assets/Skeleton.css";
-
-const API_BASE = 'http://localhost:9009';
+import BASE_URL from "../../Utils/constants/apiEndpoints";
 
 const Shop1 = () => {
     const [products, setProducts] = useState([]);
@@ -330,7 +329,7 @@ const Shop1 = () => {
                                                     key={product.id}
                                                     img={
                                                         product.imageUrl
-                                                            ? `${API_BASE}/api/auth${product.imageUrl}`
+                                                            ? `${BASE_URL}/api/auth${product.imageUrl}`
                                                             : "/assets/img/dishes/default.png"
                                                     }
                                                     title={product.name}

@@ -2,8 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { ProductService } from "../../Utils/MainService";
 import Toast from "../Toast/Toast";
-
-const API_BASE = 'http://localhost:9009';
+import BASE_URL from "../../Utils/constants/apiEndpoints";
 
 const Cart = () => {
     const [cartItems, setCartItems] = useState(() => {
@@ -210,7 +209,7 @@ const Cart = () => {
                                                 <img
                                                     width="91"
                                                     height="91"
-                                                    src={`${API_BASE}/api/auth${item.imageUrl}`}
+                                                    src={`${BASE_URL}/api/auth${item.imageUrl}`}
                                                     alt={item.productName}
                                                 />
                                             </Link>

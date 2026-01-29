@@ -4,6 +4,7 @@ import IngredientTable from "./IngredientTable";
 import ProductFormModal from "./ProductFormModal";
 import IngredientFormModal from "./IngredientFormModal";
 import Toast from "./Toast";
+import BASE_URL from "../../Utils/constants/apiEndpoints";
 import { ProductService, STATUS_CODE } from "../../Utils/MainService";
 
 const SellerDashboard = () => {
@@ -35,7 +36,7 @@ const SellerDashboard = () => {
 
     const fetchIngredients = async () => {
         try {
-            const response = await fetch('http://localhost:9009/api/seller/ingredients', {
+            const response = await fetch(`${BASE_URL}/api/seller/ingredients`, {
                 headers: { 'Authorization': `Bearer ${localStorage.getItem('accessToken')}` }
             });
             const data = await response.json();

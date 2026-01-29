@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { STATUS_CODE } from "../../Utils/MainService";
+import BASE_URL from "../../Utils/constants/apiEndpoints";
 
-const API_BASE = 'http://localhost:9009';
 const getToken = () => localStorage.getItem('accessToken');
 
 const OrderItem = () => {
@@ -39,7 +39,7 @@ const OrderItem = () => {
   const fetchProducts = async () => {
     try {
       setLoading(true);
-      const res = await fetch(`${API_BASE}/api/seller/products?size=100`, {
+      const res = await fetch(`${BASE_URL}/api/seller/products?size=100`, {
         headers: { 'Authorization': `Bearer ${getToken()}` }
       });
       const data = await res.json();
@@ -55,7 +55,7 @@ const OrderItem = () => {
 
   const fetchIngredients = async () => {
     try {
-      const res = await fetch(`${API_BASE}/api/seller/ingredients`, {
+      const res = await fetch(`${BASE_URL}/api/seller/ingredients`, {
         headers: { 'Authorization': `Bearer ${getToken()}` }
       });
       const data = await res.json();
@@ -81,7 +81,7 @@ const OrderItem = () => {
       type === 'variant' ? '/api/upload/variant-image' :
       '/api/upload/ingredient-image';
 
-    const res = await fetch(`${API_BASE}${endpoint}`, {
+    const res = await fetch(`${BASE_URL}${endpoint}`, {
       method: 'POST',
       headers: { 'Authorization': `Bearer ${getToken()}` },
       body: formData
@@ -296,7 +296,7 @@ const OrderItem = () => {
         ingredients: productForm.variants.length === 0 ? productForm.ingredients : null
       };
 
-      const res = await fetch(`${API_BASE}/api/seller/products`, {
+      const res = await fetch(`${BASE_URL}/api/seller/products`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -329,7 +329,7 @@ const OrderItem = () => {
 
     setSubmitting(true);
     try {
-      const res = await fetch(`${API_BASE}/api/seller/ingredients`, {
+      const res = await fetch(`${BASE_URL}/api/seller/ingredients`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -450,7 +450,7 @@ const OrderItem = () => {
                             <td>
                               {p.imageUrl && (
                                 <img
-                                  src={`${API_BASE}/api/auth${p.imageUrl}`}
+                                  src={`${BASE_URL}/api/auth${p.imageUrl}`}
                                   alt={p.name}
                                   style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '8px' }}
                                 />
