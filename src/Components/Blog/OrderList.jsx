@@ -283,7 +283,7 @@ const OrderList = () => {
                             <td>
                               {item.productImageUrl && (
                                 <img
-                                  src={`${BASE_URL}${item.productImageUrl}`}
+                                  src={`${BASE_URL}/api/auth${item.productImageUrl}`}
                                   style={{ width: 90, height: 90, objectFit: 'cover', borderRadius: 8 }}
                                   alt={item.productName}
                                   onError={(e) => {
