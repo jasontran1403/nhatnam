@@ -1,52 +1,6 @@
 @charset "UTF-8";
-/*-----------------------------------------------------------------
- CSS TABLE OF CONTENTS
--------------------------------------------------------------------
 
-01.Mixins
-02.Variables
-03.Typography
-04.Buttons 
-05.Gutter 
-06.Container 
-07.Animation 
-08.Helping 
-09.MeanMenu 
-10.Preloader
-11.Title 
-12.Common 
-13.Header 
-14.Footer 
-15.Contact 
-16.Banner 
-17.Breadcumb
-18.Marquee
-19.Gallery
-20.Testimonial
-21.Chefe
-22.History 
-23.Timer
-24.Menu
-25.Cta
-26.Popular Dishes
-27.About
-28.Services
-29.Offer
-30.Food Items
-31.Faq
-32.Wcu
-33.Blog
-34.Blog Extra
-35.Sidebar
-36.Shop
-37.Cart
-38.Checkout
-39.Wishlist
-40.Woocommerce
 
-------------------------------------------------------------------*/
-/* 01.Mixins */
-/* 02.Variables */
 @import url("https://fonts.googleapis.com/css2?family=Engagement&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   --body: #fff;
@@ -68,7 +22,6 @@
   --body-font: "Roboto", sans-serif;
   --icon-font: "Font Awesome 6 Pro";
 }
-
 
 /* 03.Typography */
 /* --------------------------------------------
@@ -2716,7 +2669,9 @@ input.main-search-input::placeholder {
 }
 .modal .modal-content {
   position: relative;
-  margin-top: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
 }
 .modal .modal-content .modal-header .btn-close {
   position: absolute;

@@ -1,5 +1,5 @@
 // Base URL
-export const BASE_URL = 'http://localhost:9009';
+export const BASE_URL = 'https://ghoul-helpful-salmon.ngrok-free.app';
 
 // API Endpoints
 export const API_ENDPOINTS = {
@@ -29,6 +29,8 @@ export const API_ENDPOINTS = {
     GET_MY_ORDERS: '/api/seller/orders/my-orders', // GET
     CANCEL_ORDER: (id) => `/api/seller/orders/${id}/cancel`, // POST
     GET_INVOICE: (id) => `/api/seller/orders/${id}/invoice`, // GET - download PDF
+
+    VALIDATE_CART_ITEMS: '/api/seller/cart/validate-items',
   },
 
   // Admin endpoints

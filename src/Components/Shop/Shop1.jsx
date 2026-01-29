@@ -25,11 +25,10 @@ const Shop1 = () => {
     const [priceRange, setPriceRange] = useState({ min: 0, max: 10000000 });
 
     // View mode
-    const [viewMode, setViewMode] = useState('grid'); // 'grid' or 'list'
+    const [viewMode, setViewMode] = useState('grid');
 
     const categories = ['sausages', 'small goods', 'hela', 'richs'];
 
-    // Fetch products
     const fetchProducts = async () => {
         try {
             setLoading(true);
@@ -38,8 +37,8 @@ const Shop1 = () => {
             const params = {
                 page: currentPage,
                 size: pageSize,
-                sortBy: sortBy,
-                sortDir: sortDir,
+                sortBy,
+                sortDir,
                 ...(selectedCategory && { category: selectedCategory }),
                 ...(searchQuery && { search: searchQuery }),
                 minPrice: priceRange.min,
@@ -68,7 +67,7 @@ const Shop1 = () => {
         fetchProducts();
     }, [currentPage, sortBy, sortDir, selectedCategory, searchQuery, priceRange]);
 
-    // Lọc sản phẩm client-side (search + price range)
+    // Filter client-side: hỗ trợ category nhiều giá trị (cách nhau bằng ;)
     const filteredProducts = products.filter(product => {
         const matchesSearch = !searchQuery ||
             product.name.toLowerCase().includes(searchQuery.toLowerCase());
@@ -76,7 +75,12 @@ const Shop1 = () => {
         const matchesPrice = product.defaultPrice >= priceRange.min &&
             product.defaultPrice <= priceRange.max;
 
-        return matchesSearch && matchesPrice;
+        // Filter category: sản phẩm có category chứa selectedCategory (dù nhiều category)
+        const matchesCategory = !selectedCategory ||
+            (product.category || '').toLowerCase().split(';')
+                .some(cat => cat.trim().toLowerCase() === selectedCategory.toLowerCase());
+
+        return matchesSearch && matchesPrice && matchesCategory;
     });
 
     const handlePageChange = (page) => {
@@ -180,6 +184,53 @@ const Shop1 = () => {
                                         ))}
                                     </ul>
                                 </div>
+
+                                {/* Price Range (giữ nguyên nếu bạn muốn) */}
+                                <div className="single-sidebar-widget">
+                                    <h5 className="widget-title">Filter By Price</h5>
+                                    <div className="range__barcustom">
+                                        <div className="slider">
+                                            <div className="progress"></div>
+                                        </div>
+                                        <div className="range-input">
+                                            <input type="range" className="range-min" min="0" max="10000000" value={priceRange.min} />
+                                            <input type="range" className="range-max" min="0" max="10000000" value={priceRange.max} />
+                                        </div>
+                                        <div className="range-items">
+                                            <div className="price-input">
+                                                <div className="price-wrapper d-flex align-items-center gap-1">
+                                                    <div className="field">
+                                                        <span>Price:</span>
+                                                    </div>
+                                                    <div className="field">
+                                                        <input
+                                                            type="number"
+                                                            className="input-min"
+                                                            value={priceRange.min}
+                                                            onChange={(e) => setPriceRange({
+                                                                ...priceRange,
+                                                                min: Number(e.target.value) || 0,
+                                                            })}
+                                                        />
+                                                    </div>
+                                                    <div className="separators">-</div>
+                                                    <div className="field">
+                                                        <input
+                                                            type="number"
+                                                            className="input-max"
+                                                            value={priceRange.max}
+                                                            onChange={(e) => setPriceRange({
+                                                                ...priceRange,
+                                                                max: Number(e.target.value) || 10000000,
+                                                            })}
+                                                        />
+                                                    </div>
+                                                    <a href="#" className="filter-btn mt-2 me-3" onClick={(e) => e.preventDefault()}>Filter</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -275,19 +326,19 @@ const Shop1 = () => {
                                     ) : (
                                         <div className="dishes-card-wrap style2">
                                             {filteredProducts.map((product) => (
-                                                <div key={product.id}>
-                                                    <ShopCard
-                                                        img={
-                                                            product.imageUrl
-                                                                ? `${API_BASE}/api/auth${product.imageUrl}`
-                                                                : "/assets/img/dishes/default.png"
-                                                        }
-                                                        title={product.name}
-                                                        content={product.description || "Delicious food"}
-                                                        price={formatPrice(product.defaultPrice || 0)}
-                                                        id={product.id}
-                                                    />
-                                                </div>
+                                                <ShopCard
+                                                    key={product.id}
+                                                    img={
+                                                        product.imageUrl
+                                                            ? `${API_BASE}/api/auth${product.imageUrl}`
+                                                            : "/assets/img/dishes/default.png"
+                                                    }
+                                                    title={product.name}
+                                                    content={product.description || "Delicious food"}
+                                                    prices={product.prices} // Truyền mảng giá
+                                                    variants={product.variants} // Truyền biến thể
+                                                    id={product.id}
+                                                />
                                             ))}
                                         </div>
                                     )}

@@ -1,19 +1,34 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { ProductService, STATUS_CODE } from "../../Utils/MainService";
-
-const API_BASE = 'http://localhost:9009';
+import { BASE_URL } from "../../Utils/constants/apiEndpoints";
+import Toast from "../Toast/Toast";
 
 const ShopDetails = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState("1.00");
   const [selectedVariant, setSelectedVariant] = useState(null);
+  const [selectedPrice, setSelectedPrice] = useState(null);
+  const [tempTotal, setTempTotal] = useState(0);
   const [showVariantModal, setShowVariantModal] = useState(false);
   const [currentImage, setCurrentImage] = useState("");
   const [images, setImages] = useState([]);
+  const [toasts, setToasts] = useState([]);
+
+  // Hiển thị toast
+  const showToast = (message, type = "success") => {
+    const id = Date.now();
+    setToasts((prev) => [...prev, { id, message, type }]);
+  };
+
+  // Xóa toast
+  const removeToast = (id) => {
+    setToasts((prev) => prev.filter((t) => t.id !== id));
+  };
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -26,11 +41,11 @@ const ShopDetails = () => {
           setProduct(prod);
 
           const imgList = [];
-          if (prod.imageUrl) imgList.push(`${API_BASE}/api/auth${prod.imageUrl}`);
+          if (prod.imageUrl) imgList.push(`${BASE_URL}/api/auth${prod.imageUrl}`);
 
           if (prod.variants?.length > 0) {
             prod.variants.forEach(v => {
-              if (v.imageUrl) imgList.push(`${API_BASE}/api/auth${v.imageUrl}`);
+              if (v.imageUrl) imgList.push(`${BASE_URL}/api/auth${v.imageUrl}`);
             });
           }
 
@@ -41,6 +56,9 @@ const ShopDetails = () => {
             const defaultVariant = prod.variants.find(v => v.isDefault) || prod.variants[0];
             setSelectedVariant(defaultVariant);
           }
+
+          const defaultPrice = prod.prices?.find(p => p.isDefault) || prod.prices?.[0];
+          setSelectedPrice(defaultPrice);
         } else {
           setError(response.message || 'Không tải được chi tiết sản phẩm');
         }
@@ -54,9 +72,35 @@ const ShopDetails = () => {
     fetchProduct();
   }, [id]);
 
-  const handleQuantityChange = (type) => {
-    if (type === 'plus') setQuantity(q => q + 1);
-    if (type === 'minus' && quantity > 1) setQuantity(q => q - 1);
+  // Debounce tạm tính
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const numQty = parseFloat(quantity);
+      if (selectedPrice && !isNaN(numQty) && numQty >= 0.01) {
+        const total = selectedPrice.price * numQty;
+        const rounded = Math.ceil(total * 100) / 100;
+        setTempTotal(rounded);
+      } else {
+        setTempTotal(0);
+      }
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, [quantity, selectedPrice]);
+
+  const handleQuantityChange = (e) => {
+    let value = e.target.value.replace(/[^0-9.,]/g, '');
+    value = value.replace(',', '.');
+    setQuantity(value);
+  };
+
+  const handleQuantityBlur = () => {
+    let num = parseFloat(quantity);
+    if (isNaN(num) || num < 0.01) {
+      setQuantity("0.01");
+    } else {
+      setQuantity(num.toFixed(2));
+    }
   };
 
   const handleAddToCart = () => {
@@ -64,8 +108,43 @@ const ShopDetails = () => {
       setShowVariantModal(true);
       return;
     }
-    console.log("Thêm vào giỏ:", { productId: product.id, variantId: selectedVariant?.id, quantity });
-    alert("Đã thêm vào giỏ hàng!");
+
+    const currentCart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    const newItem = {
+      productId: product.id,
+      productName: product.name,
+      unit: product.unit || "Kg",
+      imageUrl: product.imageUrl,
+      priceId: selectedPrice?.id,
+      priceName: selectedPrice?.priceName,
+      price: selectedPrice?.price,
+      variantId: selectedVariant?.id || null,
+      variantName: selectedVariant?.variantName || null,
+      quantity: parseFloat(quantity),
+      total: tempTotal,
+    };
+
+    const existingItemIndex = currentCart.findIndex(
+      item =>
+        item.productId === newItem.productId &&
+        item.variantId === newItem.variantId &&
+        item.priceId === newItem.priceId
+    );
+
+    let updatedCart;
+    if (existingItemIndex !== -1) {
+      updatedCart = [...currentCart];
+      updatedCart[existingItemIndex].quantity += newItem.quantity;
+      updatedCart[existingItemIndex].total += newItem.total;
+      showToast(`Đã cập nhật số lượng cho "${product.name}" trong giỏ hàng!`, "success");
+    } else {
+      updatedCart = [...currentCart, newItem];
+      showToast(`Đã thêm "${product.name}" vào giỏ hàng!`, "success");
+    }
+
+    localStorage.setItem('cart', JSON.stringify(updatedCart));
+    setQuantity("1.00");
   };
 
   const handleAddToWishlist = () => {
@@ -73,8 +152,38 @@ const ShopDetails = () => {
       setShowVariantModal(true);
       return;
     }
-    console.log("Thêm vào wishlist:", { productId: product.id, variantId: selectedVariant?.id });
-    alert("Đã thêm vào danh sách yêu thích!");
+
+    const currentWishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+
+    const newItem = {
+      productId: product.id,
+      productName: product.name,
+      unit: product.unit || "Kg",
+      imageUrl: product.imageUrl,
+      priceId: selectedPrice?.id,
+      priceName: selectedPrice?.priceName,
+      price: selectedPrice?.price,
+      variantId: selectedVariant?.id || null,
+      variantName: selectedVariant?.variantName || null,
+      addedAt: Date.now(), // Để sort nếu cần
+    };
+
+    // Kiểm tra trùng (cùng product + variant + price)
+    const isDuplicate = currentWishlist.some(
+      item =>
+        item.productId === newItem.productId &&
+        item.variantId === newItem.variantId &&
+        item.priceId === newItem.priceId
+    );
+
+    if (isDuplicate) {
+      showToast("Sản phẩm này đã có trong danh sách yêu thích!", "info");
+      return;
+    }
+
+    const updatedWishlist = [...currentWishlist, newItem];
+    localStorage.setItem('wishlist', JSON.stringify(updatedWishlist));
+    showToast("Đã thêm vào danh sách yêu thích!", "success");
   };
 
   const selectVariant = (variant) => {
@@ -86,12 +195,30 @@ const ShopDetails = () => {
     setCurrentImage(imgSrc);
   };
 
+  const formatPrice = (price) => {
+    return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(price || 0);
+  };
+
   if (loading) return <div className="text-center py-5">Đang tải...</div>;
   if (error) return <div className="alert alert-danger text-center py-5">{error}</div>;
   if (!product) return <div className="alert alert-info text-center py-5">Không tìm thấy sản phẩm</div>;
 
+  const unit = product.unit || "Kg";
+
   return (
     <div className="shop-details-section section-padding pb-0 fix">
+      {/* Toast container */}
+      <div className="toast-container position-fixed bottom-0 end-0 p-3" style={{ zIndex: 1050 }}>
+        {toasts.map((toast) => (
+          <Toast
+            key={toast.id}
+            message={toast.message}
+            type={toast.type}
+            onClose={() => removeToast(toast.id)}
+          />
+        ))}
+      </div>
+
       <div className="shop-details-wrapper style1">
         <div className="container">
           <div className="shop-details bg-white">
@@ -159,12 +286,13 @@ const ShopDetails = () => {
                     <div className="title-wrapper">
                       <h2 className="product-title">{product.name}</h2>
                       <div className="price">
-                        {product.defaultPrice ? formatPrice(product.defaultPrice) : "Liên hệ"}
+                        {formatPrice(selectedPrice?.price || product.defaultPrice)}
                       </div>
                     </div>
 
                     <p className="text">{product.description || "Mô tả sản phẩm đang được cập nhật..."}</p>
 
+                    {/* Chọn biến thể */}
                     {product.variants?.length > 0 && (
                       <div className="mb-4">
                         <h6>Biến thể:</h6>
@@ -183,20 +311,96 @@ const ShopDetails = () => {
                       </div>
                     )}
 
-                    <div className="actions">
-                      <div className="quantity">
-                        <p>Số lượng</p>
-                        <div className="qty-wrapper">
-                          <button className="quantity-minus qty-btn" onClick={() => handleQuantityChange('minus')}>
-                            <i className="bi bi-dash-lg"></i>
-                          </button>
-                          <input type="number" className="qty-input" value={quantity} readOnly />
-                          <button className="quantity-plus qty-btn" onClick={() => handleQuantityChange('plus')}>
-                            <i className="bi bi-plus-lg"></i>
-                          </button>
-                        </div>
+                    {/* Chọn mức giá */}
+                    {product.prices?.length > 0 && (
+                      <div className="mb-4">
+                        <h6>Chọn mức giá:</h6>
+                        <select
+                          className="form-select"
+                          value={selectedPrice?.price || ''}
+                          onChange={(e) => {
+                            const p = product.prices.find(p => p.price === Number(e.target.value));
+                            setSelectedPrice(p);
+                          }}
+                        >
+                          {product.prices.map((p) => (
+                            <option key={p.id} value={p.price}>
+                              {p.priceName} - {formatPrice(p.price)}
+                            </option>
+                          ))}
+                        </select>
                       </div>
+                    )}
 
+                    {/* Số lượng + Unit */}
+                    <div className="quantity mt-4">
+                      <p>Số lượng ({unit}):</p>
+                      <div className="qty-wrapper position-relative d-flex align-items-center" style={{ maxWidth: '180px' }}>
+                        <button
+                          className="quantity-minus qty-btn position-absolute start-0 top-50 translate-middle-y"
+                          style={{
+                            zIndex: 2,
+                            background: 'transparent',
+                            border: 'none',
+                            fontSize: '1.2rem',
+                            padding: '0 12px',
+                            cursor: 'pointer'
+                          }}
+                          onClick={() => {
+                            const current = parseFloat(quantity);
+                            if (current > 0.01) {
+                              setQuantity((current - 0.01).toFixed(2));
+                            }
+                          }}
+                        >
+                          <i className="bi bi-dash-lg"></i>
+                        </button>
+
+                        <input
+                          type="text"
+                          className="qty-input form-control text-center"
+                          value={quantity}
+                          onChange={handleQuantityChange}
+                          onFocus={(e) => e.target.select()}
+                          onBlur={handleQuantityBlur}
+                          placeholder="0.01"
+                          style={{
+                            paddingLeft: '40px',
+                            paddingRight: '40px',
+                            textAlign: 'center'
+                          }}
+                        />
+
+                        <button
+                          className="quantity-plus qty-btn position-absolute end-0 top-50 translate-middle-y"
+                          style={{
+                            zIndex: 2,
+                            background: 'transparent',
+                            border: 'none',
+                            fontSize: '1.2rem',
+                            padding: '0 12px',
+                            cursor: 'pointer'
+                          }}
+                          onClick={() => {
+                            const current = parseFloat(quantity);
+                            setQuantity((current + 0.01).toFixed(2));
+                          }}
+                        >
+                          <i className="bi bi-plus-lg"></i>
+                        </button>
+                      </div>
+                      <small className="text-muted d-block mt-1">
+                        Nhập số lẻ (tối thiểu 0.01 {unit})
+                      </small>
+                    </div>
+
+                    {/* Tạm tính */}
+                    <div className="mt-3">
+                      <strong>Tạm tính:</strong> {formatPrice(tempTotal)}
+                      <small className="text-muted ms-2">(đã làm tròn lên đồng)</small>
+                    </div>
+
+                    <div className="actions mt-4">
                       <button className="theme-btn cart-btn0" onClick={handleAddToCart}>
                         Thêm vào giỏ <i className="bi bi-basket3-fill"></i>
                       </button>
@@ -206,6 +410,7 @@ const ShopDetails = () => {
                       </button>
                     </div>
 
+                    {/* Modal chọn biến thể */}
                     {showVariantModal && (
                       <div className="modal fade show" style={{ display: 'block', background: 'rgba(0,0,0,0.6)' }}>
                         <div className="modal-dialog modal-dialog-centered">
@@ -246,10 +451,6 @@ const ShopDetails = () => {
       </div>
     </div>
   );
-};
-
-const formatPrice = (price) => {
-  return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(price || 0);
 };
 
 export default ShopDetails;

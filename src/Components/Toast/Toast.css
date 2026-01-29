@@ -1,0 +1,80 @@
+/* Toast.css */
+
+/* Container cho stack toast (chồng lên nhau) */
+.toast-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column-reverse; /* Toast mới nhất ở dưới cùng, cũ đẩy lên */
+  gap: 12px; /* Khoảng cách giữa các toast */
+  max-height: 80vh; /* Giới hạn chiều cao nếu quá nhiều toast */
+  overflow-y: auto; /* Scroll nếu quá nhiều */
+  pointer-events: none; /* Không chặn click bên dưới */
+}
+
+/* Toast item */
+.toast {
+  display: flex;
+  align-items: center;
+  min-width: 320px;
+  max-width: 420px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  color: white;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  pointer-events: auto; /* Cho phép click close */
+}
+
+/* Hiệu ứng fade-in khi toast xuất hiện */
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Màu theo type */
+.toast-success {
+  background-color: #28a745;
+}
+
+.toast-error {
+  background-color: #dc3545;
+}
+
+.toast-info {
+  background-color: #17a2b8;
+}
+
+/* Icon */
+.toast-icon {
+  font-size: 1.6rem;
+  margin-right: 14px;
+  flex-shrink: 0;
+}
+
+/* Message */
+.toast-message {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Nút close */
+.toast-close {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 0 8px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.toast-close:hover {
+  opacity: 1;
+}

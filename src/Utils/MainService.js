@@ -85,8 +85,9 @@ const AuthService = {
   },
 };
 
+// PRODUCT SERVICE - ĐÃ THÊM validateCartItems
 const ProductService = {
-  // Danh sách sản phẩm (đã có)
+  // Danh sách sản phẩm
   getProducts: async (params = {}) => {
     const queryParams = new URLSearchParams({
       page: params.page || 0,
@@ -98,29 +99,29 @@ const ProductService = {
     return apiClient.get(`${API_ENDPOINTS.SELLER.GET_PRODUCTS}?${queryParams}`);
   },
 
-  // === THÊM MỚI: Lấy chi tiết sản phẩm ===
+  // Chi tiết sản phẩm
   getProductDetail: async (id) => {
     try {
       const response = await apiClient.get(API_ENDPOINTS.SELLER.GET_PRODUCT_DETAIL(id));
-      return response; // { code, data: ProductResponse, message }
+      return response;
     } catch (error) {
       console.error("Lỗi lấy chi tiết sản phẩm:", error);
       throw error.response?.data || { code: STATUS_CODE.INTERNAL_SERVER_ERROR, message: "Lỗi server" };
     }
   },
 
-  // === THÊM MỚI: Lấy danh sách variants ===
+  // Danh sách variants
   getProductVariants: async (id) => {
     try {
       const response = await apiClient.get(API_ENDPOINTS.SELLER.GET_PRODUCT_VARIANTS(id));
-      return response; // { code, data: List<VariantResponse>, message }
+      return response;
     } catch (error) {
       console.error("Lỗi lấy variants:", error);
       throw error.response?.data || { code: STATUS_CODE.INTERNAL_SERVER_ERROR, message: "Lỗi server" };
     }
   },
 
-  // === THÊM MỚI: Lấy prices (có thể filter theo variantId) ===
+  // Danh sách prices
   getProductPrices: async (id, variantId = null) => {
     try {
       let url = API_ENDPOINTS.SELLER.GET_PRODUCT_PRICES(id);
@@ -128,10 +129,24 @@ const ProductService = {
         url += `?variantId=${variantId}`;
       }
       const response = await apiClient.get(url);
-      return response; // { code, data: List<PriceResponse>, message }
+      return response;
     } catch (error) {
       console.error("Lỗi lấy prices:", error);
       throw error.response?.data || { code: STATUS_CODE.INTERNAL_SERVER_ERROR, message: "Lỗi server" };
+    }
+  },
+
+  // === MỚI: Validate giỏ hàng ===
+  validateCartItems: async (items) => {
+    try {
+      const response = await apiClient.post(API_ENDPOINTS.SELLER.VALIDATE_CART_ITEMS, items);
+      return response;
+    } catch (error) {
+      console.error("Lỗi validate giỏ hàng:", error);
+      throw error.response?.data || {
+        code: STATUS_CODE.INTERNAL_SERVER_ERROR,
+        message: "Không thể kiểm tra giỏ hàng"
+      };
     }
   },
 };
