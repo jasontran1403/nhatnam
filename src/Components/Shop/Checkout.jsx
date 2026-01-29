@@ -186,9 +186,7 @@ const Checkout = () => {
                 customerName: `${billing.firstName} ${billing.lastName || ''}`.trim(),
                 customerPhone: billing.phone,
                 customerEmail: billing.email || null,
-                shippingAddress: shipDifferent
-                    ? `${shipping.firstName} ${shipping.lastName || ''} - ${shipping.address}`.trim()
-                    : `${billing.firstName} ${billing.lastName || ''} - ${billing.address}`.trim(),
+                shippingAddress: billing.address.trim(),
                 notes: billing.notes || null,
                 paymentMethod,
                 items: cartItems.map(item => ({
