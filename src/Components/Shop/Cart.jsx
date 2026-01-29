@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { ProductService } from "../../Utils/MainService";
 import Toast from "../Toast/Toast";
-import BASE_URL from "../../Utils/constants/apiEndpoints";
+import { BASE_URL } from "../../Utils/constants/apiEndpoints";
 
 const Cart = () => {
     const [cartItems, setCartItems] = useState(() => {

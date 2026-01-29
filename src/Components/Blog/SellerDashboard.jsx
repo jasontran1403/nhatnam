@@ -4,7 +4,7 @@ import IngredientTable from "./IngredientTable";
 import ProductFormModal from "./ProductFormModal";
 import IngredientFormModal from "./IngredientFormModal";
 import Toast from "./Toast";
-import BASE_URL from "../../Utils/constants/apiEndpoints";
+import { BASE_URL } from "../../Utils/constants/apiEndpoints";
 import { ProductService, STATUS_CODE } from "../../Utils/MainService";
 
 const SellerDashboard = () => {

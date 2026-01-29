@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import ShopCard from "../Card/ShopCard";
 import { ProductService, STATUS_CODE } from "../../Utils/MainService";
 import "../../assets/Skeleton.css";
-import BASE_URL from "../../Utils/constants/apiEndpoints";
+import { BASE_URL } from "../../Utils/constants/apiEndpoints";
 
 const Shop1 = () => {
     const [products, setProducts] = useState([]);

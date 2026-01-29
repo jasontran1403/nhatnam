@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { STATUS_CODE } from "../../Utils/MainService";
-import BASE_URL from "../../Utils/constants/apiEndpoints";
+import { BASE_URL } from "../../Utils/constants/apiEndpoints";
 
 const getToken = () => localStorage.getItem('accessToken');
 
