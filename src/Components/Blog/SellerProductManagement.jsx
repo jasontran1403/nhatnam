@@ -39,7 +39,7 @@ const SellerProductManagement = () => {
   const fetchProducts = async () => {
     try {
       setLoading(true);
-      const res = await fetch(`${BASE_URL}/api/seller/products?size=100`, {
+      const res = await fetch(`${BASE_URL}/api/seller/products?size=10`, {
         headers: { 'Authorization': `Bearer ${getToken()}` }
       });
       const data = await res.json();
