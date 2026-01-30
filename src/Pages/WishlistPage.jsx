@@ -1,14 +1,17 @@
 import BreadCumb from "../Components/Common/BreadCumb";
 import Wishlist from "../Components/Shop/Wishlist";
+import ProtectedContent from "../Layout/ProtectedContent";
 
 const WishlistPage = () => {
     return (
         <div>
-              <BreadCumb
+            <BreadCumb
                 bgimg="/assets/img/bg/breadcumb.jpg"
                 Title="Wishlist"
-            ></BreadCumb>   
-            <Wishlist></Wishlist>         
+            ></BreadCumb>
+            <ProtectedContent message="Bạn cần đăng nhập để xem tài nguyên này">
+                <Wishlist></Wishlist>
+            </ProtectedContent>
         </div>
     );
 };
