@@ -63,11 +63,11 @@ const HeroBanneer3 = () => {
                         <div className="banner-wrapper style3 bg-img">
                             <div className="shape1  d-none d-xxl-block" data-animation="slideInLeft" data-duration="2s"
                                 data-delay=".3s">
-                                <img className="float-bob-y" src="/assets/img/shape/bannerShape3_1.svg" alt="shape" />
+                                <img className="float-bob-y" src="/assets/img/shape/bestFoodItemsShape1_1.png" alt="shape" />
                             </div>
                             <div className="shape2  d-none d-xxl-block" data-animation="slideInLeft" data-duration="2s"
                                 data-delay=".5s">
-                                <img className="float-bob-x" src="/assets/img/shape/bannerShape3_2.svg" alt="shape" />
+                                <img className="float-bob-x" src="/assets/img/shape/ctaShape2_5.png" alt="shape" />
                             </div>
                             <div className="shape3" data-tilt data-tilt-max="4"
                                 data-animation="slideInLeft" data-duration="2s" data-delay=".8s">
