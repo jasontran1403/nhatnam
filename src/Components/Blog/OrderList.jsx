@@ -242,11 +242,6 @@ const OrderList = () => {
               <div className="modal-content rounded-4">
                 <div className="modal-header border-0">
                   <h5 className="fw-bold">Chi tiết đơn #{selectedOrder.orderCode}</h5>
-                  <button
-                    type="button"
-                    className="btn-close"
-                    onClick={() => setShowDetailModal(false)}
-                  />
                 </div>
 
                 <div className="modal-body">
@@ -341,7 +336,7 @@ const OrderList = () => {
                   {/* TOTAL */}
                   <div className="text-end mt-4">
                     <h5>
-                      Tổng thanh toán:{' '}
+                      Tổng tiền đơn hàng:{' '}
                       <span className="text-success">
                         {selectedOrder.finalAmount?.toLocaleString('vi-VN')} đ
                       </span>

@@ -186,9 +186,7 @@ const Checkout = () => {
                 customerName: `${billing.firstName} ${billing.lastName || ''}`.trim(),
                 customerPhone: billing.phone,
                 customerEmail: billing.email || null,
-                shippingAddress: shipDifferent
-                    ? `${shipping.firstName} ${shipping.lastName || ''} - ${shipping.address}`.trim()
-                    : `${billing.firstName} ${billing.lastName || ''} - ${billing.address}`.trim(),
+                shippingAddress: billing.address.trim(),
                 notes: billing.notes || null,
                 paymentMethod,
                 items: cartItems.map(item => ({
@@ -329,7 +327,7 @@ const Checkout = () => {
                         </div>
 
                         {/* Shipping Different Address */}
-                        <div className="col-lg-6">
+                        {/* <div className="col-lg-6">
                             <p id="ship-to-different-address">
                                 <input
                                     id="ship-to-different-address-checkbox"
@@ -391,7 +389,7 @@ const Checkout = () => {
                                     </div>
                                 </div>
                             )}
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* Summary Order */}
