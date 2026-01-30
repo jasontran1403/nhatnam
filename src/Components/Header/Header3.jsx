@@ -71,9 +71,7 @@ export default function Header3({ variant }) {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
-      if (currentScrollPos > prevScrollPos) {
-        setIsSticky("cs-gescout_sticky");
-      } else if (currentScrollPos !== 0) {
+      if (currentScrollPos > prevScrollPos || currentScrollPos !== 0) {
         setIsSticky("cs-gescout_show cs-gescout_sticky");
       } else {
         setIsSticky();

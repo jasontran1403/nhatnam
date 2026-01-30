@@ -13352,7 +13352,7 @@ table.woocommerce-product-attributes {
   background-color: #111111;
 }
 .header_sticky_style1.cs-gescout_sticky{
-  background-color: #111111;
+  background: linear-gradient(180deg, #010F1C 0%, rgba(1, 15, 28, 0.75) 100%);
 }
 .header_sticky_style1.cs_site_header.header_style_2.cs_style_1 .container::before {
  
