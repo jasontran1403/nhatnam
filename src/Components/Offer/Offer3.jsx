@@ -21,7 +21,7 @@ const Offer3 = () => {
                             >
                             <div className="offer-content">
                                 <h6>start price $28</h6>
-                                <h3>special chicken roll</h3>
+                                <h3>special Beef Sausage</h3>
                                 <p>limits Time Offer</p>
                                 <Link to="/menu" className="theme-btn style4">
                                     ORDER NOW <i className="bi bi-arrow-right"></i>
@@ -39,7 +39,7 @@ const Offer3 = () => {
                            >
                             <div className="offer-content">
                                 <h6 className="text-white">start price $55</h6>
-                                <h3>SPICY FRIED CHICKEN</h3>
+                                <h3>SPICY HELA CAKE</h3>
                                 <p className="text-white">limits Time Offer</p>
                                 <Link to="/menu" className="theme-btn style4">
                                     ORDER NOW <i className="bi bi-arrow-right"></i>

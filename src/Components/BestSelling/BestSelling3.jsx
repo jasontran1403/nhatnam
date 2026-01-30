@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 const BestSelling3 = () => {
 
     const foodItems = [
-        {img:'/assets/img/dishes/dishes6_1.png', title:'Grilled Salmon', content:'The registration fee', price:'$24.00'},    
-        {img:'/assets/img/dishes/dishes6_2.png', title:'Crab Cakes', content:'The registration fee', price:'$28.00'},    
-        {img:'/assets/img/dishes/dishes6_3.png', title:'Fish and Chips', content:'The registration fee', price:'$20.00'},    
-        {img:'/assets/img/dishes/dishes6_4.png', title:'Shrimp Scampi', content:'The registration fee', price:'$58.00'},       
+        {img:'/assets/img/dishes/dishes6_1.png', title:'Sausages', content:'Order Price', price:'$24.00'},    
+        {img:'/assets/img/dishes/dishes6_2.png', title:'Small Goods', content:'Order Price', price:'$28.00'},    
+        {img:'/assets/img/dishes/dishes6_3.png', title:'Richs', content:'Order Price', price:'$20.00'},    
+        {img:'/assets/img/dishes/dishes6_4.png', title:'Hela', content:'Order Price', price:'$58.00'},       
       ]; 
 
     return (

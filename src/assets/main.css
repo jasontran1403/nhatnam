@@ -5414,7 +5414,7 @@ input.main-search-input::placeholder {
 .banner-style3 .subtitle {
   position: relative;
   -webkit-text-stroke: 2px var(--theme2);
-  color: transparent;
+  color: white;
   text-align: center;
   font-family: "Engagement", sans-serif;
   font-size: 180px;

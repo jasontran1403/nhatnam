@@ -58,9 +58,9 @@ const Testimonial1 = () => {
         };
 
     const tesItems = [
-        {img:'/assets/img/testimonial/testimonialProfile1_1.png', title:'Albert Flores', designation:'Web Designer', content:'Penatibus magnis dis point parturient montes nascetur ridiculus mus Ut id lorem ac enim the vestibulum blandit nec sit amet felis. Fusce quis diam odio Cras mattis mi quis tincidunt'},
-        {img:'/assets/img/testimonial/testimonialProfile1_1.png', title:'Albert Flores', designation:'Web Designer', content:'Penatibus magnis dis point parturient montes nascetur ridiculus mus Ut id lorem ac enim the vestibulum blandit nec sit amet felis. Fusce quis diam odio Cras mattis mi quis tincidunt'},
-        {img:'/assets/img/testimonial/testimonialProfile1_1.png', title:'Albert Flores', designation:'Web Designer', content:'Penatibus magnis dis point parturient montes nascetur ridiculus mus Ut id lorem ac enim the vestibulum blandit nec sit amet felis. Fusce quis diam odio Cras mattis mi quis tincidunt'},
+        {img:'/assets/img/testimonial/testimonialProfile1_1.png', title:'Albert Flores', designation:'Food Reviewer', content:'Penatibus magnis dis point parturient montes nascetur ridiculus mus Ut id lorem ac enim the vestibulum blandit nec sit amet felis. Fusce quis diam odio Cras mattis mi quis tincidunt'},
+        {img:'/assets/img/testimonial/testimonialProfile1_1.png', title:'Albert Flores', designation:'Food Reviewer', content:'Penatibus magnis dis point parturient montes nascetur ridiculus mus Ut id lorem ac enim the vestibulum blandit nec sit amet felis. Fusce quis diam odio Cras mattis mi quis tincidunt'},
+        {img:'/assets/img/testimonial/testimonialProfile1_1.png', title:'Albert Flores', designation:'Food Reviewer', content:'Penatibus magnis dis point parturient montes nascetur ridiculus mus Ut id lorem ac enim the vestibulum blandit nec sit amet felis. Fusce quis diam odio Cras mattis mi quis tincidunt'},
       ]; 
 
     return (

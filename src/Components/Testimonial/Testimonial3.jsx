@@ -45,10 +45,10 @@ const Testimonial3 = () => {
               }; 
     
               const tesItems = [
-                {img:'/assets/img/testimonial/testimonialProfile3_1.png', title:'Albert Flores', designation:'Web Designer', content:'There are many variations digof passages of Lorem Ipsum available,d like digital agency but the majority have suffered nalteration in some form, by injected humour'},
-                {img:'/assets/img/testimonial/testimonialProfile3_2.png', title:'Brooklyn', designation:'UI/UX Designer', content:'There are many variations digof passages of Lorem Ipsum available,d like digital agency but the majority have suffered nalteration in some form, by injected humour'},
-                {img:'/assets/img/testimonial/testimonialProfile3_1.png', title:'Albert Flores', designation:'Web Designer', content:'There are many variations digof passages of Lorem Ipsum available,d like digital agency but the majority have suffered nalteration in some form, by injected humour'},
-                {img:'/assets/img/testimonial/testimonialProfile3_2.png', title:'Brooklyn', designation:'UI/UX Designer', content:'There are many variations digof passages of Lorem Ipsum available,d like digital agency but the majority have suffered nalteration in some form, by injected humour'},                
+                {img:'/assets/img/testimonial/testimonialProfile3_1.png', title:'Albert Flores', designation:'Food Reviewer', content:'There are many variations digof passages of Lorem Ipsum available,d like digital agency but the majority have suffered nalteration in some form, by injected humour'},
+                {img:'/assets/img/testimonial/testimonialProfile3_2.png', title:'Brooklyn', designation:'Food Reviewer', content:'There are many variations digof passages of Lorem Ipsum available,d like digital agency but the majority have suffered nalteration in some form, by injected humour'},
+                {img:'/assets/img/testimonial/testimonialProfile3_1.png', title:'Albert Flores', designation:'Food Reviewer', content:'There are many variations digof passages of Lorem Ipsum available,d like digital agency but the majority have suffered nalteration in some form, by injected humour'},
+                {img:'/assets/img/testimonial/testimonialProfile3_2.png', title:'Brooklyn', designation:'Food Reviewer', content:'There are many variations digof passages of Lorem Ipsum available,d like digital agency but the majority have suffered nalteration in some form, by injected humour'},                
               ];              
 
     return (

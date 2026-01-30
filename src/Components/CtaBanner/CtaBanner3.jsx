@@ -56,7 +56,7 @@ const CtaBanner3 = () => {
                         <div
                             className="col-xl-6 d-flex align-items-center justify-content-center justify-content-xl-start order-1 order-xl-2">
                             <div className="cta-thumb">
-                                <img className="img-fluid float-bob-x" src="/assets/img/cta/ctaThumb3_1.png" alt="thumb"/>
+                                <img className="img-fluid float-bob-x" src="/assets/img/logo/clientLogo1_4.png" alt="thumb"/>
                             </div>
                         </div>
                     </div>

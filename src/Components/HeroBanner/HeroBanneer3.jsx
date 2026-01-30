@@ -46,9 +46,9 @@ const HeroBanneer3 = () => {
     }; 
 
     const heroContent = [
-        {img:'/assets/img/shape/bannerShape3_3.png', subtitle:'signature', title:'<span>SEA</span> FOODS', content:'Every dish is not just prepared it is a crafted with a savor the a utmost precision and a deep understanding sdf of flavor Every dish is not just prepared it is a crafted with a savor', location:'Rd. Santa Ana, Illinois 85486, United States'},
-        {img:'/assets/img/shape/bannerShape3_3.png', subtitle:'signature', title:'<span>SEA</span> FOODS', content:'Every dish is not just prepared it is a crafted with a savor the a utmost precision and a deep understanding sdf of flavor Every dish is not just prepared it is a crafted with a savor', location:'Rd. Santa Ana, Illinois 85486, United States'},
-        {img:'/assets/img/shape/bannerShape3_3.png', subtitle:'signature', title:'<span>SEA</span> FOODS', content:'Every dish is not just prepared it is a crafted with a savor the a utmost precision and a deep understanding sdf of flavor Every dish is not just prepared it is a crafted with a savor', location:'Rd. Santa Ana, Illinois 85486, United States'},
+        {img:'/assets/img/shape/766 × 478.png', subtitle:'Sausage', title:'<span>SEA</span> FOODS', content:'Every dish is not just prepared it is a crafted with a savor the a utmost precision and a deep understanding sdf of flavor Every dish is not just prepared it is a crafted with a savor', location:'Rd. Santa Ana, Illinois 85486, United States'},
+        {img:'/assets/img/shape/766 × 478_1.png', subtitle:'Rich', title:'<span>SEA</span> FOODS', content:'Every dish is not just prepared it is a crafted with a savor the a utmost precision and a deep understanding sdf of flavor Every dish is not just prepared it is a crafted with a savor', location:'Rd. Santa Ana, Illinois 85486, United States'},
+        {img:'/assets/img/shape/766 × 478_3.png', subtitle:'Hela', title:'<span>SEA</span> FOODS', content:'Every dish is not just prepared it is a crafted with a savor the a utmost precision and a deep understanding sdf of flavor Every dish is not just prepared it is a crafted with a savor', location:'Rd. Santa Ana, Illinois 85486, United States'},
 
       ]; 
 
