@@ -1,0 +1,35 @@
+{
+  "info": {
+    "phone": {
+      "title": "Số điện thoại"
+    },
+    "email": {
+      "title": "Địa chỉ Email"
+    },
+    "address": {
+      "title": "Địa chỉ"
+    },
+    "time": {
+      "title": "Giờ mở cửa",
+      "content": "Thứ 2 - Thứ 6: 09:00 - 17:00\nThứ 7 - CN: Nghỉ"
+    }
+  },
+
+  "form": {
+    "title": "Liên hệ với chúng tôi",
+    "name": "Họ và tên",
+    "email": "Email",
+    "phone": "Số điện thoại",
+    "subject": "Chủ đề",
+    "subjects": {
+      "complain": "Khiếu nại",
+      "greetings": "Góp ý",
+      "date": "Hạn sử dụng",
+      "price": "Về giá cả",
+      "order": "Về đơn hàng"
+    },
+    "message": "Nhập nội dung tin nhắn...",
+    "agree": "Tôi đồng ý với các điều khoản và chính sách liên quan",
+    "submit": "Gửi ngay"
+  }
+}

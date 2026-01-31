@@ -1,0 +1,67 @@
+{
+  "sidebar": {
+    "search_title": "Search",
+    "search_placeholder": "Search here",
+    "categories_title": "Categories",
+    "all": "All",
+    "filter_price_title": "Filter By Price",
+    "price_label": "Price:",
+    "filter_btn": "Filter"
+  },
+  "sortbar": {
+    "showing": "Showing {{from}} - {{to}} of {{total}} results",
+    "default_sort": "Default Sorting",
+    "sort_popularity": "Sort by popularity",
+    "sort_latest": "Sort by latest",
+    "sort_price_asc": "Sort by price: low to high",
+    "sort_price_desc": "Sort by price: high to low"
+  },
+  "content": {
+    "error_load": "Unable to load products",
+    "not_found": "No products found.",
+    "list_mode_dev": "List view is under development. Please switch to grid view.",
+    "default_desc": "Delicious food"
+  },
+  "categories": {
+    "sausages": "Sausages",
+    "small goods": "Small goods",
+    "hela": "Hela",
+    "richs": "Richs"
+  },
+   "detail": {
+    "loading": "Loading...",
+    "not_found": "Product not found",
+    "error_load_detail": "Unable to load product details",
+    "server_error": "Server connection error",
+
+    "description_fallback": "Product description is being updated...",
+    "variant_label": "Variants:",
+    "default_suffix": "(Default)",
+
+    "price_select_label": "Select price:",
+    "quantity_label": "Quantity ({{unit}}):",
+    "quantity_hint": "Enter decimals (minimum 0.01 {{unit}})",
+
+    "subtotal_label": "Subtotal:",
+    "rounded_note": "(rounded up)",
+
+    "add_to_cart": "Add to cart",
+    "wishlist": "Wishlist",
+
+    "modal": {
+      "title": "Choose a variant",
+      "desc": "Choose a variant for \"{{name}}\":",
+      "close": "Close"
+    },
+
+    "toast": {
+      "cart_updated": "Updated quantity for \"{{name}}\" in your cart!",
+      "cart_added": "Added \"{{name}}\" to your cart!",
+      "wishlist_added": "Added to wishlist!",
+      "wishlist_duplicate": "This item is already in your wishlist!"
+    },
+
+    "unit_fallback": "Kg",
+    "thumb_alt": "Thumbnail {{index}}"
+  }
+}

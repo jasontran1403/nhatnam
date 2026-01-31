@@ -1,0 +1,177 @@
+{
+  "hero": [
+    {
+      "subtitle": "Sausage",
+      "title": "<span>FAST</span> FOODS",
+      "content": "Every dish is not just prepared, it is crafted with utmost precision and deep understanding of flavor.",
+      "location": "Rd. Santa Ana, Illinois 85486, United States"
+    },
+    {
+      "subtitle": "Rich",
+      "title": "<span>HEALTHY</span> FOODS",
+      "content": "Every dish is not just prepared, it is crafted with utmost precision and deep understanding of flavor.",
+      "location": "Rd. Santa Ana, Illinois 85486, United States"
+    },
+    {
+      "subtitle": "Hela",
+      "title": "<span>DESSERT</span> FOODS",
+      "content": "Every dish is not just prepared, it is crafted with utmost precision and deep understanding of flavor.",
+      "location": "Rd. Santa Ana, Illinois 85486, United States"
+    }
+  ],
+  "popular_dishes": {
+    "subtitle": "POPULAR DISHES",
+    "title": "Our Most Popular Deals",
+    "order_now": "Order Now",
+    "items": [
+      { "name": "Sausages", "order_price_label": "Order Price" },
+      { "name": "Small Goods", "order_price_label": "Order Price" },
+      { "name": "Richs", "order_price_label": "Order Price" },
+      { "name": "Hela", "order_price_label": "Order Price" }
+    ]
+  },
+    "about": {
+    "subtitle": "About Us",
+    "title": "We Ensure Healthy & High-Quality Foods",
+    "description": "It is a long established fact that a reader will be distracted lorem the readable content of a page when looking at layout the point lorem established fact that It is a long established",
+    "features": [
+      {
+        "title": "Super quality food",
+        "desc": "Served our tasty food & good food by friendly"
+      },
+      {
+        "title": "Qualified Chef",
+        "desc": "Served our tasty food & good food by friendly"
+      }
+    ],
+    "button": "About Us"
+  },
+  "offer": {
+    "order_now": "Order Now",
+    "items": [
+      {
+        "start_price": "Start price $28",
+        "title": "Special Beef Sausage",
+        "note": "Limited Time Offer"
+      },
+      {
+        "start_price": "Start price $55",
+        "title": "Spicy Hela Cake",
+        "note": "Limited Time Offer"
+      }
+    ]
+  },
+    "why_choose": {
+    "subtitle": "Why choose us",
+    "title": "The history of our restaurant",
+    "desc": "It is a long established fact that a reader will be distracted the readable content of a page",
+    "items": [
+      {
+        "title": "Buffet Service",
+        "desc": "It is a long established fact that a reader will be distracted the"
+      },
+      {
+        "title": "Cook & Serve Faster",
+        "desc": "It is a long established fact that a reader will be distracted the"
+      }
+    ],
+    "order_now": "Order Now"
+  },
+   "faq": {
+    "subtitle": "Enjoy Our Dishes",
+    "title": "We serve and deliver delectable food.",
+    "items": [
+      {
+        "q": "What Are The Restaurant's Operating Hours?",
+        "a": "It is a long established fact that a reader will be distracted lorem the readable content of a page when looking"
+      },
+      {
+        "q": "Do You Offer Vegetarian / Vegan Options?",
+        "a": "It is a long established fact that a reader will be distracted lorem the readable content of a page when looking"
+      },
+      {
+        "q": "Are Kids Allowed in Restaurant?",
+        "a": "It is a long established fact that a reader will be distracted lorem the readable content of a page when looking"
+      },
+      {
+        "q": "Do you provide takeaway / delivery?",
+        "a": "It is a long established fact that a reader will be distracted lorem the readable content of a page when looking"
+      }
+    ],
+    "discount_title": "Get 30% Discount Every Item",
+    "countdown": {
+      "days": "days",
+      "hours": "hrs",
+      "minutes": "mins",
+      "seconds": "secs"
+    }
+  },
+   "testimonial": {
+    "subtitle": "Testimonials",
+    "title": "What Clients Say About Us",
+    "designation": "Food Reviewer",
+    "items": [
+      {
+        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour."
+      },
+      {
+        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour."
+      },
+      {
+        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour."
+      },
+      {
+        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour."
+      }
+    ]
+  },
+    "cta_app": {
+    "subtitle": "DOWNLOAD APP",
+    "title": "Download food app Order today!",
+    "store_prefix": "Get it on",
+    "app_store": "App store",
+    "google_play": "Google play"
+  },
+  "process": {
+    "subtitle": "Work Process",
+    "title": "Delicious Food and Quick Delivery Together",
+    "steps": [
+      {
+        "title": "Set your Location",
+        "desc": "It’s the perfect dining experience where every dish is crafted"
+      },
+      {
+        "title": "Select Food",
+        "desc": "It’s the perfect dining experience where every dish is crafted"
+      },
+      {
+        "title": "Pay Cash or Online",
+        "desc": "It’s the perfect dining experience where every dish is crafted"
+      }
+    ]
+  },
+    "blog": {
+    "subtitle": "LATEST BLOG",
+    "title": "Latest News & Articles",
+    "meta": {
+      "month_august": "August",
+      "by_admin": "By Admin",
+      "comments": "Comments({{count}})"
+    },
+    "read_more": "Read More",
+    "items": [
+      {
+        "title": "Top 10 Must-Try Dishes at Our Restaurant",
+        "content": "Get to know the top 10 dishes you must try when you visit our restaurant, from appetizers to desserts..."
+      },
+      {
+        "title": "Take a behind-the-scenes look at a typical day",
+        "content": "Get to know the top 10 dishes you must try when you visit our restaurant, from appetizers to desserts..."
+      },
+      {
+        "title": "Learn the secrets to making perfect pasta",
+        "content": "Get to know the top 10 dishes you must try when you visit our restaurant, from appetizers to desserts..."
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "offer": {
+    "items": [
+      {
+        "title1": "TRONG TUẦN NÀY",
+        "title2": "GÀ RÁN CAY",
+        "content": "Ưu đãi có thời hạn"
+      },
+      {
+        "title1": "CHÀO MỪNG ĐẾN NHATNAMFOOD",
+        "title2": "MÓN ĐẶC BIỆT ",
+        "content": "Ưu đãi có thời hạn"
+      },
+      {
+        "title1": "TRONG TUẦN NÀY",
+        "title2": "GÀ CUỐN ĐẶC BIỆT",
+        "content": "Ưu đãi có thời hạn"
+      }
+    ],
+    "order_now": "ĐẶT NGAY"
+  },
+  "about2": {
+    "subtitle": "Về chúng tôi",
+    "title": "Đa dạng hương vị từ ẩm thực Mỹ",
+    "description": "Mỗi món ăn không chỉ được chế biến mà còn được chăm chút tỉ mỉ với sự thấu hiểu sâu sắc về hương vị. Đôi tay giàu kinh nghiệm của các đầu bếp tạo nên sự hài hòa tinh tế trong từng món.",
+    "features": [
+      {
+        "title": "Chất lượng món ăn vượt trội",
+        "desc": "Phục vụ món ngon, hương vị chuẩn, thân thiện và tận tâm."
+      },
+      {
+        "title": "Đầu bếp giàu kinh nghiệm",
+        "desc": "Đội ngũ chuyên nghiệp, đảm bảo chất lượng trong từng công đoạn."
+      }
+    ],
+    "marquee": [
+      "Pizza gà",
+      "Gà nướng",
+      "Burger",
+      "Pizza gà",
+      "Pasta tươi",
+      "Khoai tây chiên kiểu Ý",
+      "Gà chiên"
+    ]
+  },
+    "ctaBanner1": {
+    "tag": "CHÀO MỪNG FRESHEAT",
+    "title": "MÓN ĐẶC BIỆT HÔM NAY",
+    "desc": "Ưu đãi có thời hạn",
+    "button": "ĐẶT NGAY"
+  },
+   "team": {
+    "subtitle": "ĐỘI NGŨ ĐẦU BẾP",
+    "title": "Gặp gỡ các đầu bếp giàu kinh nghiệm",
+    "share": "Chia sẻ",
+    "roles": {
+      "chef_lead": "Bếp trưởng",
+      "chef_assistant": "Phụ bếp"
+    }
+  },
+   "testimonial": {
+    "subtitle": "CẢM NHẬN KHÁCH HÀNG",
+    "title": "Khách hàng nói gì về chúng tôi",
+    "designation": {
+      "food_reviewer": "Chuyên gia ẩm thực"
+    },
+    "content": "Penatibus magnis dis parturient montes nascetur ridiculus mus. Ut id lorem ac enim vestibulum blandit nec sit amet felis. Fusce quis diam odio. Cras mattis mi quis tincidunt."
+  },
+   "blog": {
+    "subtitle": "TIN MỚI NHẤT",
+    "title": "Tin tức ẩm thực mới nhất",
+    "date": {
+      "day": "15",
+      "month": "Th12"
+    },
+    "meta": {
+      "by": "Bởi Admin",
+      "tag": "Mì"
+    },
+    "readMore": "Xem thêm",
+    "items": [
+      { "title": "Thức Ăn Nhanh và sự tiện lợi mà nó đem lại" },
+      { "title": "Lợi ích cho sức khỏe từ Salad" },
+      { "title": "Đồ ăn nhanh tiện lợi" },
+      { "title": "Thức Ăn Nhanh và sự tiện lợi mà nó đem lại" },
+      { "title": "Lợi ích cho sức khỏe từ Salad" },
+      { "title": "Đồ ăn nhanh tiện lợi" }
+    ]
+  }
+}

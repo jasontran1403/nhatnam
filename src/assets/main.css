@@ -5425,6 +5425,11 @@ input.main-search-input::placeholder {
   margin-bottom: 100px;
   z-index: 5;
 }
+
+.banner-title {
+  color:transparent;
+   -webkit-text-stroke: 1px var(--theme2);
+}
 @media (max-width: 1399px) {
   .banner-style3 .subtitle {
     font-size: 100px;
@@ -12340,6 +12345,73 @@ span.select2-selection.select2-selection--single:focus {
   color: var(--white);
 }
 
+.floating-lang-btn {
+  position: fixed;
+  right: 16px;
+  bottom: 24px;
+  z-index: 9999;
+
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+
+  background: #fff;
+  color: #000;
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+
+  border: none;
+  box-shadow: 0 12px 28px rgba(0,0,0,.35);
+
+  transition: all .2s ease;
+}
+
+.floating-lang-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(0,0,0,.45);
+}
+
+.floating-lang-btn:active {
+  transform: scale(.92);
+}
+
+/* chỉ hiện trên mobile */
+@media (min-width: 992px){
+  .floating-lang-btn{ display: none; }
+}
+
+/* optional: tránh bị đè bởi bottom nav */
+@media (max-width: 991.98px){
+  .floating-lang-btn{ bottom: 80px; } /* nếu bạn có bottom bar */
+}
+
+.lang-toast{
+  position: fixed;
+  right: 16px;
+  bottom: 92px; /* tránh đè lên floating button */
+  z-index: 10000;
+
+  padding: 10px 12px;
+  border-radius: 999px;
+
+  background: rgba(20,20,20,.9);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+  backdrop-filter: blur(6px);
+
+  animation: langToastIn .18s ease-out;
+}
+
+@keyframes langToastIn{
+  from { transform: translateY(6px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
 @media (max-width: 991px) {
   .tinvwl-full {
     display: none;
@@ -13822,7 +13894,7 @@ display: unset;
   background-color: transparent;
 }
 .header-logo-3 img{
-  max-width: 70px;
+  max-width: 90px;
 }
 .accordion-item .accordion-collapse{
   display: none;

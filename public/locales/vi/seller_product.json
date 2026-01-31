@@ -1,0 +1,101 @@
+{
+  "page": {
+    "title": "Quản lý sản phẩm",
+    "desc": "Quản lý sản phẩm và nguyên liệu"
+  },
+  "actions": {
+    "add_product": "Thêm sản phẩm mới",
+    "add_ingredient_btn": "Thêm nguyên liệu mới",
+    "add_price": "+ Thêm mức giá",
+    "add_variant": "+ Thêm biến thể",
+    "add_ingredient": "+ Thêm nguyên liệu"
+  },
+  "tables": {
+    "products_title": "Danh sách sản phẩm",
+    "ingredients_title": "Danh sách nguyên liệu",
+    "empty_products": "Chưa có sản phẩm nào",
+    "empty_ingredients": "Chưa có nguyên liệu nào",
+    "loading": "Đang tải..."
+  },
+  "columns": {
+    "image": "Ảnh",
+    "name": "Tên",
+    "default_price": "Giá mặc định",
+    "variants": "Biến thể",
+    "unit": "Đơn vị",
+    "stock": "Tồn kho"
+  },
+  "buttons": {
+    "cancel": "Hủy",
+    "delete": "Xóa",
+    "save_product": "Lưu sản phẩm",
+    "save_ingredient": "Lưu nguyên liệu",
+    "saving": "Đang lưu..."
+  },
+  "modal": {
+    "add_ingredient_title": "Thêm nguyên liệu mới",
+    "add_product_title": "Thêm sản phẩm mới"
+  },
+  "ingredient_form": {
+    "name_label": "Tên nguyên liệu *",
+    "unit_label": "Đơn vị (kg, cái, lít,...) *",
+    "stock_label": "Số lượng tồn kho *",
+    "image_label": "Ảnh nguyên liệu *",
+    "uploading": "Đang tải ảnh..."
+  },
+  "product_form": {
+    "name_label": "Tên sản phẩm *",
+    "desc_label": "Mô tả",
+    "image_label": "Ảnh sản phẩm *",
+    "uploading": "Đang tải ảnh...",
+    "price_label": "Mức giá *",
+    "price_name_placeholder": "Tên mức giá (VD: Size M, Combo...)",
+    "price_placeholder": "Giá",
+    "default": "Mặc định",
+    "variants_label": "Biến thể (tùy chọn)",
+    "variant_name_label": "Tên biến thể *",
+    "variant_image_label": "Ảnh biến thể (tùy chọn)",
+    "variant_uploading": "Đang tải...",
+    "variant_ingredients_label": "Nguyên liệu của biến thể",
+    "select_ingredient": "Chọn nguyên liệu...",
+    "quantity_placeholder": "Số lượng",
+    "no_variants_info": "Chưa có biến thể. Sản phẩm sẽ sử dụng nguyên liệu chung bên dưới.",
+    "product_ingredients_label": "Nguyên liệu sản phẩm *",
+    "need_1_ingredient_warning": "Vui lòng thêm ít nhất 1 nguyên liệu cho sản phẩm"
+  },
+  "toast": {
+    "cannot_load_products": "Không tải được danh sách sản phẩm",
+    "cannot_load_ingredients": "Không tải được danh sách nguyên liệu",
+    "upload_failed": "Upload thất bại",
+    "file_too_big": "Ảnh phải dưới 5MB",
+    "product_image_upload_success": "Ảnh sản phẩm đã tải lên thành công",
+    "product_image_upload_failed": "Tải ảnh sản phẩm thất bại",
+    "variant_image_upload_success": "Ảnh biến thể đã tải lên",
+    "variant_image_upload_failed": "Tải ảnh biến thể thất bại",
+    "ingredient_image_upload_success": "Ảnh nguyên liệu đã tải lên",
+    "ingredient_image_upload_failed": "Tải ảnh nguyên liệu thất bại",
+    "need_at_least_1_price": "Phải có ít nhất 1 mức giá",
+    "need_at_least_1_ingredient": "Phải có ít nhất 1 nguyên liệu",
+    "product_name_required": "Tên sản phẩm là bắt buộc",
+    "product_image_required": "Cần chọn ảnh sản phẩm",
+    "price_name_required": "Tên mức giá bắt buộc",
+    "price_gt_0": "Giá phải lớn hơn 0",
+    "variant_name_required": "Tên biến thể bắt buộc",
+    "variant_need_ingredient": "Biến thể \"{{name}}\" cần ít nhất 1 nguyên liệu",
+    "choose_variant_ingredient": "Chọn nguyên liệu cho biến thể",
+    "ingredient_qty_gt_0": "Số lượng nguyên liệu > 0",
+    "product_need_ingredient": "Sản phẩm cần ít nhất 1 nguyên liệu",
+    "choose_ingredient": "Chọn nguyên liệu",
+    "qty_gt_0": "Số lượng > 0",
+    "create_product_success": "Tạo sản phẩm thành công!",
+    "create_product_failed": "Tạo sản phẩm thất bại",
+    "server_connect_error": "Lỗi kết nối server",
+    "ingredient_name_required": "Tên nguyên liệu bắt buộc",
+    "unit_required": "Đơn vị bắt buộc",
+    "stock_not_negative": "Tồn kho không được âm",
+    "ingredient_image_required": "Ảnh nguyên liệu bắt buộc",
+    "create_ingredient_success": "Tạo nguyên liệu thành công!",
+    "create_ingredient_failed": "Tạo nguyên liệu thất bại",
+    "system_error": "Lỗi hệ thống"
+  }
+}

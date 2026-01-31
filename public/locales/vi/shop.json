@@ -1,0 +1,67 @@
+{
+  "sidebar": {
+    "search_title": "Tìm kiếm",
+    "search_placeholder": "Tìm ở đây",
+    "categories_title": "Danh mục",
+    "all": "Tất cả",
+    "filter_price_title": "Lọc theo giá",
+    "price_label": "Giá:",
+    "filter_btn": "Lọc"
+  },
+  "sortbar": {
+    "showing": "Hiển thị {{from}} - {{to}} / {{total}} kết quả",
+    "default_sort": "Sắp xếp mặc định",
+    "sort_popularity": "Sắp xếp theo phổ biến",
+    "sort_latest": "Sắp xếp mới nhất",
+    "sort_price_asc": "Giá: thấp đến cao",
+    "sort_price_desc": "Giá: cao đến thấp"
+  },
+  "content": {
+    "error_load": "Không thể tải sản phẩm",
+    "not_found": "Không tìm thấy sản phẩm.",
+    "list_mode_dev": "Chế độ danh sách đang được phát triển. Vui lòng chuyển sang chế độ lưới.",
+    "default_desc": "Món ngon hấp dẫn"
+  },
+  "categories": {
+    "sausages": "Xúc xích",
+    "small goods": "Đồ nguội",
+    "hela": "Hela",
+    "richs": "Richs"
+  },
+   "detail": {
+    "loading": "Đang tải...",
+    "not_found": "Không tìm thấy sản phẩm",
+    "error_load_detail": "Không tải được chi tiết sản phẩm",
+    "server_error": "Lỗi kết nối server",
+
+    "description_fallback": "Mô tả sản phẩm đang được cập nhật...",
+    "variant_label": "Biến thể:",
+    "default_suffix": "(Mặc định)",
+
+    "price_select_label": "Chọn mức giá:",
+    "quantity_label": "Số lượng ({{unit}}):",
+    "quantity_hint": "Nhập số lẻ (tối thiểu 0.01 {{unit}})",
+
+    "subtotal_label": "Tạm tính:",
+    "rounded_note": "(đã làm tròn lên đồng)",
+
+    "add_to_cart": "Thêm vào giỏ",
+    "wishlist": "Yêu thích",
+
+    "modal": {
+      "title": "Chọn biến thể",
+      "desc": "Chọn biến thể cho \"{{name}}\":",
+      "close": "Đóng"
+    },
+
+    "toast": {
+      "cart_updated": "Đã cập nhật số lượng cho \"{{name}}\" trong giỏ hàng!",
+      "cart_added": "Đã thêm \"{{name}}\" vào giỏ hàng!",
+      "wishlist_added": "Đã thêm vào danh sách yêu thích!",
+      "wishlist_duplicate": "Sản phẩm này đã có trong danh sách yêu thích!"
+    },
+
+    "unit_fallback": "Kg",
+    "thumb_alt": "Ảnh thu nhỏ {{index}}"
+  }
+}

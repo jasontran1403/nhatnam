@@ -16,6 +16,7 @@ import CheckoutPage from "../Pages/CheckoutPage";
 import WishlistPage from "../Pages/WishlistPage";
 import Orders from "../Pages/Orders";
 
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -25,6 +26,7 @@ export const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
       },
+      
       {
         path: "/about",
         element: <AboutPage></AboutPage>,

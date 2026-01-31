@@ -1,0 +1,54 @@
+{
+  "header.home": "Trang chủ",
+  "header.management": "Quản lý",
+  "header.orders": "Đơn hàng",
+  "header.menu": "Thực đơn",
+  "header.pages": "Trang",
+
+  "pages.about": "Giới thiệu",
+  "pages.gallery": "Thư viện ảnh",
+  "pages.testimonial": "Đánh giá",
+  "pages.faq": "Hỏi đáp",
+  "pages.contact": "Liên hệ",
+  
+  "footer.address_title": "Địa chỉ",
+  "footer.address_value": "Đường XXX, Phường YYY, Thành phố ZZZ",
+  "footer.email_title": "Email hỗ trợ",
+  "footer.email_value": "support@company.com",
+  "footer.hotline_title": "Hotline",
+  "footer.hotline_value": "+000.000.000",
+
+  "footer.about_text": "Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia mollis",
+
+  "footer.quick_links": "Liên kết nhanh",
+  "footer.our_menu": "Thực đơn",
+  "footer.contact_us": "Liên hệ",
+
+  "footer.link.about": "Giới thiệu",
+  "footer.link.gallery": "Thư viện ảnh",
+  "footer.link.blog": "Bài viết",
+  "footer.link.faq": "Hỏi đáp",
+  "footer.link.contact": "Liên hệ",
+
+  "footer.menu.burger": "Burger King",
+  "footer.menu.pizza": "Pizza King",
+  "footer.menu.fresh_food": "Món tươi",
+  "footer.menu.vegetable": "Rau củ",
+  "footer.menu.desserts": "Tráng miệng",
+
+  "footer.open_days_week": "Thứ 2 – Thứ 6:",
+  "footer.open_time_week": "8:00 – 16:00",
+  "footer.open_days_sat": "Thứ 7:",
+  "footer.open_time_sat": "8:00 – 12:00",
+
+  "footer.email_placeholder": "Nhập email của bạn",
+  "footer.privacy_agree": "Tôi đồng ý với",
+  "footer.privacy_policy": "Chính sách bảo mật",
+
+  "footer.copyright": "© Bản quyền 2024 thuộc về",
+  "footer.brand": "NhatNam Food",
+
+  "footer.terms": "Điều khoản",
+  "footer.privacy": "Chính sách bảo mật"
+  
+}

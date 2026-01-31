@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { STATUS_CODE } from "../../Utils/MainService";
 import { BASE_URL } from "../../Utils/constants/apiEndpoints";
+import { useTranslation } from "react-i18next";
 
 const getToken = () => localStorage.getItem('accessToken');
 
 const SellerProductManagement = () => {
+    const { t } = useTranslation("seller_product");
   const [products, setProducts] = useState([]);
   const [ingredients, setIngredients] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -47,7 +49,7 @@ const SellerProductManagement = () => {
         setProducts(data.data.content || []);
       }
     } catch (err) {
-      showToast('Không tải được danh sách sản phẩm', 'error');
+      showToast(t("toast.cannot_load_products"), "error");
     } finally {
       setLoading(false);
     }
@@ -63,7 +65,7 @@ const SellerProductManagement = () => {
         setIngredients(data.data || []);
       }
     } catch (err) {
-      showToast('Không tải được danh sách nguyên liệu', 'error');
+      showToast(t("toast.cannot_load_ingredients"), "error");
     }
   };
 
@@ -91,7 +93,7 @@ const SellerProductManagement = () => {
     if (data.code === STATUS_CODE.SUCCESS) {
       return data.data.imageUrl;
     }
-    throw new Error(data.message || 'Upload thất bại');
+    throw new Error(data.message || t("toast.upload_failed"));
   };
 
   const handleProductImageSelect = async (e) => {
@@ -99,7 +101,7 @@ const SellerProductManagement = () => {
     if (!file) return;
 
     if (file.size > 5 * 1024 * 1024) {
-      showToast('Ảnh phải dưới 5MB', 'error');
+      showToast(t("toast.file_too_big"), "error");
       return;
     }
 
@@ -107,9 +109,9 @@ const SellerProductManagement = () => {
     try {
       const imageUrl = await uploadImage(file, 'product');
       setProductForm(prev => ({ ...prev, imageUrl }));
-      showToast('Ảnh sản phẩm đã tải lên thành công', 'success');
+      showToast(t("toast.product_image_upload_success"), "success");
     } catch {
-      showToast('Tải ảnh sản phẩm thất bại', 'error');
+      showToast(t("toast.product_image_upload_failed"), "error");
     } finally {
       setUploadingImages(prev => ({ ...prev, 'product': false }));
     }
@@ -120,7 +122,7 @@ const SellerProductManagement = () => {
     if (!file) return;
 
     if (file.size > 5 * 1024 * 1024) {
-      showToast('Ảnh phải dưới 5MB', 'error');
+      showToast(t("toast.file_too_big"), "error");
       return;
     }
 
@@ -133,11 +135,11 @@ const SellerProductManagement = () => {
           i === variantIndex ? { ...v, imageUrl } : v
         )
       }));
-      showToast('Ảnh biến thể đã tải lên', 'success');
+      showToast(t("toast.variant_image_upload_success"), "success");
     } catch {
-      showToast('Tải ảnh biến thể thất bại', 'error');
+      showToast(t("toast.variant_image_upload_failed"), "error");
     } finally {
-      setUploadingImages(prev => ({ ...prev, [`variant-${variantIndex}`]: false }));
+      setUploadingImages((prev) => ({ ...prev, [`variant-${variantIndex}`]: false }));
     }
   };
 
@@ -146,7 +148,7 @@ const SellerProductManagement = () => {
     if (!file) return;
 
     if (file.size > 5 * 1024 * 1024) {
-      showToast('Ảnh phải dưới 5MB', 'error');
+      showToast(t("toast.file_too_big"), "error");
       return;
     }
 
@@ -154,9 +156,9 @@ const SellerProductManagement = () => {
     try {
       const imageUrl = await uploadImage(file, 'ingredient');
       setIngredientForm(prev => ({ ...prev, imageUrl }));
-      showToast('Ảnh nguyên liệu đã tải lên', 'success');
+      showToast(t("toast.ingredient_image_upload_success"), "success");
     } catch {
-      showToast('Tải ảnh nguyên liệu thất bại', 'error');
+      showToast(t("toast.ingredient_image_upload_failed"), "error");
     } finally {
       setUploadingImages(prev => ({ ...prev, 'ingredient': false }));
     }
@@ -172,7 +174,7 @@ const SellerProductManagement = () => {
 
   const removePrice = (index) => {
     if (productForm.prices.length <= 1) {
-      showToast('Phải có ít nhất 1 mức giá', 'error');
+      showToast(t("toast.need_at_least_1_price"), "error");
       return;
     }
     setProductForm(prev => ({
@@ -246,7 +248,7 @@ const SellerProductManagement = () => {
 
   const removeIngredientFromProduct = (index) => {
     if (productForm.ingredients.length <= 1) {
-      showToast('Phải có ít nhất 1 nguyên liệu', 'error');
+      showToast(t("toast.need_at_least_1_ingredient"), "error");
       return;
     }
     setProductForm(prev => ({
@@ -257,31 +259,31 @@ const SellerProductManagement = () => {
 
   const handleSubmitProduct = async () => {
     // Validation cơ bản
-    if (!productForm.name.trim()) return showToast('Tên sản phẩm là bắt buộc', 'error');
-    if (!productForm.imageUrl) return showToast('Cần chọn ảnh sản phẩm', 'error');
+    if (!productForm.name.trim()) return showToast(t("toast.product_name_required"), "error");
+    if (!productForm.imageUrl) return showToast(t("toast.product_image_required"), "error");
 
     // Kiểm tra giá
-    if (productForm.prices.length === 0) return showToast('Phải có ít nhất 1 mức giá', 'error');
+    if (productForm.prices.length === 0) return showToast(t("toast.need_at_least_1_price"), 'error');
     for (const p of productForm.prices) {
-      if (!p.priceName.trim()) return showToast('Tên mức giá bắt buộc', 'error');
-      if (p.price <= 0) return showToast('Giá phải lớn hơn 0', 'error');
+      if (!p.priceName.trim()) return showToast(t("toast.price_name_required"), 'error');
+      if (p.price <= 0) return showToast(t("toast.price_gt_0"), 'error');
     }
 
     // Kiểm tra biến thể hoặc nguyên liệu
     if (productForm.variants.length > 0) {
       for (const v of productForm.variants) {
-        if (!v.variantName.trim()) return showToast('Tên biến thể bắt buộc', 'error');
-        if (v.ingredients.length === 0) return showToast(`Biến thể "${v.variantName}" cần ít nhất 1 nguyên liệu`, 'error');
+        if (!v.variantName.trim()) return showToast(t("toast.variant_name_required"), 'error');
+        if (v.ingredients.length === 0) return showToast(t("toast.variant_need_ingredient", { name: v.variantName }), 'error');
         for (const ing of v.ingredients) {
-          if (!ing.ingredientId) return showToast('Chọn nguyên liệu cho biến thể', 'error');
-          if (ing.quantity <= 0) return showToast('Số lượng nguyên liệu > 0', 'error');
+          if (!ing.ingredientId) return showToast(t("toast.choose_variant_ingredient"), 'error');
+          if (ing.quantity <= 0) return showToast(t("toast.ingredient_qty_gt_0"), 'error');
         }
       }
     } else {
-      if (productForm.ingredients.length === 0) return showToast('Sản phẩm cần ít nhất 1 nguyên liệu', 'error');
+      if (productForm.ingredients.length === 0) return showToast(t("toast.product_need_ingredient"), 'error');
       for (const ing of productForm.ingredients) {
-        if (!ing.ingredientId) return showToast('Chọn nguyên liệu', 'error');
-        if (ing.quantity <= 0) return showToast('Số lượng > 0', 'error');
+        if (!ing.ingredientId) return showToast(t("toast.choose_ingredient"), 'error');
+        if (ing.quantity <= 0) return showToast(t("toast.qty_gt_0"), 'error');
       }
     }
 
@@ -307,25 +309,25 @@ const SellerProductManagement = () => {
 
       const data = await res.json();
       if (data.code === STATUS_CODE.SUCCESS) {
-        showToast('Tạo sản phẩm thành công!', 'success');
+        showToast(t("toast.create_product_success"), 'success');
         setShowProductModal(false);
         resetProductForm();
         fetchProducts();
       } else {
-        showToast(data.message || 'Tạo sản phẩm thất bại', 'error');
+        showToast(data.message || t("toast.create_product_failed"), 'error');
       }
     } catch (err) {
-      showToast('Lỗi kết nối server', 'error');
+      showToast(t("toast.server_connect_error"), 'error');
     } finally {
       setSubmitting(false);
     }
   };
 
   const handleSubmitIngredient = async () => {
-    if (!ingredientForm.name.trim()) return showToast('Tên nguyên liệu bắt buộc', 'error');
-    if (!ingredientForm.unit.trim()) return showToast('Đơn vị bắt buộc', 'error');
-    if (ingredientForm.stockQuantity < 0) return showToast('Tồn kho không được âm', 'error');
-    if (!ingredientForm.imageUrl) return showToast('Ảnh nguyên liệu bắt buộc', 'error');
+    if (!ingredientForm.name.trim()) return showToast(t("toast.ingredient_name_required"), 'error');
+    if (!ingredientForm.unit.trim()) return showToast(t("toast.unit_required"), 'error');
+    if (ingredientForm.stockQuantity < 0) return showToast(t("toast.stock_not_negative"), 'error');
+    if (!ingredientForm.imageUrl) return showToast(t("toast.ingredient_image_required"), 'error');
 
     setSubmitting(true);
     try {
@@ -345,10 +347,10 @@ const SellerProductManagement = () => {
         resetIngredientForm();
         fetchIngredients();
       } else {
-        showToast(data.message || 'Tạo nguyên liệu thất bại', 'error');
+        showToast(data.message || t("toast.create_ingredient_failed"), 'error');
       }
     } catch {
-      showToast('Lỗi hệ thống', 'error');
+      showToast(t("toast.system_error"), 'error');
     } finally {
       setSubmitting(false);
     }
@@ -383,10 +385,10 @@ const SellerProductManagement = () => {
         <div className="row mb-4">
           <div className="col-12">
             <h1 style={{ fontSize: '2.5rem', fontWeight: '700', color: '#0f172a' }}>
-              Quản lý sản phẩm
+              {t("page.title")}
             </h1>
             <p style={{ color: '#64748b', fontSize: '1.1rem' }}>
-              Quản lý sản phẩm và nguyên liệu
+              {t("page.desc")}
             </p>
           </div>
         </div>
@@ -403,7 +405,7 @@ const SellerProductManagement = () => {
                 boxShadow: '0 4px 15px rgba(102,126,234,0.3)'
               }}
             >
-              <i className="bi bi-plus-circle me-2"></i> Thêm sản phẩm mới
+              <i className="bi bi-plus-circle me-2"></i> {t("actions.add_product")}
             </button>
           </div>
           <div className="col-md-6">
@@ -417,7 +419,7 @@ const SellerProductManagement = () => {
                 boxShadow: '0 4px 15px rgba(245,87,108,0.3)'
               }}
             >
-              <i className="bi bi-plus-circle me-2"></i> Thêm nguyên liệu mới
+              <i className="bi bi-plus-circle me-2"></i> {t("actions.add_ingredient_btn")}
             </button>
           </div>
         </div>
@@ -427,7 +429,7 @@ const SellerProductManagement = () => {
           <div className="col-12">
             <div className="card shadow-sm border-0 rounded-4">
               <div className="card-body">
-                <h4 className="mb-4 fw-semibold">Danh sách sản phẩm</h4>
+                <h4 className="mb-4 fw-semibold">{t("tables.products_title")}</h4>
                 {loading ? (
                   <div className="text-center py-5">
                     <div className="spinner-border text-primary"></div>
@@ -437,10 +439,10 @@ const SellerProductManagement = () => {
                     <table className="table table-hover align-middle">
                       <thead className="table-light">
                         <tr>
-                          <th>Ảnh</th>
-                          <th>Tên</th>
-                          <th>Giá mặc định</th>
-                          <th>Biến thể</th>
+                          <th>{t("columns.image")}</th>
+                          <th>{t("columns.name")}</th>
+                          <th>{t("columns.default_price")}</th>
+                          <th>{t("columns.variants")}</th>
                           <th></th>
                         </tr>
                       </thead>
@@ -460,7 +462,7 @@ const SellerProductManagement = () => {
                             <td>{p.defaultPrice ? formatPrice(p.defaultPrice) : '-'}</td>
                             <td>{p.variants?.length || 0}</td>
                             <td>
-                              <button className="btn btn-sm btn-outline-danger">
+                              <button className="btn btn-sm btn-outline-danger" title={t("buttons.delete")}> 
                                 <i className="bi bi-trash"></i>
                               </button>
                             </td>
@@ -469,7 +471,7 @@ const SellerProductManagement = () => {
                         {products.length === 0 && (
                           <tr>
                             <td colSpan={5} className="text-center text-muted py-4">
-                              Chưa có sản phẩm nào
+                              {t("tables.empty_products")}
                             </td>
                           </tr>
                         )}
@@ -487,15 +489,15 @@ const SellerProductManagement = () => {
           <div className="col-12">
             <div className="card shadow-sm border-0 rounded-4">
               <div className="card-body">
-                <h4 className="mb-4 fw-semibold">Danh sách nguyên liệu</h4>
+                <h4 className="mb-4 fw-semibold">{t("tables.ingredients_title")}</h4>
                 <div className="table-responsive">
                   <table className="table table-hover align-middle">
                     <thead className="table-light">
                       <tr>
-                        <th>Ảnh</th>
-                        <th>Tên</th>
-                        <th>Đơn vị</th>
-                        <th>Tồn kho</th>
+                        <th>{t("columns.image")}</th>
+                        <th>{t("columns.name")}</th>
+                        <th>{t("columns.unit")}</th>
+                        <th>{t("columns.stock")}</th>
                         <th></th>
                       </tr>
                     </thead>
@@ -515,7 +517,7 @@ const SellerProductManagement = () => {
                           <td>{ing.unit}</td>
                           <td>{ing.stockQuantity}</td>
                           <td>
-                            <button className="btn btn-sm btn-outline-danger">
+                            <button className="btn btn-sm btn-outline-danger"title={t("buttons.delete")}>
                               <i className="bi bi-trash"></i>
                             </button>
                           </td>
@@ -524,7 +526,7 @@ const SellerProductManagement = () => {
                       {ingredients.length === 0 && (
                         <tr>
                           <td colSpan={5} className="text-center text-muted py-4">
-                            Chưa có nguyên liệu nào
+                             {t("tables.empty_ingredients")}
                           </td>
                         </tr>
                       )}
@@ -543,12 +545,12 @@ const SellerProductManagement = () => {
           <div className="modal-dialog modal-dialog-centered modal-lg">
             <div className="modal-content border-0 shadow-lg rounded-4">
               <div className="modal-header border-0 pb-0">
-                <h5 className="modal-title fw-bold">Thêm nguyên liệu mới</h5>
+                <h5 className="modal-title fw-bold">{t("modal.add_ingredient_title")}i</h5>
                 <button className="btn-close" onClick={() => setShowIngredientModal(false)} disabled={submitting}></button>
               </div>
               <div className="modal-body">
                 <div className="mb-3">
-                  <label className="form-label fw-medium">Tên nguyên liệu *</label>
+                  <label className="form-label fw-medium">{t("ingredient_form.name_label")}</label>
                   <input
                     type="text"
                     className="form-control"
@@ -557,7 +559,7 @@ const SellerProductManagement = () => {
                   />
                 </div>
                 <div className="mb-3">
-                  <label className="form-label fw-medium">Đơn vị (kg, cái, lít,...) *</label>
+                  <label className="form-label fw-medium">{t("ingredient_form.unit_label")}</label>
                   <input
                     type="text"
                     className="form-control"
@@ -566,7 +568,7 @@ const SellerProductManagement = () => {
                   />
                 </div>
                 <div className="mb-3">
-                  <label className="form-label fw-medium">Số lượng tồn kho *</label>
+                  <label className="form-label fw-medium">{t("ingredient_form.stock_label")}</label>
                   <input
                     type="number"
                     className="form-control"
@@ -577,7 +579,7 @@ const SellerProductManagement = () => {
                   />
                 </div>
                 <div className="mb-3">
-                  <label className="form-label fw-medium">Ảnh nguyên liệu *</label>
+                  <label className="form-label fw-medium">{t("ingredient_form.image_label")}</label>
                   <input
                     type="file"
                     className="form-control"
@@ -585,7 +587,7 @@ const SellerProductManagement = () => {
                     onChange={handleIngredientImageSelect}
                     disabled={uploadingImages['ingredient']}
                   />
-                  {uploadingImages['ingredient'] && <div className="mt-2 text-primary small">Đang tải ảnh...</div>}
+                  {uploadingImages['ingredient'] && <div className="mt-2 text-primary small">{t("ingredient_form.uploading")}</div>}
                   {ingredientForm.imageUrl && (
                     <img
                       src={`${BASE_URL}/api/auth${ingredientForm.imageUrl}`}
@@ -598,10 +600,10 @@ const SellerProductManagement = () => {
               </div>
               <div className="modal-footer border-0">
                 <button className="btn btn-outline-secondary px-4" onClick={() => setShowIngredientModal(false)} disabled={submitting}>
-                  Hủy
+                  {t("buttons.cancel")}
                 </button>
                 <button className="btn btn-primary px-4" onClick={handleSubmitIngredient} disabled={submitting}>
-                  {submitting ? 'Đang lưu...' : 'Lưu nguyên liệu'}
+                  {submitting ? t("buttons.saving") : t("buttons.save_ingredient")}
                 </button>
               </div>
             </div>
@@ -615,14 +617,14 @@ const SellerProductManagement = () => {
           <div className="modal-dialog modal-xl modal-dialog-scrollable">
             <div className="modal-content border-0 shadow-lg rounded-4">
               <div className="modal-header border-0 pb-0">
-                <h5 className="modal-title fw-bold">Thêm sản phẩm mới</h5>
+                <h5 className="modal-title fw-bold">{t("modal.add_product_title")}</h5>
                 <button className="btn-close" onClick={() => setShowProductModal(false)} disabled={submitting}></button>
               </div>
 
               <div className="modal-body" style={{ maxHeight: '78vh', overflowY: 'auto' }}>
                 {/* Tên & Mô tả */}
                 <div className="mb-4">
-                  <label className="form-label fw-medium">Tên sản phẩm *</label>
+                  <label className="form-label fw-medium">{t("product_form.name_label")}</label>
                   <input
                     type="text"
                     className="form-control form-control-lg"
@@ -632,7 +634,7 @@ const SellerProductManagement = () => {
                 </div>
 
                 <div className="mb-4">
-                  <label className="form-label fw-medium">Mô tả</label>
+                  <label className="form-label fw-medium">{t("product_form.desc_label")}</label>
                   <textarea
                     className="form-control"
                     rows={3}
@@ -643,7 +645,7 @@ const SellerProductManagement = () => {
 
                 {/* Ảnh sản phẩm */}
                 <div className="mb-5">
-                  <label className="form-label fw-medium">Ảnh sản phẩm *</label>
+                  <label className="form-label fw-medium">{t("product_form.image_label")}</label>
                   <input
                     type="file"
                     className="form-control"
@@ -651,7 +653,7 @@ const SellerProductManagement = () => {
                     onChange={handleProductImageSelect}
                     disabled={uploadingImages['product']}
                   />
-                  {uploadingImages['product'] && <div className="mt-2 text-primary small">Đang tải ảnh...</div>}
+                  {uploadingImages['product'] && <div className="mt-2 text-primary small">{t("product_form.uploading")}</div>}
                   {productForm.imageUrl && (
                     <div className="mt-3 text-center">
                       <img
@@ -667,9 +669,9 @@ const SellerProductManagement = () => {
                 {/* Mức giá */}
                 <div className="mb-5">
                   <div className="d-flex justify-content-between align-items-center mb-3">
-                    <label className="form-label fw-medium mb-0">Mức giá *</label>
+                    <label className="form-label fw-medium mb-0">{t("product_form.price_label")}</label>
                     <button className="btn btn-sm btn-outline-primary" onClick={addPrice}>
-                      + Thêm mức giá
+                      {t("actions.add_price")}
                     </button>
                   </div>
 
@@ -678,7 +680,7 @@ const SellerProductManagement = () => {
                       <input
                         type="text"
                         className="form-control"
-                        placeholder="Tên mức giá (VD: Size M, Combo...)"
+                        placeholder={t("product_form.price_name_placeholder")}
                         value={price.priceName}
                         onChange={(e) => {
                           const prices = [...productForm.prices];
@@ -689,7 +691,7 @@ const SellerProductManagement = () => {
                       <input
                         type="number"
                         className="form-control"
-                        placeholder="Giá"
+                        placeholder={t("product_form.price_placeholder")}
                         min="0"
                         step="1000"
                         value={price.price}
@@ -705,11 +707,11 @@ const SellerProductManagement = () => {
                           checked={price.isDefault}
                           onChange={() => setDefaultPrice(idx)}
                         />
-                        <label className="ms-2 mb-0">Mặc định</label>
+                        <label className="ms-2 mb-0">{t("product_form.default")}</label>
                       </div>
                       {productForm.prices.length > 1 && (
                         <button className="btn btn-outline-danger ms-2" onClick={() => removePrice(idx)}>
-                          Xóa
+                         {t("buttons.delete")}
                         </button>
                       )}
                     </div>
@@ -719,9 +721,9 @@ const SellerProductManagement = () => {
                 {/* Biến thể */}
                 <div className="mb-5">
                   <div className="d-flex justify-content-between align-items-center mb-3">
-                    <label className="form-label fw-medium mb-0">Biến thể (tùy chọn)</label>
+                    <label className="form-label fw-medium mb-0">{t("product_form.variants_label")}</label>
                     <button className="btn btn-sm btn-outline-success" onClick={addVariant}>
-                      + Thêm biến thể
+                      {t("actions.add_variant")}
                     </button>
                   </div>
 
@@ -734,14 +736,14 @@ const SellerProductManagement = () => {
                             className="btn btn-sm btn-outline-danger"
                             onClick={() => removeVariant(vIdx)}
                           >
-                            Xóa
+                            {t("buttons.delete")}
                           </button>
                         </div>
                       </div>
                       <div className="card-body">
                         <div className="row g-3">
                           <div className="col-md-6">
-                            <label className="form-label">Tên biến thể *</label>
+                            <label className="form-label">{t("product_form.variant_name_label")}</label>
                             <input
                               type="text"
                               className="form-control"
@@ -755,7 +757,7 @@ const SellerProductManagement = () => {
                           </div>
 
                           <div className="col-md-6">
-                            <label className="form-label">Ảnh biến thể (tùy chọn)</label>
+                            <label className="form-label">{t("product_form.variant_image_label")}</label>
                             <input
                               type="file"
                               className="form-control"
@@ -763,7 +765,7 @@ const SellerProductManagement = () => {
                               onChange={(e) => handleVariantImageSelect(e, vIdx)}
                               disabled={uploadingImages[`variant-${vIdx}`]}
                             />
-                            {uploadingImages[`variant-${vIdx}`] && <small className="text-primary">Đang tải...</small>}
+                            {uploadingImages[`variant-${vIdx}`] && <small className="text-primary">{t("product_form.variant_uploading")}</small>}
                             {variant.imageUrl && (
                               <img
                                 src={`${BASE_URL}/api/auth${variant.imageUrl}`}
@@ -776,12 +778,12 @@ const SellerProductManagement = () => {
 
                           <div className="col-12">
                             <div className="d-flex justify-content-between mb-2">
-                              <label className="form-label fw-medium">Nguyên liệu của biến thể</label>
+                              <label className="form-label fw-medium">{t("product_form.variant_ingredients_label")}</label>
                               <button
                                 className="btn btn-sm btn-outline-primary"
                                 onClick={() => addIngredientToVariant(vIdx)}
                               >
-                                + Thêm nguyên liệu
+                               {t("actions.add_ingredient")}
                               </button>
                             </div>
 
@@ -796,7 +798,7 @@ const SellerProductManagement = () => {
                                     setProductForm({ ...productForm, variants });
                                   }}
                                 >
-                                  <option value="">Chọn nguyên liệu...</option>
+                                  <option value="">{t("product_form.select_ingredient")}</option>
                                   {ingredients.map(ingOpt => (
                                     <option key={ingOpt.id} value={ingOpt.id}>
                                       {ingOpt.name} ({ingOpt.unit})
@@ -833,7 +835,7 @@ const SellerProductManagement = () => {
 
                   {productForm.variants.length === 0 && (
                     <div className="alert alert-info text-center py-3">
-                      Chưa có biến thể. Sản phẩm sẽ sử dụng nguyên liệu chung bên dưới.
+                      {t("product_form.no_variants_info")}
                     </div>
                   )}
                 </div>
@@ -842,9 +844,9 @@ const SellerProductManagement = () => {
                 {productForm.variants.length === 0 && (
                   <div className="mb-4">
                     <div className="d-flex justify-content-between mb-2">
-                      <label className="form-label fw-medium">Nguyên liệu sản phẩm *</label>
+                      <label className="form-label fw-medium">{t("product_form.product_ingredients_label")}</label>
                       <button className="btn btn-sm btn-outline-primary" onClick={addIngredientToProduct}>
-                        + Thêm nguyên liệu
+                        {t("actions.add_ingredient")}
                       </button>
                     </div>
 
@@ -859,7 +861,7 @@ const SellerProductManagement = () => {
                             setProductForm({ ...productForm, ingredients: ings });
                           }}
                         >
-                          <option value="">Chọn nguyên liệu...</option>
+                          <option value="">{t("product_form.select_ingredient")}</option>
                           {ingredients.map(ingOpt => (
                             <option key={ingOpt.id} value={ingOpt.id}>
                               {ingOpt.name} ({ingOpt.unit})
@@ -893,7 +895,7 @@ const SellerProductManagement = () => {
 
                     {productForm.ingredients.length === 0 && (
                       <div className="alert alert-warning small text-center">
-                        Vui lòng thêm ít nhất 1 nguyên liệu cho sản phẩm
+                        {t("product_form.need_1_ingredient_warning")}
                       </div>
                     )}
                   </div>
@@ -909,14 +911,14 @@ const SellerProductManagement = () => {
                   }}
                   disabled={submitting}
                 >
-                  Hủy
+                   {t("buttons.cancel")}
                 </button>
                 <button
                   className="btn btn-primary px-5"
                   onClick={handleSubmitProduct}
                   disabled={submitting}
                 >
-                  {submitting ? 'Đang lưu...' : 'Lưu sản phẩm'}
+                  {submitting ? t("buttons.saving") : t("buttons.save_product")}
                 </button>
               </div>
             </div>

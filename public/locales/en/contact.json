@@ -1,0 +1,35 @@
+{
+  "info": {
+    "phone": {
+      "title": "Phone Number"
+    },
+    "email": {
+      "title": "Email Address"
+    },
+    "address": {
+      "title": "Our Address"
+    },
+    "time": {
+      "title": "Opening Time",
+      "content": "Mon - Fri 09:00 AM - 05:00 PM\nSat - Sun Closed"
+    }
+  },
+
+  "form": {
+    "title": "Get in Touch",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "subject": "Subject",
+    "subjects": {
+      "complain": "Complain",
+      "greetings": "Greetings",
+      "date": "Expire Date",
+      "price": "About Price",
+      "order": "About Order"
+    },
+    "message": "Write your message here...",
+    "agree": "Collaboratively formulate principle capital. Progressively evolve user",
+    "submit": "Submit Now"
+  }
+}

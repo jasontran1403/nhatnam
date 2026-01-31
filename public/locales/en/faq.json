@@ -1,0 +1,29 @@
+{
+  "header": {
+    "subtitle": "Faq",
+    "title": "Frequently asked questions"
+  },
+  "items": [
+    {
+      "title": "What are the restaurant's operating hours?",
+      "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking."
+    },
+    {
+      "title": "Do you offer vegetarian / vegan options?",
+      "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking."
+    },
+    {
+      "title": "Are kids allowed in the restaurant?",
+      "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking."
+    },
+    {
+      "title": "What are the restaurant's operating hours?",
+      "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking."
+    },
+    {
+      "title": "Do you offer vegetarian / vegan options?",
+      "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking."
+    }
+  ],
+  "imageAlt": "FAQ image"
+}

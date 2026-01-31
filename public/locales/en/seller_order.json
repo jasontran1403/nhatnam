@@ -1,0 +1,53 @@
+{
+  "page": {
+    "title": "Order Management",
+    "desc": "View and manage all orders"
+  },
+  "filter": {
+    "search_placeholder": "Search by name / phone",
+    "all_status": "All statuses"
+  },
+  "table": {
+    "id": "ID",
+    "order_code": "Order code",
+    "customer": "Customer",
+    "phone": "Phone",
+    "total": "Total",
+    "status": "Status",
+    "actions": "Actions",
+    "empty": "No orders found"
+  },
+  "actions": {
+    "view_detail": "View details",
+    "download_invoice": "Download invoice PDF"
+  },
+  "modal": {
+    "title": "Order details #{{code}}",
+    "customer_info": "Customer information",
+    "name": "Name",
+    "phone": "Phone",
+    "address": "Address",
+    "status": "Status",
+    "na": "N/A",
+    "items": {
+      "image": "Image",
+      "product": "Product",
+      "price": "Price",
+      "qty": "Quantity",
+      "subtotal": "Subtotal",
+      "variant": "Variant",
+      "uom": "UOM"
+    },
+    "total": "Order total",
+    "close": "Close",
+    "downloading": "Downloading..."
+  },
+  "toast": {
+    "load_orders_error": "Failed to load orders",
+    "server_connect_error": "Cannot connect to server",
+    "not_found": "Order not found",
+    "detail_load_error": "Failed to load order details",
+    "download_success": "Invoice downloaded successfully!",
+    "download_failed": "Unable to download invoice"
+  }
+}

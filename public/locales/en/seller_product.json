@@ -1,0 +1,101 @@
+{
+  "page": {
+    "title": "Product Management",
+    "desc": "Manage products and ingredients"
+  },
+  "actions": {
+    "add_product": "Add new product",
+    "add_ingredient_btn": "Add new ingredient",
+    "add_price": "+ Add price tier",
+    "add_variant": "+ Add variant",
+    "add_ingredient": "+ Add ingredient"
+  },
+  "tables": {
+    "products_title": "Product list",
+    "ingredients_title": "Ingredient list",
+    "empty_products": "No products yet",
+    "empty_ingredients": "No ingredients yet",
+    "loading": "Loading..."
+  },
+  "columns": {
+    "image": "Image",
+    "name": "Name",
+    "default_price": "Default price",
+    "variants": "Variants",
+    "unit": "Unit",
+    "stock": "Stock"
+  },
+  "buttons": {
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "save_product": "Save product",
+    "save_ingredient": "Save ingredient",
+    "saving": "Saving..."
+  },
+  "modal": {
+    "add_ingredient_title": "Add new ingredient",
+    "add_product_title": "Add new product"
+  },
+  "ingredient_form": {
+    "name_label": "Ingredient name *",
+    "unit_label": "Unit (kg, pcs, liter,...) *",
+    "stock_label": "Stock quantity *",
+    "image_label": "Ingredient image *",
+    "uploading": "Uploading..."
+  },
+  "product_form": {
+    "name_label": "Product name *",
+    "desc_label": "Description",
+    "image_label": "Product image *",
+    "uploading": "Uploading...",
+    "price_label": "Price tiers *",
+    "price_name_placeholder": "Price name (e.g., Size M, Combo...)",
+    "price_placeholder": "Price",
+    "default": "Default",
+    "variants_label": "Variants (optional)",
+    "variant_name_label": "Variant name *",
+    "variant_image_label": "Variant image (optional)",
+    "variant_uploading": "Uploading...",
+    "variant_ingredients_label": "Variant ingredients",
+    "select_ingredient": "Select ingredient...",
+    "quantity_placeholder": "Quantity",
+    "no_variants_info": "No variants yet. This product will use common ingredients below.",
+    "product_ingredients_label": "Product ingredients *",
+    "need_1_ingredient_warning": "Please add at least 1 ingredient for the product"
+  },
+  "toast": {
+    "cannot_load_products": "Failed to load products",
+    "cannot_load_ingredients": "Failed to load ingredients",
+    "upload_failed": "Upload failed",
+    "file_too_big": "Image must be under 5MB",
+    "product_image_upload_success": "Product image uploaded successfully",
+    "product_image_upload_failed": "Failed to upload product image",
+    "variant_image_upload_success": "Variant image uploaded successfully",
+    "variant_image_upload_failed": "Failed to upload variant image",
+    "ingredient_image_upload_success": "Ingredient image uploaded successfully",
+    "ingredient_image_upload_failed": "Failed to upload ingredient image",
+    "need_at_least_1_price": "You must have at least 1 price tier",
+    "need_at_least_1_ingredient": "You must have at least 1 ingredient",
+    "product_name_required": "Product name is required",
+    "product_image_required": "Product image is required",
+    "price_name_required": "Price name is required",
+    "price_gt_0": "Price must be greater than 0",
+    "variant_name_required": "Variant name is required",
+    "variant_need_ingredient": "Variant \"{{name}}\" must have at least 1 ingredient",
+    "choose_variant_ingredient": "Select ingredient for variant",
+    "ingredient_qty_gt_0": "Ingredient quantity must be > 0",
+    "product_need_ingredient": "Product must have at least 1 ingredient",
+    "choose_ingredient": "Select ingredient",
+    "qty_gt_0": "Quantity must be > 0",
+    "create_product_success": "Product created successfully!",
+    "create_product_failed": "Failed to create product",
+    "server_connect_error": "Server connection error",
+    "ingredient_name_required": "Ingredient name is required",
+    "unit_required": "Unit is required",
+    "stock_not_negative": "Stock cannot be negative",
+    "ingredient_image_required": "Ingredient image is required",
+    "create_ingredient_success": "Ingredient created successfully!",
+    "create_ingredient_failed": "Failed to create ingredient",
+    "system_error": "System error"
+  }
+}

@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './assets/main.css';
+import './i18n/index.js'
 
 createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />

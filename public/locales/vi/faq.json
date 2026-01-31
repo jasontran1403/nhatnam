@@ -1,0 +1,29 @@
+{
+  "header": {
+    "subtitle": "FAQ",
+    "title": "Câu hỏi thường gặp"
+  },
+  "items": [
+    {
+      "title": "Giờ mở cửa của nhà hàng là khi nào?",
+      "content": "Nhiều người đọc thường bị phân tâm bởi nội dung hiển thị trên trang khi đang xem."
+    },
+    {
+      "title": "Nhà hàng có món chay / thuần chay không?",
+      "content": "Nhiều người đọc thường bị phân tâm bởi nội dung hiển thị trên trang khi đang xem."
+    },
+    {
+      "title": "Trẻ em có được vào nhà hàng không?",
+      "content": "Nhiều người đọc thường bị phân tâm bởi nội dung hiển thị trên trang khi đang xem."
+    },
+    {
+      "title": "Giờ mở cửa của nhà hàng là khi nào?",
+      "content": "Nhiều người đọc thường bị phân tâm bởi nội dung hiển thị trên trang khi đang xem."
+    },
+    {
+      "title": "Nhà hàng có món chay / thuần chay không?",
+      "content": "Nhiều người đọc thường bị phân tâm bởi nội dung hiển thị trên trang khi đang xem."
+    }
+  ],
+  "imageAlt": "Hình FAQ"
+}

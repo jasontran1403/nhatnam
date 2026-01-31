@@ -1,0 +1,53 @@
+{
+  "header.home": "Home",
+  "header.management": "Management",
+  "header.orders": "Orders",
+  "header.menu": "Menu",
+  "header.pages": "Pages",
+
+  "pages.about": "About Us",
+  "pages.gallery": "Gallery",
+  "pages.testimonial": "Testimonials",
+  "pages.faq": "FAQ",
+  "pages.contact": "Contact",
+
+  "footer.address_title": "Address",
+  "footer.address_value": "XXX Street, YYY Ward, ZZZ City",
+  "footer.email_title": "Send email",
+  "footer.email_value": "support@company.com",
+  "footer.hotline_title": "Hotline Contact",
+  "footer.hotline_value": "+000.000.000",
+
+  "footer.about_text": "Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia mollis",
+
+  "footer.quick_links": "Quick Links",
+  "footer.our_menu": "Our Menu",
+  "footer.contact_us": "Contact Us",
+
+  "footer.link.about": "About Us",
+  "footer.link.gallery": "Our Gallery",
+  "footer.link.blog": "Our Blogs",
+  "footer.link.faq": "FAQ’S",
+  "footer.link.contact": "Contact Us",
+
+  "footer.menu.burger": "Burger King",
+  "footer.menu.pizza": "Pizza King",
+  "footer.menu.fresh_food": "Fresh Food",
+  "footer.menu.vegetable": "Vegetable",
+  "footer.menu.desserts": "Desserts",
+
+  "footer.open_days_week": "Monday – Friday:",
+  "footer.open_time_week": "8am – 4pm",
+  "footer.open_days_sat": "Saturday:",
+  "footer.open_time_sat": "8am – 12am",
+
+  "footer.email_placeholder": "Your email address",
+  "footer.privacy_agree": "I agree to the",
+  "footer.privacy_policy": "Privacy Policy",
+
+  "footer.copyright": "© All Copyright 2024 by",
+  "footer.brand": "NhatNam Food",
+
+  "footer.terms": "Terms & Condition",
+  "footer.privacy": "Privacy Policy"
+}

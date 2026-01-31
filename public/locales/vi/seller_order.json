@@ -1,0 +1,53 @@
+{
+  "page": {
+    "title": "Quản Lý Đơn Hàng",
+    "desc": "Xem và quản lý tất cả đơn hàng"
+  },
+  "filter": {
+    "search_placeholder": "Tìm theo tên / SĐT",
+    "all_status": "Tất cả trạng thái"
+  },
+  "table": {
+    "id": "ID",
+    "order_code": "Mã đơn",
+    "customer": "Người đặt",
+    "phone": "SĐT",
+    "total": "Tổng tiền",
+    "status": "Trạng thái",
+    "actions": "Thao tác",
+    "empty": "Không có đơn hàng"
+  },
+  "actions": {
+    "view_detail": "Xem chi tiết",
+    "download_invoice": "Tải invoice PDF"
+  },
+  "modal": {
+    "title": "Chi tiết đơn #{{code}}",
+    "customer_info": "Thông tin khách hàng",
+    "name": "Tên",
+    "phone": "SĐT",
+    "address": "Địa chỉ",
+    "status": "Trạng thái",
+    "na": "N/A",
+    "items": {
+      "image": "Ảnh",
+      "product": "Sản phẩm",
+      "price": "Giá",
+      "qty": "Số lượng",
+      "subtotal": "Thành tiền",
+      "variant": "Biến thể",
+      "uom": "ĐVT"
+    },
+    "total": "Tổng tiền đơn hàng",
+    "close": "Đóng",
+    "downloading": "Đang tải..."
+  },
+  "toast": {
+    "load_orders_error": "Lỗi tải đơn hàng",
+    "server_connect_error": "Không thể kết nối server",
+    "not_found": "Không tìm thấy đơn hàng",
+    "detail_load_error": "Lỗi tải chi tiết",
+    "download_success": "Tải invoice thành công!",
+    "download_failed": "Không thể tải invoice"
+  }
+}

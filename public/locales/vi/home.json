@@ -1,0 +1,177 @@
+{
+  "hero": [
+    {
+      "subtitle": "Xúc xích",
+      "title": "<span>Xúc</span> Xích",
+      "content": "Mỗi món ăn không chỉ được chế biến mà còn được chăm chút tỉ mỉ với sự thấu hiểu sâu sắc về hương vị.",
+      "location": "Đường Santa Ana, Illinois 85486, Hoa Kỳ"
+    },
+    {
+      "subtitle": "Đậm đà",
+      "title": "<span>Sa</span> Lad",
+      "content": "Mỗi món ăn không chỉ được chế biến mà còn được chăm chút tỉ mỉ với sự thấu hiểu sâu sắc về hương vị.",
+      "location": "Đường Santa Ana, Illinois 85486, Hoa Kỳ"
+    },
+    {
+      "subtitle": "Hela",
+      "title": "<span>Bánh</span> Ngọt",
+      "content": "Mỗi món ăn không chỉ được chế biến mà còn được chăm chút tỉ mỉ với sự thấu hiểu sâu sắc về hương vị.",
+      "location": "Đường Santa Ana, Illinois 85486, Hoa Kỳ"
+    }
+  ],
+  "popular_dishes": {
+    "subtitle": "MÓN NỔI BẬT",
+    "title": "Ưu đãi được yêu thích nhất",
+    "order_now": "Đặt ngay",
+    "items": [
+      { "name": "Xúc xích", "order_price_label": "Giá đặt hàng" },
+      { "name": "Đồ nguội", "order_price_label": "Giá đặt hàng" },
+      { "name": "Richs", "order_price_label": "Giá đặt hàng" },
+      { "name": "Hela", "order_price_label": "Giá đặt hàng" }
+    ]
+  },
+  "about": {
+    "subtitle": "Về chúng tôi",
+    "title": "Chúng tôi đảm bảo thực phẩm khỏe mạnh & chất lượng cao",
+    "description": "Đây là một thực tế đã được chứng minh rằng người đọc sẽ bị phân tâm bởi nội dung có thể đọc được của trang khi nhìn vào bố cục.",
+    "features": [
+      {
+        "title": "Thực phẩm chất lượng cao",
+        "desc": "Phục vụ món ăn ngon & an toàn bởi đội ngũ thân thiện"
+      },
+      {
+        "title": "Đầu bếp chuyên nghiệp",
+        "desc": "Phục vụ món ăn ngon & an toàn bởi đội ngũ thân thiện"
+      }
+    ],
+    "button": "Xem thêm"
+  },
+    "offer": {
+    "order_now": "Đặt ngay",
+    "items": [
+      {
+        "start_price": "Giá từ 28$",
+        "title": "Xúc xích bò đặc biệt",
+        "note": "Ưu đãi trong thời gian giới hạn"
+      },
+      {
+        "start_price": "Giá từ 55$",
+        "title": "Bánh Hela cay",
+        "note": "Ưu đãi trong thời gian giới hạn"
+      }
+    ]
+  },
+    "why_choose": {
+    "subtitle": "Vì sao chọn chúng tôi",
+    "title": "Câu chuyện của nhà hàng",
+    "desc": "Đây là một thực tế đã được chứng minh rằng người đọc sẽ bị phân tâm bởi nội dung dễ đọc của một trang.",
+    "items": [
+      {
+        "title": "Phục vụ Buffet",
+        "desc": "Chúng tôi phục vụ đa dạng món ăn với trải nghiệm nhanh chóng và thoải mái."
+      },
+      {
+        "title": "Chế biến & phục vụ nhanh",
+        "desc": "Quy trình tối ưu giúp món ăn lên nhanh nhưng vẫn đảm bảo chất lượng."
+      }
+    ],
+    "order_now": "Đặt ngay"
+  },
+  "faq": {
+    "subtitle": "Thưởng thức món ngon",
+    "title": "Chúng tôi phục vụ và giao món ăn hấp dẫn.",
+    "items": [
+      {
+        "q": "Giờ mở cửa của nhà hàng là khi nào?",
+        "a": "Đây là một thực tế đã được chứng minh rằng người đọc sẽ bị phân tâm bởi nội dung dễ đọc của một trang."
+      },
+      {
+        "q": "Nhà hàng có lựa chọn cho người ăn chay/thuần chay không?",
+        "a": "Đây là một thực tế đã được chứng minh rằng người đọc sẽ bị phân tâm bởi nội dung dễ đọc của một trang."
+      },
+      {
+        "q": "Trẻ em có được vào nhà hàng không?",
+        "a": "Đây là một thực tế đã được chứng minh rằng người đọc sẽ bị phân tâm bởi nội dung dễ đọc của một trang."
+      },
+      {
+        "q": "Có hỗ trợ mang đi / giao hàng không?",
+        "a": "Đây là một thực tế đã được chứng minh rằng người đọc sẽ bị phân tâm bởi nội dung dễ đọc của một trang."
+      }
+    ],
+    "discount_title": "Giảm 30% cho mọi món",
+    "countdown": {
+      "days": "ngày",
+      "hours": "giờ",
+      "minutes": "phút",
+      "seconds": "giây"
+    }
+  },
+ "testimonial": {
+    "subtitle": "Đánh giá",
+    "title": "Khách hàng nói gì về chúng tôi",
+    "designation": "Người đánh giá ẩm thực",
+    "items": [
+      {
+        "content": "Có rất nhiều biến thể của Lorem Ipsum, nhưng phần lớn đã bị thay đổi theo một cách nào đó, bởi sự châm biếm hoặc thêm thắt."
+      },
+      {
+        "content": "Có rất nhiều biến thể của Lorem Ipsum, nhưng phần lớn đã bị thay đổi theo một cách nào đó, bởi sự châm biếm hoặc thêm thắt."
+      },
+      {
+        "content": "Có rất nhiều biến thể của Lorem Ipsum, nhưng phần lớn đã bị thay đổi theo một cách nào đó, bởi sự châm biếm hoặc thêm thắt."
+      },
+      {
+        "content": "Có rất nhiều biến thể của Lorem Ipsum, nhưng phần lớn đã bị thay đổi theo một cách nào đó, bởi sự châm biếm hoặc thêm thắt."
+      }
+    ]
+  },
+    "cta_app": {
+    "subtitle": "TẢI ỨNG DỤNG",
+    "title": "Tải app đặt món và đặt ngay hôm nay!",
+    "store_prefix": "Tải về trên",
+    "app_store": "App Store",
+    "google_play": "Google Play"
+  },
+   "process": {
+    "subtitle": "Quy trình đặt món",
+    "title": "Món ngon và giao nhanh trong một trải nghiệm",
+    "steps": [
+      {
+        "title": "Chọn vị trí của bạn",
+        "desc": "Trải nghiệm ẩm thực trọn vẹn, nơi mỗi món ăn đều được chăm chút"
+      },
+      {
+        "title": "Chọn món",
+        "desc": "Trải nghiệm ẩm thực trọn vẹn, nơi mỗi món ăn đều được chăm chút"
+      },
+      {
+        "title": "Thanh toán tiền mặt hoặc online",
+        "desc": "Trải nghiệm ẩm thực trọn vẹn, nơi mỗi món ăn đều được chăm chút"
+      }
+    ]
+  },
+    "blog": {
+    "subtitle": "BLOG MỚI NHẤT",
+    "title": "Tin tức & Bài viết mới",
+    "meta": {
+      "month_august": "Tháng 8",
+      "by_admin": "Đăng bởi Admin",
+      "comments": "Bình luận({{count}})"
+    },
+    "read_more": "Xem thêm",
+    "items": [
+      {
+        "title": "Top 10 món nhất định phải thử tại nhà hàng",
+        "content": "Khám phá 10 món bạn nhất định nên thử khi ghé nhà hàng, từ khai vị đến tráng miệng..."
+      },
+      {
+        "title": "Hậu trường một ngày làm việc điển hình",
+        "content": "Cùng xem một ngày vận hành bếp và phục vụ diễn ra như thế nào..."
+      },
+      {
+        "title": "Bí quyết làm pasta chuẩn vị",
+        "content": "Bật mí những mẹo nhỏ để làm pasta ngon đúng chuẩn, dễ áp dụng tại nhà..."
+      }
+    ]
+  }
+}

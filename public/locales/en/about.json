@@ -1,0 +1,90 @@
+{
+  "offer": {
+    "items": [
+      {
+        "title1": "THIS WEEK",
+        "title2": "SPICY FRIED CHICKEN",
+        "content": "Limited time offer"
+      },
+      {
+        "title1": "WELCOME TO NHATNAMFOOD",
+        "title2": "TODAY'S SPECIAL FOOD",
+        "content": "Limited time offer"
+      },
+      {
+        "title1": "THIS WEEK",
+        "title2": "SPECIAL CHICKEN ROLL",
+        "content": "Limited time offer"
+      }
+    ],
+    "order_now": "ORDER NOW"
+  },
+   "about2": {
+    "subtitle": "About Us",
+    "title": "Variety of flavours from American cuisine",
+    "description": "Every dish is not just prepared, it is crafted with utmost precision and a deep understanding of flavor harmony. The experienced hands of our chefs make every bite memorable.",
+    "features": [
+      {
+        "title": "Super quality food",
+        "desc": "Served our tasty food & good food by friendly staff."
+      },
+      {
+        "title": "Qualified Chef",
+        "desc": "Professional chefs ensuring quality in every step."
+      }
+    ],
+    "marquee": [
+      "Chicken pizza",
+      "Grilled chicken",
+      "Burger",
+      "Chicken pizza",
+      "Fresh pasta",
+      "Italiano french fry",
+      "Chicken fry"
+    ]
+  },
+    "ctaBanner1": {
+    "tag": "WELCOME NHATNAMFOOD",
+    "title": "TODAY SPECIAL FOOD",
+    "desc": "Limited time offer",
+    "button": "ORDER NOW"
+  },
+    "team": {
+    "subtitle": "OUR CHEF",
+    "title": "Meet Our Expert Chef",
+    "share": "Share",
+    "roles": {
+      "chef_lead": "Chef Lead",
+      "chef_assistant": "Chef Assistant"
+    }
+  },
+    "testimonial": {
+    "subtitle": "TESTIMONIALS",
+    "title": "What Our Clients Say",
+    "designation": {
+      "food_reviewer": "Food Reviewer"
+    },
+    "content": "Penatibus magnis dis parturient montes nascetur ridiculus mus. Ut id lorem ac enim vestibulum blandit nec sit amet felis. Fusce quis diam odio. Cras mattis mi quis tincidunt."
+  },
+   "blog": {
+    "subtitle": "LATEST NEWS",
+    "title": "Our Latest Foods News",
+    "date": {
+      "day": "15",
+      "month": "Dec"
+    },
+    "meta": {
+      "by": "By Admin",
+      "tag": "Noodles"
+    },
+    "readMore": "Read More",
+    "items": [
+      { "title": "Fast Food Frenzy a Taste of Convenience" },
+      { "title": "Benefits of health and safety measures" },
+      { "title": "Quick Cravings Unraveling Fast Food Delights" },
+      { "title": "Fast Food Frenzy a Taste of Convenience" },
+      { "title": "Benefits of health and safety measures" },
+      { "title": "Quick Cravings Unraveling Fast Food Delights" }
+    ]
+  }
+}

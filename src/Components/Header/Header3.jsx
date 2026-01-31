@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+import FloatingLangButton from "../MultiLanguage/FloattingButton.jsx";
 import Nav from "./Nav";
 import AuthModal from "./AuthModal";
 import AuthService from "../../Utils/AuthService";
 import "../../assets/UserDropdown.css";
+import { useTranslation } from "react-i18next";
+import i18n from "../../i18n/index.js";
 
 export default function Header3({ variant }) {
   const [mobileToggle, setMobileToggle] = useState(false);
@@ -14,12 +17,41 @@ export default function Header3({ variant }) {
   const [userDropdownOpen, setUserDropdownOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [currentUser, setCurrentUser] = useState(null);
+  const [langToast, setLangToast] = useState(null); // { text: string } | null
 
   // State cho badge
   const [cartCount, setCartCount] = useState(0);
   const [wishlistCount, setWishlistCount] = useState(0);
 
   const navigate = useNavigate();
+  const { t } = useTranslation(["common"]);
+
+  const loc = useLocation();
+  const nav = useNavigate();
+
+  function toggleLang() {
+    const next = (localStorage.getItem("lng") || "vi") === "vi" ? "en" : "vi";
+
+    localStorage.setItem("lng", next);
+
+    // đổi i18n ngay để UI phản hồi lập tức
+    i18n.changeLanguage(next);
+
+    // update query param nếu bạn cần
+    const params = new URLSearchParams(loc.search);
+    params.set("lang", next);
+    nav(`${loc.pathname}?${params.toString()}`, { replace: true });
+
+    showLangToast(next);
+  }
+
+  function showLangToast(next) {
+    const text =
+      next === "vi" ? "Đã chuyển sang Tiếng Việt 🇻🇳" : "Switched to English EN";
+    setLangToast({ text });
+    window.clearTimeout(window.__langToastTimer);
+    window.__langToastTimer = window.setTimeout(() => setLangToast(null), 1200);
+  }
 
   // Kiểm tra login
   useEffect(() => {
@@ -86,7 +118,10 @@ export default function Header3({ variant }) {
   // Click ngoài đóng dropdown
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (userDropdownOpen && !event.target.closest(".user-dropdown-container")) {
+      if (
+        userDropdownOpen &&
+        !event.target.closest(".user-dropdown-container")
+      ) {
         setUserDropdownOpen(false);
       }
     };
@@ -130,14 +165,18 @@ export default function Header3({ variant }) {
             <div className="cs_main_header_in">
               <div className="cs_main_header_left">
                 <Link className="cs_site_branding header-logo-3" to="/">
-                  <img src="/assets/img/logo/logo3.svg" alt="Logo" />
+                  <img src="/assets/img/logo/logo.png" alt="Logo" />
                 </Link>
               </div>
 
               <div className="cs_main_header_center">
                 <div className="cs_nav cs_primary_font fw-medium">
                   <span
-                    className={mobileToggle ? "cs-munu_toggle cs_teggle_active" : "cs-munu_toggle"}
+                    className={
+                      mobileToggle
+                        ? "cs-munu_toggle cs_teggle_active"
+                        : "cs-munu_toggle"
+                    }
                     onClick={() => setMobileToggle(!mobileToggle)}
                   >
                     <span></span>
@@ -157,7 +196,10 @@ export default function Header3({ variant }) {
                   </button>
 
                   {/* Cart */}
-                  <Link to="/cart" className="header-icon-btn cart-icon-btn position-relative">
+                  <Link
+                    to="/cart"
+                    className="header-icon-btn cart-icon-btn position-relative"
+                  >
                     <i className="bi bi-cart3"></i>
                     {cartCount > 0 && (
                       <span
@@ -176,7 +218,10 @@ export default function Header3({ variant }) {
                   </Link>
 
                   {/* Wishlist */}
-                  <Link to="/wishlist" className="header-icon-btn cart-icon-btn position-relative">
+                  <Link
+                    to="/wishlist"
+                    className="header-icon-btn cart-icon-btn position-relative"
+                  >
                     <i className="bi bi-heart"></i>
                     {wishlistCount > 0 && (
                       <span
@@ -193,6 +238,9 @@ export default function Header3({ variant }) {
                       </span>
                     )}
                   </Link>
+                  <button onClick={toggleLang} className="header-icon-btn">
+                    {i18n.language === "vi" ? "EN" : "VI"}
+                  </button>
 
                   {/* User Icon with Dropdown */}
                   <div className="user-dropdown-container position-relative">
@@ -255,7 +303,11 @@ export default function Header3({ variant }) {
           <div className="search-cell">
             <form method="get">
               <div className="search-field-holder">
-                <input type="search" className="main-search-input" placeholder="Search..." />
+                <input
+                  type="search"
+                  className="main-search-input"
+                  placeholder="Seach..."
+                />
               </div>
             </form>
           </div>
@@ -263,7 +315,13 @@ export default function Header3({ variant }) {
       </div>
 
       {/* Auth Modal */}
-      <AuthModal isOpen={authModalOpen} onClose={() => setAuthModalOpen(false)} />
+      <AuthModal
+        isOpen={authModalOpen}
+        onClose={() => setAuthModalOpen(false)}
+      />
+      {/* Floating button for mobile */}
+      <FloatingLangButton />
+      {langToast && <div className="lang-toast">{langToast.text}</div>}
     </div>
   );
 }
