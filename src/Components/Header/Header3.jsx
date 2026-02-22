@@ -17,30 +17,23 @@ export default function Header3({ variant }) {
   const [userDropdownOpen, setUserDropdownOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [currentUser, setCurrentUser] = useState(null);
-  const [langToast, setLangToast] = useState(null); // { text: string } | null
+  const [langToast, setLangToast] = useState(null);
 
-  // State cho badge
   const [cartCount, setCartCount] = useState(0);
   const [wishlistCount, setWishlistCount] = useState(0);
 
   const navigate = useNavigate();
   const { t } = useTranslation(["common"]);
-
   const loc = useLocation();
-  const nav = useNavigate();
 
   function toggleLang() {
     const next = (localStorage.getItem("lng") || "vi") === "vi" ? "en" : "vi";
-
     localStorage.setItem("lng", next);
-
-    // đổi i18n ngay để UI phản hồi lập tức
     i18n.changeLanguage(next);
 
-    // update query param nếu bạn cần
     const params = new URLSearchParams(loc.search);
     params.set("lang", next);
-    nav(`${loc.pathname}?${params.toString()}`, { replace: true });
+    navigate(`${loc.pathname}?${params.toString()}`, { replace: true });
 
     showLangToast(next);
   }
@@ -50,10 +43,9 @@ export default function Header3({ variant }) {
       next === "vi" ? "Đã chuyển sang Tiếng Việt 🇻🇳" : "Switched to English EN";
     setLangToast({ text });
     window.clearTimeout(window.__langToastTimer);
-    window.__langToastTimer = window.setTimeout(() => setLangToast(null), 1200);
+    window.__langToastTimer = setTimeout(() => setLangToast(null), 1200);
   }
 
-  // Kiểm tra login
   useEffect(() => {
     const checkLoginStatus = () => {
       const loggedIn = AuthService.isLoggedIn();
@@ -64,42 +56,29 @@ export default function Header3({ variant }) {
 
     checkLoginStatus();
     window.addEventListener("storage", checkLoginStatus);
-
-    return () => {
-      window.removeEventListener("storage", checkLoginStatus);
-    };
+    return () => window.removeEventListener("storage", checkLoginStatus);
   }, []);
 
-  // Cập nhật số lượng cart & wishlist
-  const updateCounts = () => {
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
-    setCartCount(cart.length);
-    setWishlistCount(wishlist.length);
-  };
-
   useEffect(() => {
-    updateCounts();
-
-    // Lắng nghe thay đổi từ tab khác
-    const handleStorage = (e) => {
-      if (e.key === "cart" || e.key === "wishlist") {
-        updateCounts();
-      }
+    const updateCounts = () => {
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+      const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+      setCartCount(cart.length);
+      setWishlistCount(wishlist.length);
     };
 
+    updateCounts();
+    const handleStorage = (e) => {
+      if (e.key === "cart" || e.key === "wishlist") updateCounts();
+    };
     window.addEventListener("storage", handleStorage);
-
-    // Poll mỗi 1s để bắt thay đổi trong cùng tab
     const interval = setInterval(updateCounts, 1000);
-
     return () => {
       window.removeEventListener("storage", handleStorage);
       clearInterval(interval);
     };
   }, []);
 
-  // Sticky header
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
@@ -115,17 +94,12 @@ export default function Header3({ variant }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos]);
 
-  // Click ngoài đóng dropdown
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (
-        userDropdownOpen &&
-        !event.target.closest(".user-dropdown-container")
-      ) {
+      if (userDropdownOpen && !event.target.closest(".user-dropdown-container")) {
         setUserDropdownOpen(false);
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [userDropdownOpen]);
@@ -155,10 +129,10 @@ export default function Header3({ variant }) {
     <div>
       <header
         className={`cs_site_header header_style_2 cs_style_1 header_sticky_style1 ${
-          variant ? variant : ""
+          variant || ""
         } cs_sticky_header cs_site_header_full_width ${
           mobileToggle ? "cs_mobile_toggle_active" : ""
-        } ${isSticky ? isSticky : ""}`}
+        } ${isSticky || ""}`}
       >
         <div className="cs_main_header header-area-3">
           <div className="container">
@@ -181,7 +155,21 @@ export default function Header3({ variant }) {
                   >
                     <span></span>
                   </span>
-                  <Nav setMobileToggle={setMobileToggle} />
+                  <Nav
+                    setMobileToggle={setMobileToggle}
+                    mobileToggle={mobileToggle}
+                    cartCount={cartCount}
+                    wishlistCount={wishlistCount}
+                    toggleLang={toggleLang}
+                    currentLang={i18n.language}
+                    setSearchToggle={setSearchToggle}
+                    isLoggedIn={isLoggedIn}
+                    currentUser={currentUser}
+                    userDropdownOpen={userDropdownOpen}
+                    setUserDropdownOpen={setUserDropdownOpen}
+                    handleUserIconClick={handleUserIconClick}
+                    handleLogout={handleLogout}
+                  />
                 </div>
               </div>
 
@@ -242,7 +230,6 @@ export default function Header3({ variant }) {
                     {i18n.language === "vi" ? "EN" : "VI"}
                   </button>
 
-                  {/* User Icon with Dropdown */}
                   <div className="user-dropdown-container position-relative">
                     <button
                       onClick={handleUserIconClick}
@@ -306,7 +293,7 @@ export default function Header3({ variant }) {
                 <input
                   type="search"
                   className="main-search-input"
-                  placeholder="Seach..."
+                  placeholder="Tìm kiếm..."
                 />
               </div>
             </form>
@@ -319,7 +306,6 @@ export default function Header3({ variant }) {
         isOpen={authModalOpen}
         onClose={() => setAuthModalOpen(false)}
       />
-      {/* Floating button for mobile */}
       <FloatingLangButton />
       {langToast && <div className="lang-toast">{langToast.text}</div>}
     </div>

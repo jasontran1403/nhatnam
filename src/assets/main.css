@@ -13339,6 +13339,7 @@ table.woocommerce-product-attributes {
   .cs_nav .cs_nav_list > li.menu-item-has-children > a {
     position: relative;
  }
+
   .cs_nav .cs_nav_list > li.menu-item-has-children > a::after {
     content: "\f282";
     font-family: bootstrap-icons !important;
@@ -13921,4 +13922,17 @@ margin-bottom: 0 !important;
   background-color: #f8f9fa;
   border-color: #D4DCFF;
   padding: 15px 10px;
+}
+
+
+/* Here */
+.mobile-extra-items li button,
+.mobile-extra-items li a {
+  pointer-events: auto !important;
+  position: relative;
+  z-index: 10;
+}
+
+.bg-white.shadow.rounded.p-3 {
+  pointer-events: auto !important;
 }
