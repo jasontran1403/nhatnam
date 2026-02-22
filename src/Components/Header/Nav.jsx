@@ -14,7 +14,12 @@ export default function Nav({ setMobileToggle }) {
 
       <li className="menu-item">
         <Link to="/management" onClick={() => setMobileToggle(false)}>
-            {t("header.management")}
+          {t("header.management")}
+        </Link>
+      </li>
+      <li className="menu-item">
+        <Link to="/warehouse" onClick={() => setMobileToggle(false)}>
+          {t("header.warehouse")}
         </Link>
       </li>
       <li className="menu-item">

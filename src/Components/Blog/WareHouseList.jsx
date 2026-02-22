@@ -5,7 +5,7 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 import { useTranslation } from "react-i18next";
 
-const OrderList = () => {
+const WareHouseList = () => {
   const { t } = useTranslation("seller_order");
 
   const [orders, setOrders] = useState([]);
@@ -180,16 +180,17 @@ const OrderList = () => {
                         <td>{o.finalAmount?.toLocaleString("vi-VN")} đ</td>
                         <td>
                           <span
-                            className={`badge ${o.status === "PENDING"
-                              ? "bg-warning text-dark"
-                              : o.status === "CONFIRMED"
+                            className={`badge ${
+                              o.status === "PENDING"
+                                ? "bg-warning text-dark"
+                                : o.status === "CONFIRMED"
                                 ? "bg-info text-white"
                                 : o.status === "SHIPPED"
-                                  ? "bg-primary"
-                                  : o.status === "DELIVERED"
-                                    ? "bg-success"
-                                    : "bg-danger"
-                              }`}
+                                ? "bg-primary"
+                                : o.status === "DELIVERED"
+                                ? "bg-success"
+                                : "bg-danger"
+                            }`}
                           >
                             {o.status}
                           </span>
@@ -319,12 +320,11 @@ const OrderList = () => {
                               </div>
                             </td>
                             <td>
-                              {item.quantity.toLocaleString("vi-VN", {
-                                minimumFractionDigits: 2,
-                                maximumFractionDigits: 2
-                              })}{" "}
+                              {item.quantity}
                               {item.unit && (
-                                <span className="text-muted small">({item.unit})</span>
+                                <div className="text-muted small" style={{ fontStyle: "italic" }}>
+                                  {t("modal.items.uom")} ({item.unit})
+                                </div>
                               )}
                             </td>
                             <td className="fw-medium">{item.subtotal?.toLocaleString("vi-VN")} đ</td>
@@ -378,4 +378,4 @@ const OrderList = () => {
   );
 };
 
-export default OrderList;
+export default WareHouseList;

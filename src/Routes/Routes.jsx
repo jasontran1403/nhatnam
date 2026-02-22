@@ -15,6 +15,7 @@ import CartPage from "../Pages/CartPage";
 import CheckoutPage from "../Pages/CheckoutPage";
 import WishlistPage from "../Pages/WishlistPage";
 import Orders from "../Pages/Orders";
+import WareHouse from "../Pages/WareHouse";
 
 
 export const router = createBrowserRouter([
@@ -50,6 +51,10 @@ export const router = createBrowserRouter([
       {
         path: "/management",
         element: <ProductManagement></ProductManagement>,
+      },
+      {
+        path: "/warehouse",
+        element: <WareHouse></WareHouse>,
       },
       {
         path: "/orders",
