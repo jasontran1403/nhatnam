@@ -1,7 +1,6 @@
 import DropDown from './DropDown';
 import { Link } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
-import Swal from 'sweetalert2';
 
 export default function Nav({
   setMobileToggle,
