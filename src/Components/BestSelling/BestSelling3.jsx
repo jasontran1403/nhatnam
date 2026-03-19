@@ -5,10 +5,10 @@ const BestSelling3 = () => {
   const { t } = useTranslation("home");
 
   const foodItems = [
-  { img: "/assets/img/dishes/dishes6_1.png", price: "$24.00", route: "/sausage" },
-  { img: "/assets/img/dishes/dishes6_2.png", price: "$28.00", route: "/gallery" },
-  { img: "/assets/img/dishes/dishes6_3.png", price: "$20.00", route: "/hela" },
-  { img: "/assets/img/dishes/dishes6_4.png", price: "$58.00", route: "/rich" },
+  { img: "/assets/img/dishes/dishes6_1.png", price: "Sausage", route: "/sausage" },
+  { img: "/assets/img/dishes/dishes6_2.png", price: "Meats", route: "/gallery" },
+  { img: "/assets/img/dishes/dishes6_3.png", price: "Hela", route: "/hela" },
+  { img: "/assets/img/dishes/dishes6_4.png", price: "Rich", route: "/rich" },
 ];
   const itemsText = t("popular_dishes.items", { returnObjects: true });
 
@@ -57,9 +57,9 @@ const BestSelling3 = () => {
                         <Link to="/menu">
                           <h3>{text.name}</h3>
                         </Link>
-                        <div className="star">
-                          <img src="/assets/img/icon/star2.svg" alt="icon" />
-                        </div>
+                          {/* <div className="star">
+                            <img src="/assets/img/icon/star2.svg" alt="icon" />
+                          </div> */}
                         <div className="text">{item.content}</div>
                         <h6>{item.price}</h6>
                         <Link to={item.route} className="theme-btn style6">

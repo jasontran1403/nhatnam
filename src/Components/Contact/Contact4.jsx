@@ -17,8 +17,7 @@ const Contact4 = () => {
                     <img className="rounded-circle" src="/assets/img/icon/phone2.png" alt="icon" />
                   </div>
                   <h3 className="title">{t("info.phone.title")}</h3>
-                  <p>+123 (5246) 2356 65</p>
-                  <p>+123 (214) 321</p>
+                  <p>028-38479216</p>
                 </div>
               </div>
 
@@ -28,8 +27,7 @@ const Contact4 = () => {
                     <img className="rounded-circle" src="/assets/img/icon/gmail2.png" alt="icon" />
                   </div>
                   <h3 className="title">{t("info.email.title")}</h3>
-                  <p>info.needhelp@gmail.com</p>
-                  <p>hello@gmail.com</p>
+                  <p>Infor@nhatnamfinefoods.com.vn</p>
                 </div>
               </div>
 
@@ -39,7 +37,7 @@ const Contact4 = () => {
                     <img className="rounded-circle" src="/assets/img/icon/location2.png" alt="icon" />
                   </div>
                   <h3 className="title">{t("info.address.title")}</h3>
-                  <p>8502 Preston Rd. Inglewood, Maine 98380</p>
+                  <p>112/5 Phổ Quang, Phường Đức Nhuận, TP. Hồ Chí Minh</p>
                 </div>
               </div>
 
