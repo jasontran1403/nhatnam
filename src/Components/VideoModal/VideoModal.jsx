@@ -2,24 +2,24 @@ const VideoModal = ({ isTrue, videoSrc, handelClose }) => {
   if (!isTrue) return null;
 
   return (
-    <div className="video-modal">
-      <div className="video-modal-overlay" onClick={handelClose}></div>
+    <div className="nn-video-modal">
+      <div className="nn-video-modal-overlay" onClick={handelClose}></div>
 
-      <div className="video-modal-content">
-        <button className="close-btn" onClick={handelClose}>
+      <div className="nn-video-modal-content">
+        <button className="nn-video-modal-close" onClick={handelClose}>
           ×
         </button>
 
-        <video
-          controls
-          autoPlay
-          playsInline
-          preload="metadata"
-          className="video-modal-player"
-        >
-          <source src={videoSrc} type="video/mp4" />
-          Trình duyệt của bạn không hỗ trợ video.
-        </video>
+        <div className="nn-video-modal-frame-wrap">
+          <iframe
+            src={videoSrc}
+            title="Cloudinary Video Player"
+            allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+            allowFullScreen
+            frameBorder="0"
+            className="nn-video-modal-iframe"
+          />
+        </div>
       </div>
     </div>
   );

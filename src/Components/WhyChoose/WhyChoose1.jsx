@@ -10,7 +10,9 @@ const WhyChoose1 = () => {
   const [toggle, setToggle] = useState(false);
 
   const handelClick = () => {
-    setVideoSrc("/assets/video/Nhat Nam SECC.mp4");
+    setVideoSrc(
+      "https://player.cloudinary.com/embed/?cloud_name=dflodky4j&public_id=c737bc8c-a6b4-46ec-8c7c-88489d0f9336_y7cfr5",
+    );
     setToggle(true);
   };
   const handelClose = () => {
@@ -40,13 +42,17 @@ const WhyChoose1 = () => {
 
                 <div className="video-wrap ripple-effect">
                   {/* giữ nguyên structure, chỉ thêm type để tránh default submit nếu lỡ nằm trong form */}
-                  <a onClick={handelClick} className="play-btn popup-video">
+                  <button
+                    type="button"
+                    onClick={handelClick}
+                    className="play-btn popup-video border-0 bg-transparent p-0"
+                  >
                     <img
                       className="playerImg"
                       src="/assets/img/shape/player2.svg"
                       alt="icon"
                     />
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
