@@ -7,8 +7,8 @@
       "location": "Rd. Santa Ana, Illinois 85486, United States"
     },
     {
-      "subtitle": "Rich",
-      "title": "<span>Richs</span> Cream",
+      "subtitle": "Rich's",
+      "title": "<span>Rich's</span> Cream",
       "content": "Every dish is not just prepared, it is crafted with utmost precision and deep understanding of flavor.",
       "location": "Rd. Santa Ana, Illinois 85486, United States"
     },
@@ -37,7 +37,7 @@
         "order_price_label": "Order Price"
       },
       {
-        "name": "Richs",
+        "name": "Rich's",
         "order_price_label": "Order Price"
       }
     ]

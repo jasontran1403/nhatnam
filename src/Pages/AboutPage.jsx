@@ -13,7 +13,7 @@ const AboutPage = () => {
   return (
     <div>
       <BreadCumb
-        bgimg="/assets/img/bg/breadcumb.jpg"
+        bgimg="/assets/img/bg/team1.jpg"
         Title={t("about_title")}
       ></BreadCumb>
       <Offer4></Offer4>

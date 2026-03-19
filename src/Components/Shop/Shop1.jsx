@@ -29,7 +29,7 @@ const Shop1 = () => {
   // View mode
   const [viewMode, setViewMode] = useState("grid");
 
-  const categories = ["sausages", "small goods", "hela", "richs"];
+  const categories = ["sausages", "small goods", "hela", "rich's"];
 
   const fetchProducts = async () => {
     try {
