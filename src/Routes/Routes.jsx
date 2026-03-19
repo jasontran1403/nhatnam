@@ -16,6 +16,9 @@ import CheckoutPage from "../Pages/CheckoutPage";
 import WishlistPage from "../Pages/WishlistPage";
 import Orders from "../Pages/Orders";
 import WareHouse from "../Pages/WareHouse";
+import RichPage from "../Pages/RichPage";
+import SausagePage from "../Pages/SausagePage";
+import HelaPage from "../Pages/HelaPage";
 
 
 export const router = createBrowserRouter([
@@ -27,7 +30,7 @@ export const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
       },
-      
+
       {
         path: "/about",
         element: <AboutPage></AboutPage>,
@@ -36,6 +39,23 @@ export const router = createBrowserRouter([
         path: "/gallery",
         element: <GalleryPage></GalleryPage>,
       },
+
+      {
+        path: "/rich",
+        element: <RichPage></RichPage>,
+      },
+
+      {
+        path: "/sausage",
+        element: <SausagePage></SausagePage>,
+      },
+
+      {
+        path: "/hela",
+        element: <HelaPage></HelaPage>
+      },
+
+
       {
         path: "/testimonial",
         element: <TestimonialPage></TestimonialPage>,

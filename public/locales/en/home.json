@@ -2,35 +2,47 @@
   "hero": [
     {
       "subtitle": "Sausage",
-      "title": "<span>FAST</span> FOODS",
+      "title": "<span>Original</span> Sausage",
       "content": "Every dish is not just prepared, it is crafted with utmost precision and deep understanding of flavor.",
       "location": "Rd. Santa Ana, Illinois 85486, United States"
     },
     {
       "subtitle": "Rich",
-      "title": "<span>HEALTHY</span> FOODS",
+      "title": "<span>Richs</span> Cream",
       "content": "Every dish is not just prepared, it is crafted with utmost precision and deep understanding of flavor.",
       "location": "Rd. Santa Ana, Illinois 85486, United States"
     },
     {
       "subtitle": "Hela",
-      "title": "<span>DESSERT</span> FOODS",
+      "title": "<span>Spicy</span>",
       "content": "Every dish is not just prepared, it is crafted with utmost precision and deep understanding of flavor.",
       "location": "Rd. Santa Ana, Illinois 85486, United States"
     }
   ],
   "popular_dishes": {
-    "subtitle": "POPULAR DISHES",
-    "title": "Our Most Popular Deals",
+    "subtitle": "Product Category",
+    "title": "Our Providers Category",
     "order_now": "Details",
     "items": [
-      { "name": "Sausages", "order_price_label": "Order Price" },
-      { "name": "Richs", "order_price_label": "Order Price" },
-      { "name": "Hela Goods", "order_price_label": "Order Price" },
-      { "name": "Meat Products", "order_price_label": "Order Price" }
+      {
+        "name": "Sausages",
+        "order_price_label": "Order Price"
+      },
+      {
+        "name": "Meat Products",
+        "order_price_label": "Order Price"
+      },
+      {
+        "name": "Hela Goods",
+        "order_price_label": "Order Price"
+      },
+      {
+        "name": "Richs",
+        "order_price_label": "Order Price"
+      }
     ]
   },
-    "about": {
+  "about": {
     "subtitle": "About Us",
     "title": "We Ensure Healthy & High-Quality Foods",
     "description": "It is a long established fact that a reader will be distracted lorem the readable content of a page when looking at layout the point lorem established fact that It is a long established",
@@ -61,7 +73,7 @@
       }
     ]
   },
-    "why_choose": {
+  "why_choose": {
     "subtitle": "Why choose us",
     "title": "The history of our restaurant",
     "desc": "It is a long established fact that a reader will be distracted the readable content of a page",
@@ -77,80 +89,80 @@
     ],
     "order_now": "Details"
   },
-   "faq": {
-    "subtitle": "Enjoy Our Dishes",
-    "title": "We serve and deliver delectable food.",
+  "faq": {
+    "subtitle": "Customer Questions",
+    "title": "Frequently Asked Questions",
     "items": [
       {
-        "q": "What Are The Restaurant's Operating Hours?",
-        "a": "It is a long established fact that a reader will be distracted lorem the readable content of a page when looking"
+        "q": "When was Nhat Nam established?",
+        "a": "Nhat Nam Food Production Trading Service Co., Ltd. was established in Ho Chi Minh City in 1997."
       },
       {
-        "q": "Do You Offer Vegetarian / Vegan Options?",
-        "a": "It is a long established fact that a reader will be distracted lorem the readable content of a page when looking"
+        "q": "What services does Nhat Nam provide?",
+        "a": "Nhat Nam has developed into a well-known distributor and supplier of products such as frozen seafood, meat, groceries, herbs and spices, whipping cream, cake decorating cream, and baking ingredients."
       },
       {
-        "q": "Are Kids Allowed in Restaurant?",
-        "a": "It is a long established fact that a reader will be distracted lorem the readable content of a page when looking"
+        "q": "Does Nhat Nam specialize in Central European sausages?",
+        "a": "In 2000, Nhat Nam founded Swiss Alps® - Thao Nguyen as a separate entity to produce sausages for a wide range of customers, including foreigners and Vietnamese who want to enjoy Central European sausages."
       },
       {
-        "q": "Do you provide takeaway / delivery?",
-        "a": "It is a long established fact that a reader will be distracted lorem the readable content of a page when looking"
+        "q": "What are the ingredients and sources of Nhat Nam products?",
+        "a": "All our products are made from natural ingredients, without the use of artificial coloring, flavorings, fillers, or leavening agents. All smoked products are naturally smoked using birch wood imported from Germany."
       }
     ],
-    "discount_title": "Get 30% Discount Every Item",
+    "discount_title": "30% Off All Items",
     "countdown": {
       "days": "days",
-      "hours": "hrs",
-      "minutes": "mins",
-      "seconds": "secs"
+      "hours": "hours",
+      "minutes": "minutes",
+      "seconds": "seconds"
     }
   },
-   "testimonial": {
+  "testimonial": {
     "subtitle": "Testimonials",
-    "title": "What Clients Say About Us",
+    "title": "What Our Customers Say About Us",
     "designation": "Food Reviewer",
     "items": [
       {
-        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour."
+        "content": "Authentic European quality: 'The sausages and cold cuts here have a very distinctive, authentic European flavor. Especially the German sausage lines—you can really taste the freshness, rich seasoning, and the strong aroma of natural herbs.'"
       },
       {
-        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour."
+        "content": "Diversity and refinement: 'Nhat Nam Fine Foods always offers a wide variety of sausage products in both flavor and size. From sausages to processed meats, everything is neatly and hygienically packaged, making it perfect for creating cold cut platters for home parties.'"
       },
       {
-        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour."
+        "content": "Long-standing reputation: 'I’ve known Nhat Nam since its early days (1997). It’s a trusted destination for those who appreciate Western cuisine in Ho Chi Minh City. The consistent quality over the years is what I value most about this brand.'"
       },
       {
-        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour."
+        "content": "Dedicated service: 'The staff provide very enthusiastic advice on storage and cooking methods to achieve the best taste. Fast delivery and careful packaging ensure that chilled products remain fresh upon arrival.'"
       }
     ]
   },
-    "cta_app": {
+  "cta_app": {
     "subtitle": "DOWNLOAD APP",
     "title": "Download food app Order today!",
     "store_prefix": "Get it on",
     "app_store": "App store",
     "google_play": "Google play"
   },
-  "process": {
-    "subtitle": "Work Process",
-    "title": "Delicious Food and Quick Delivery Together",
-    "steps": [
-      {
-        "title": "Set your Location",
-        "desc": "It’s the perfect dining experience where every dish is crafted"
-      },
-      {
-        "title": "Select Food",
-        "desc": "It’s the perfect dining experience where every dish is crafted"
-      },
-      {
-        "title": "Pay Cash or Online",
-        "desc": "It’s the perfect dining experience where every dish is crafted"
-      }
-    ]
-  },
-    "blog": {
+ "process": {
+  "subtitle": "About Nhat Nam",
+  "title": "We are confident in our extensive production experience with over 10 years of expertise",
+  "steps": [
+    {
+      "title": "Experienced team of experts",
+      "desc": "Committed to delivering the most complete and satisfying food experience"
+    },
+    {
+      "title": "Fresh ingredients",
+      "desc": "Ensuring imported and fresh ingredients of the highest quality"
+    },
+    {
+      "title": "Multiple payment methods",
+      "desc": "No need to worry about payments, with a full range of convenient payment options"
+    }
+  ]
+},
+  "blog": {
     "subtitle": "LATEST BLOG",
     "title": "Latest News & Articles",
     "meta": {

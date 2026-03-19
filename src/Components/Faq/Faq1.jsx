@@ -136,7 +136,7 @@ const Faq1 = () => {
                   </div>
                 </div>
 
-                <div className="clock-wrapper-area">
+                {/* <div className="clock-wrapper-area">
                   <h3>{t("faq.discount_title")}</h3>
 
                   <div className="clock-wrapper">
@@ -157,7 +157,7 @@ const Faq1 = () => {
                       <div className="text">{t("faq.countdown.seconds")}</div>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
               </div>
             </div>

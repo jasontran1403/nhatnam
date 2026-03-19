@@ -7,27 +7,27 @@
       "location": "Đường Santa Ana, Illinois 85486, Hoa Kỳ"
     },
     {
-      "subtitle": "Đậm đà",
-      "title": "<span>Sa</span> Lad",
+      "subtitle": "Kem Richs",
+      "title": "<span>Kem</span> Richs",
       "content": "Mỗi món ăn không chỉ được chế biến mà còn được chăm chút tỉ mỉ với sự thấu hiểu sâu sắc về hương vị.",
       "location": "Đường Santa Ana, Illinois 85486, Hoa Kỳ"
     },
     {
       "subtitle": "Hela",
-      "title": "<span>Bánh</span> Ngọt",
+      "title": "<span>Gia vị</span> Hela ",
       "content": "Mỗi món ăn không chỉ được chế biến mà còn được chăm chút tỉ mỉ với sự thấu hiểu sâu sắc về hương vị.",
       "location": "Đường Santa Ana, Illinois 85486, Hoa Kỳ"
     }
   ],
   "popular_dishes": {
-    "subtitle": "MÓN NỔI BẬT",
-    "title": "Ưu đãi được yêu thích nhất",
+    "subtitle": "NHÓM SẢN PHẨM",
+    "title": "Chúng tôi Cung cấp",
     "order_now": "Xem Thêm",
     "items": [
       { "name": "Xúc xích", "order_price_label": "Giá đặt hàng" },
-      { "name": "Kem Rich’s", "order_price_label": "Giá đặt hàng" },
+      { "name": "Sản phẩm từ thịt", "order_price_label": "Giá đặt hàng" },
       { "name": "Gia vị Hela", "order_price_label": "Giá đặt hàng" },
-      { "name": "Sản phẩm từ thịt", "order_price_label": "Giá đặt hàng" }
+      { "name": "Kem Rich’s", "order_price_label": "Giá đặt hàng" }
     ]
   },
   "about": {
@@ -78,24 +78,24 @@
     "order_now": "Xem Thêm"
   },
   "faq": {
-    "subtitle": "Thưởng thức món ngon",
-    "title": "Chúng tôi phục vụ và giao món ăn hấp dẫn.",
+    "subtitle": "Thắc mắc của Khách Hàng",
+    "title": "Những thắc mắc thường gặp của Khách hàng",
     "items": [
       {
-        "q": "Giờ mở cửa của nhà hàng là khi nào?",
-        "a": "Đây là một thực tế đã được chứng minh rằng người đọc sẽ bị phân tâm bởi nội dung dễ đọc của một trang."
+        "q": "Nhất Nam Được Thành lập từ khi nào ?",
+        "a": "Công Ty TNHH SẢN XUẤT THỰC PHẨM THƯƠNG MẠI DỊCH VỤ NHẤT NAM được thành lập tại TP. Hồ Chí Minh vào năm 1997"
       },
       {
-        "q": "Nhà hàng có lựa chọn cho người ăn chay/thuần chay không?",
-        "a": "Đây là một thực tế đã được chứng minh rằng người đọc sẽ bị phân tâm bởi nội dung dễ đọc của một trang."
+        "q": "Nhất Nam cung cấp những dịch vụ gì ?",
+        "a": "Nhất Nam đã phát triển thành một đại lý và nhà phân phối nổi tiếng các sản phẩm như Hải sản đông lạnh, thịt, hàng hóa nhỏ, thảo mộc và gia vị, các loại kem pha chế, kem trang trí bánh, nguyên liệu làm bánh"
       },
       {
-        "q": "Trẻ em có được vào nhà hàng không?",
-        "a": "Đây là một thực tế đã được chứng minh rằng người đọc sẽ bị phân tâm bởi nội dung dễ đọc của một trang."
+        "q": "Nhất Nam có chuyên sản xuất xúc xích từ Trung Âu không ?",
+        "a": "Vào năm 2000, Nhất Nam đã sáng lập ra Swiss Alps®- Thảo Nguyên, là một thực thể riêng biệt để sản xuất xúc xích cho nhiều khách hàng, người nước ngoài và người Việt Nam muốn thưởng thức xúc xích Trung Âu"
       },
       {
-        "q": "Có hỗ trợ mang đi / giao hàng không?",
-        "a": "Đây là một thực tế đã được chứng minh rằng người đọc sẽ bị phân tâm bởi nội dung dễ đọc của một trang."
+        "q": "Thành phần và nguyên liệu của Nhất Nam từ nguồn gốc nào ?",
+        "a": "Tất cả các sản phẩm của chúng tôi được làm bằng các thành phần tự nhiên, không sử dụng chất tạo màu, hương liệu, chất làm đầy, chất tạo nở. Tất cả các sản phẩm hun khói chúng tôi sử dụng xông khói tự nhiên với gỗ Bạch Dương nhập khẩu từ Đức."
       }
     ],
     "discount_title": "Giảm 30% cho mọi món",
@@ -112,16 +112,16 @@
     "designation": "Người đánh giá ẩm thực",
     "items": [
       {
-        "content": "Có rất nhiều biến thể của Lorem Ipsum, nhưng phần lớn đã bị thay đổi theo một cách nào đó, bởi sự châm biếm hoặc thêm thắt."
+        "content": "Chất lượng sản phẩm chuẩn Âu: 'Xúc xích và thịt nguội ở đây có hương vị rất đặc trưng, chuẩn vị Âu. Đặc biệt là các dòng xúc xích Đức, ăn vào cảm nhận được độ tươi, gia vị đậm đà và cực kỳ thơm mùi vị thảo mộc tự nhiên.'"
       },
       {
-        "content": "Có rất nhiều biến thể của Lorem Ipsum, nhưng phần lớn đã bị thay đổi theo một cách nào đó, bởi sự châm biếm hoặc thêm thắt."
+        "content": "Sự đa dạng và tinh tế: 'Nhất Nam Fine Foods luôn có nhiều loại sản phẩm xúc xích đa dạng từ mùi vị cho đến kích cỡ. Từ các loại xúc xích đến thịt chế biến sẵn đều được đóng gói chỉn chu, sạch sẽ, rất phù hợp để làm các khay Cold Cut đãi tiệc tại nhà.'"
       },
       {
-        "content": "Có rất nhiều biến thể của Lorem Ipsum, nhưng phần lớn đã bị thay đổi theo một cách nào đó, bởi sự châm biếm hoặc thêm thắt."
+        "content": "Uy tín lâu năm: Biết đến Nhất Nam từ những ngày đầu (năm 1997), đây là địa chỉ tin cậy cho những ai sành ăn đồ Tây tại TP.HCM. Chất lượng ổn định qua bao nhiêu năm là điều mình đánh giá cao nhất ở thương hiệu này."
       },
       {
-        "content": "Có rất nhiều biến thể của Lorem Ipsum, nhưng phần lớn đã bị thay đổi theo một cách nào đó, bởi sự châm biếm hoặc thêm thắt."
+        "content": "Dịch vụ tận tâm: Nhân viên tư vấn rất nhiệt tình về cách bảo quản cũng như chế biến món ăn sao cho ngon nhất. Giao hàng nhanh và đóng gói kỹ lưỡng, đảm bảo hàng lạnh vẫn giữ được độ tươi khi đến tay khách."
       }
     ]
   },
@@ -133,20 +133,20 @@
     "google_play": "Google Play"
   },
   "process": {
-    "subtitle": "Quy trình đặt món",
-    "title": "Món ngon và giao nhanh trong một trải nghiệm",
+    "subtitle": "Về Tập Thể Nhất Nam",
+    "title": "Chúng tôi tự tin có đủ bề dầy kinh nghiệm trong lĩnh vực sản xuất với hơn 10 năm Kinh Nghiệm",
     "steps": [
       {
-        "title": "Chọn vị trí của bạn",
-        "desc": "Trải nghiệm ẩm thực trọn vẹn, nơi mỗi món ăn đều được chăm chút"
+        "title": "Đội ngũ chuyên gia đầy kinh nghiệm",
+        "desc": "Hứa hẹn mang đến một trải nghiệm thực phẩm trọn vẹn nhất"
       },
       {
-        "title": "Chọn món",
-        "desc": "Trải nghiệm ẩm thực trọn vẹn, nơi mỗi món ăn đều được chăm chút"
+        "title": "Nguyên liệu tươi mới",
+        "desc": "Đảm bảo các nguyên liệu nhập khẩu và tươi mới"
       },
       {
-        "title": "Thanh toán tiền mặt hoặc online",
-        "desc": "Trải nghiệm ẩm thực trọn vẹn, nơi mỗi món ăn đều được chăm chút"
+        "title": "Đa dạng phương thức thanh toán",
+        "desc": "Không cần băn khoăn về vấn đề thanh toán, với đầy đủ các hình thức thanh toán"
       }
     ]
   },
