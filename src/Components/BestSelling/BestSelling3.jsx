@@ -5,11 +5,27 @@ const BestSelling3 = () => {
   const { t } = useTranslation("home");
 
   const foodItems = [
-  { img: "/assets/img/dishes/dishes6_1.png", price: "Sausage", route: "/sausage" },
-  { img: "/assets/img/dishes/dishes6_2.png", price: "Meats", route: "/gallery" },
-  { img: "/assets/img/dishes/dishes6_3.png", price: "Hela", route: "/hela" },
-  { img: "/assets/img/dishes/dishes6_4.png", price: "Rich", route: "/rich" },
-];
+    {
+      img: "/assets/img/dishes/dishes6_1.png",
+      sub_content: t("popular_dishes.items.0.sub_content"),
+      route: "/sausage",
+    },
+    {
+      img: "/assets/img/dishes/dishes6_2.png",
+      sub_content: t("popular_dishes.items.1.sub_content"),
+      route: "/gallery",
+    },
+    {
+      img: "/assets/img/dishes/dishes6_3.png",
+      sub_content: t("popular_dishes.items.2.sub_content"),
+      route: "/hela",
+    },
+    {
+      img: "/assets/img/dishes/dishes6_4.png",
+      sub_content: t("popular_dishes.items.3.sub_content"),
+      route: "/rich",
+    },
+  ];
   const itemsText = t("popular_dishes.items", { returnObjects: true });
 
   return (
@@ -44,7 +60,8 @@ const BestSelling3 = () => {
               </div>
               <div className="dishes-card-wrap style4">
                 {foodItems.map((item, i) => {
-                  const text = itemsText?.[i] || {}; return (
+                  const text = itemsText?.[i] || {};
+                  return (
                     <div
                       key={i}
                       className="dishes-card style5 wow fadeInUp"
@@ -54,22 +71,20 @@ const BestSelling3 = () => {
                         <img src={item.img} alt="thumb" />
                       </div>
                       <div className="dishes-content">
-                        <Link to="/menu">
+                        <Link to={item.route}>
                           <h3>{text.name}</h3>
                         </Link>
-                          {/* <div className="star">
-                            <img src="/assets/img/icon/star2.svg" alt="icon" />
-                          </div> */}
-                        <div className="text">{item.content}</div>
-                        <h6>{item.price}</h6>
-                        <Link to={item.route} className="theme-btn style6">
-                          {t("popular_dishes.order_now")}
-                          {/* <i className="bi bi-basket2"></i> */}
-                        </Link>
-                        
+
+                        <h6>{item.sub_content}</h6>
+
+                        <div className="dishes-btn-wrap">
+                          <Link to={item.route} className="theme-btn style6">
+                            {t("popular_dishes.order_now")}
+                          </Link>
+                        </div>
                       </div>
                     </div>
-                  )
+                  );
                 })}
               </div>
             </div>

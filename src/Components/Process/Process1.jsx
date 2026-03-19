@@ -76,7 +76,7 @@ const Process1 = () => {
 
             <div className="col-md-6 order-1 order-md-2">
               <div className="wcu-thumb">
-                <img src="/assets/img/wcu/wcuThumb1_1.png" alt="wcuThumb" />
+                <img className="wcu-image" src="/assets/img/wcu/wcuThumb1_1.png" alt="wcuThumb" />
               </div>
             </div>
 

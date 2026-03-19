@@ -39,7 +39,6 @@ const Brand1 = () => {
         {img:'/assets/img/logo/clientLogo1_3.png'},
         {img:'/assets/img/logo/clientLogo1_4.png'},
         {img:'/assets/img/logo/clientLogo1_5.png'},
-        {img:'/assets/img/logo/clientLogo1_6.png'},
       ];
 
     return (

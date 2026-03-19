@@ -55,8 +55,8 @@ const Faq1 = () => {
     <div className="faq-section section-padding pb-0 fix">
       <div className="container">
         <div className="faq-wrapper-4">
-          <div className="row gy-5 gx-60">
-            <div className="col-xl-6">
+          <div className="row gy-5 gx-60 ">
+            <div className="col">
               <div className="title-area mb-45">
                 <div className="sub-title text-start wow fadeInUp" data-wow-delay="0.5s">
                   <img className="me-1" src="/assets/img/icon/titleIcon.svg" alt="icon" />
@@ -111,7 +111,7 @@ const Faq1 = () => {
               </div>
             </div>
 
-            <div className="col-xl-6">
+            {/* <div className="col-xl-6">
               <div className="faq-image-area">
                 <div className="swiper faq-slider">
                   <div className="swiper-wrapper">
@@ -136,7 +136,7 @@ const Faq1 = () => {
                   </div>
                 </div>
 
-                {/* <div className="clock-wrapper-area">
+                <div className="clock-wrapper-area">
                   <h3>{t("faq.discount_title")}</h3>
 
                   <div className="clock-wrapper">
@@ -157,10 +157,10 @@ const Faq1 = () => {
                       <div className="text">{t("faq.countdown.seconds")}</div>
                     </div>
                   </div>
-                </div> */}
+                </div>
 
               </div>
-            </div>
+            </div> */}
 
           </div>
         </div>

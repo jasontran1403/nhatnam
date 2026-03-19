@@ -24,10 +24,26 @@
     "title": "Chúng tôi Cung cấp",
     "order_now": "Xem Thêm",
     "items": [
-      { "name": "Xúc xích", "order_price_label": "Giá đặt hàng" },
-      { "name": "Sản phẩm từ thịt", "order_price_label": "Giá đặt hàng" },
-      { "name": "Gia vị Hela", "order_price_label": "Giá đặt hàng" },
-      { "name": "Kem Rich’s", "order_price_label": "Giá đặt hàng" }
+      {
+        "name": "Xúc xích",
+        "order_price_label": "Giá đặt hàng",
+        "sub_content": "Xúc Xích Thượng Hạng Nhập Khẩu từ Đức, mang phong cách riêng và chất lượng đặc biệt từ tiêu chuẩn Châu Âu mang lại hương vị đậm đà và thơm ngon."
+      },
+      {
+        "name": "Sản phẩm từ thịt",
+        "order_price_label": "Giá đặt hàng",
+        "sub_content": "Sản phẩm từ thịt cao cấp, được chế biến theo công thức truyền thống bao gồm quy trình đóng gói, chế biến và bảo quản được thực hiện bởi các chuyên gia đi đầu trong ngành"
+      },
+      {
+        "name": "Gia vị Hela",
+        "order_price_label": "Giá đặt hàng",
+        "sub_content": "Gia vị Hela - Lựa chọn hoàn hảo cho những món ăn đặc sắc, với quy trình sản xuất nghiêm ngặt đảm bảo chất lượng"
+      },
+      {
+        "name": "Kem Rich’s",
+        "order_price_label": "Giá đặt hàng",
+        "sub_content": "Kem Rich’s - sự kết hợp hoàn hảo giữa hương vị và chất lượng, đảm bảo mềm mịn và thơm ngon cho một bữa ăn tuyệt vời"
+      }
     ]
   },
   "about": {
@@ -64,15 +80,15 @@
   "why_choose": {
     "subtitle": "Vì sao chọn chúng tôi",
     "title": "Câu chuyện của nhà hàng",
-    "desc": "Đây là một thực tế đã được chứng minh rằng người đọc sẽ bị phân tâm bởi nội dung dễ đọc của một trang.",
+    "desc": "Bắt đầu từ những năm 1997, nhất Nam được thành lập với mục tiêu trở thành nhà nhập khẩu và phân phối thực phẩm chất lượng cao từ Châu Âu và Hoa Kỳ",
     "items": [
       {
-        "title": "Phục vụ Buffet",
-        "desc": "Chúng tôi phục vụ đa dạng món ăn với trải nghiệm nhanh chóng và thoải mái."
+        "title": "Trở thành đại lý phân phối",
+        "desc": "Với mục tiêu đề ra, năm vào năm 2000, Nhất Nam đã sáng lập ra Swiss Alps®- Thảo Nguyên, là một thực thể riêng biệt để sản xuất xúc xích Trung Âu"
       },
       {
-        "title": "Chế biến & phục vụ nhanh",
-        "desc": "Quy trình tối ưu giúp món ăn lên nhanh nhưng vẫn đảm bảo chất lượng."
+        "title": "Chất lượng làm trọng tâm",
+        "desc": "Tất cả sản phẩm được đảm bảo sản xuất bằng nguyên liệu tự nhiên, sử dụng gỗ bạch Dương nhập khẩu từ Đức cho các sản phẩm hun khói."
       }
     ],
     "order_now": "Xem Thêm"
@@ -109,7 +125,7 @@
   "testimonial": {
     "subtitle": "Đánh giá",
     "title": "Khách hàng nói gì về chúng tôi",
-    "designation": "Người đánh giá ẩm thực",
+    "designation": "Khách hàng thân thiết",
     "items": [
       {
         "content": "Chất lượng sản phẩm chuẩn Âu: 'Xúc xích và thịt nguội ở đây có hương vị rất đặc trưng, chuẩn vị Âu. Đặc biệt là các dòng xúc xích Đức, ăn vào cảm nhận được độ tươi, gia vị đậm đà và cực kỳ thơm mùi vị thảo mộc tự nhiên.'"
@@ -161,16 +177,19 @@
     "read_more": "Xem thêm",
     "items": [
       {
-        "title": "Top 10 món nhất định phải thử tại nhà hàng",
-        "content": "Khám phá 10 món bạn nhất định nên thử khi ghé nhà hàng, từ khai vị đến tráng miệng..."
+        "title": "Sinh viên chế biến món ăn từ khoai tây Mỹ cùng siêu đầu bếp",
+        "content": "GD&TĐ - Tại Ngày hội HUTECH Young Chefs 2025, sinh viên đã có những trải nghiệm thú vị khi tham gia chế biến các món ăn sáng tạo từ khoai tây Mỹ.",
+        "link": "https://giaoducthoidai.vn/sinh-vien-che-bien-mon-an-tu-khoai-tay-my-cung-sieu-dau-bep-post725922.html"
       },
       {
-        "title": "Hậu trường một ngày làm việc điển hình",
-        "content": "Cùng xem một ngày vận hành bếp và phục vụ diễn ra như thế nào..."
+        "title": "Đầu bếp Norbert Ehrbar Người của thời xa xưa",
+        "content": " Năm 1999, vợ chồng người bạn này quyết định thành lập Công ty Nhất Nam, hoạt động trong lĩnh vực xuất nhập khẩu thực phẩm. Norbert được mời về tham gia xây dựng công ty trong vai trò chuyên viên tư vấn và là bếp trưởng cho nhà hàng. ",
+        "link": "https://tuoitre.vn/dau-bep-norbert-ehrbar-nguoi-cua-thoi-xa-xua-225847.htm"
       },
       {
-        "title": "Bí quyết làm pasta chuẩn vị",
-        "content": "Bật mí những mẹo nhỏ để làm pasta ngon đúng chuẩn, dễ áp dụng tại nhà..."
+        "title": "Tưng bừng sự kiện Hutech Young Chefs 2024",
+        "content": "Đảm nhiệm vai trò giám khảo có Chef Norbert Ehrbar – Bếp trưởng điều hành/Cố vấn ẩm thực tại Nhật Nam Fine foods, thành viên World Master Chef Society, Chef Trần Hồ Nhựt Linh – Iron chef Việt Nam , Chef Lê Nguyễn Hoàn Long - Phó chủ tịch Hiệp hội Siêu đầu bếp thế giới tại Việt Nam.",
+        "link": "https://taichinhdoanhnghiep.net.vn/tung-bung-su-kien-hutech-young-chefs-2024--huong-vi-tuyet-voi-tu-khoai-tay-hoa-ky-d47563.html"
       }
     ]
   }

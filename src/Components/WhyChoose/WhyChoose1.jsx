@@ -6,16 +6,16 @@ import { useTranslation } from "react-i18next";
 const WhyChoose1 = () => {
   const { t } = useTranslation("home");
 
-  const [iframeSrc, setIframeSrc] = useState("about:blank");
+  const [videoSrc, setVideoSrc] = useState("");
   const [toggle, setToggle] = useState(false);
 
   const handelClick = () => {
-    setIframeSrc("https://www.youtube.com/embed/rRid6GCJtgc");
-    setToggle(!toggle);
+    setVideoSrc("/assets/video/Nhat Nam SECC.mp4");
+    setToggle(true);
   };
   const handelClose = () => {
-    setIframeSrc("about:blank");
-    setToggle(!toggle);
+    setVideoSrc("");
+    setToggle(false);
   };
 
   const itemsRaw = t("why_choose.items", { returnObjects: true });
@@ -107,8 +107,9 @@ const WhyChoose1 = () => {
                   </div>
                 </div>
 
-                <Link to="/menu" className="theme-btn style4">
-                  {t("why_choose.order_now")} <i className="bi bi-arrow-right"></i>
+                <Link to="/about" className="theme-btn style4">
+                  {t("why_choose.order_now")}{" "}
+                  <i className="bi bi-arrow-right"></i>
                 </Link>
               </div>
             </div>
@@ -116,7 +117,11 @@ const WhyChoose1 = () => {
         </div>
       </div>
 
-      <VideoModal isTrue={toggle} iframeSrc={iframeSrc} handelClose={handelClose} />
+      <VideoModal
+        isTrue={toggle}
+        videoSrc={videoSrc}
+        handelClose={handelClose}
+      />
     </section>
   );
 };

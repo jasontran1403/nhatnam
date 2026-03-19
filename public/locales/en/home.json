@@ -20,25 +20,29 @@
     }
   ],
   "popular_dishes": {
-    "subtitle": "Product Category",
-    "title": "Our Providers Category",
-    "order_now": "Details",
+    "subtitle": "PRODUCT CATEGORIES",
+    "title": "What We Offer",
+    "order_now": "View More",
     "items": [
       {
         "name": "Sausages",
-        "order_price_label": "Order Price"
+        "order_price_label": "Order Price",
+        "sub_content": "Premium sausages imported from Germany, delivering a unique style and exceptional quality that meets European standards, offering rich and delicious flavors."
       },
       {
         "name": "Meat Products",
-        "order_price_label": "Order Price"
+        "order_price_label": "Order Price",
+        "sub_content": "High-quality meat products crafted using traditional recipes, with processing, packaging, and preservation handled by leading industry experts."
       },
       {
-        "name": "Hela Goods",
-        "order_price_label": "Order Price"
+        "name": "Hela Seasonings",
+        "order_price_label": "Order Price",
+        "sub_content": "Hela seasonings – the perfect choice for outstanding dishes, produced under strict processes to ensure top-tier quality."
       },
       {
-        "name": "Rich's",
-        "order_price_label": "Order Price"
+        "name": "Rich’s Cream",
+        "order_price_label": "Order Price",
+        "sub_content": "Rich’s cream – a perfect blend of flavor and quality, delivering smooth texture and delightful taste for an exceptional culinary experience."
       }
     ]
   },
@@ -74,20 +78,20 @@
     ]
   },
   "why_choose": {
-    "subtitle": "Why choose us",
-    "title": "The history of our restaurant",
-    "desc": "It is a long established fact that a reader will be distracted the readable content of a page",
+    "subtitle": "Why Choose Us",
+    "title": "Our Story",
+    "desc": "Established in 1997, Nhat Nam was founded with the vision of becoming a trusted importer and distributor of premium food products from Europe and the United States.",
     "items": [
       {
-        "title": "Buffet Service",
-        "desc": "It is a long established fact that a reader will be distracted the"
+        "title": "Becoming a Distribution Partner",
+        "desc": "With this vision in mind, in 2000, Nhat Nam founded Swiss Alps® – Thao Nguyen, a separate entity dedicated to producing Central European-style sausages."
       },
       {
-        "title": "Cook & Serve Faster",
-        "desc": "It is a long established fact that a reader will be distracted the"
+        "title": "Quality at the Core",
+        "desc": "All products are made from natural ingredients, with imported German beechwood used for smoking to ensure authentic flavor and premium quality."
       }
     ],
-    "order_now": "Details"
+    "order_now": "View More"
   },
   "faq": {
     "subtitle": "Customer Questions",
@@ -121,7 +125,7 @@
   "testimonial": {
     "subtitle": "Testimonials",
     "title": "What Our Customers Say About Us",
-    "designation": "Food Reviewer",
+    "designation": "Verified Customer",
     "items": [
       {
         "content": "Authentic European quality: 'The sausages and cold cuts here have a very distinctive, authentic European flavor. Especially the German sausage lines—you can really taste the freshness, rich seasoning, and the strong aroma of natural herbs.'"
@@ -144,45 +148,48 @@
     "app_store": "App store",
     "google_play": "Google play"
   },
- "process": {
-  "subtitle": "About Nhat Nam",
-  "title": "We are confident in our extensive production experience with over 10 years of expertise",
-  "steps": [
-    {
-      "title": "Experienced team of experts",
-      "desc": "Committed to delivering the most complete and satisfying food experience"
-    },
-    {
-      "title": "Fresh ingredients",
-      "desc": "Ensuring imported and fresh ingredients of the highest quality"
-    },
-    {
-      "title": "Multiple payment methods",
-      "desc": "No need to worry about payments, with a full range of convenient payment options"
-    }
-  ]
-},
+  "process": {
+    "subtitle": "About Nhat Nam",
+    "title": "We are confident in our extensive production experience with over 10 years of expertise",
+    "steps": [
+      {
+        "title": "Experienced team of experts",
+        "desc": "Committed to delivering the most complete and satisfying food experience"
+      },
+      {
+        "title": "Fresh ingredients",
+        "desc": "Ensuring imported and fresh ingredients of the highest quality"
+      },
+      {
+        "title": "Multiple payment methods",
+        "desc": "No need to worry about payments, with a full range of convenient payment options"
+      }
+    ]
+  },
   "blog": {
     "subtitle": "LATEST BLOG",
-    "title": "Latest News & Articles",
+    "title": "News & Articles",
     "meta": {
       "month_august": "August",
-      "by_admin": "By Admin",
-      "comments": "Comments({{count}})"
+      "by_admin": "Posted by Admin",
+      "comments": "Comments ({{count}})"
     },
     "read_more": "Read More",
     "items": [
       {
-        "title": "Top 10 Must-Try Dishes at Our Restaurant",
-        "content": "Get to know the top 10 dishes you must try when you visit our restaurant, from appetizers to desserts..."
+        "title": "Students Create Dishes from U.S. Potatoes with a Master Chef",
+        "content": "At the HUTECH Young Chefs 2025 event, students had exciting experiences creating innovative dishes using U.S. potatoes.",
+        "link": "https://giaoducthoidai.vn/sinh-vien-che-bien-mon-an-tu-khoai-tay-my-cung-sieu-dau-bep-post725922.html"
       },
       {
-        "title": "Take a behind-the-scenes look at a typical day",
-        "content": "Get to know the top 10 dishes you must try when you visit our restaurant, from appetizers to desserts..."
+        "title": "Chef Norbert Ehrbar – A Man from Another Era",
+        "content": "In 1999, a couple of friends founded Nhat Nam Company, operating in food import and export. Norbert was invited to join as a consultant and head chef for the restaurant.",
+        "link": "https://tuoitre.vn/dau-bep-norbert-ehrbar-nguoi-cua-thoi-xa-xua-225847.htm"
       },
       {
-        "title": "Learn the secrets to making perfect pasta",
-        "content": "Get to know the top 10 dishes you must try when you visit our restaurant, from appetizers to desserts..."
+        "title": "Exciting HUTECH Young Chefs 2024 Event",
+        "content": "Judges included Chef Norbert Ehrbar – Executive Chef and Culinary Advisor at Nhat Nam Fine Foods, member of the World Master Chef Society, along with top chefs from Vietnam.",
+        "link": "https://taichinhdoanhnghiep.net.vn/tung-bung-su-kien-hutech-young-chefs-2024--huong-vi-tuyet-voi-tu-khoai-tay-hoa-ky-d47563.html"
       }
     ]
   }

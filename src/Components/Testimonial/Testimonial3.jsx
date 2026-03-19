@@ -28,10 +28,10 @@ const Testimonial3 = () => {
 
   // Ảnh + tên giữ local (không cần dịch)
   const tesItems = [
-    { img: "/assets/img/testimonial/testimonialProfile3_1.png", title: "Albert Flores" },
-    { img: "/assets/img/testimonial/testimonialProfile3_2.png", title: "Brooklyn" },
-    { img: "/assets/img/testimonial/testimonialProfile3_1.png", title: "Albert Flores" },
-    { img: "/assets/img/testimonial/testimonialProfile3_2.png", title: "Brooklyn" }
+    { img: "/assets/img/testimonial/testimonialProfile3_1.png", title: "Trinh Dao" },
+    { img: "/assets/img/testimonial/testimonialProfile3_2.png", title: "Nguyen Nam" },
+    { img: "/assets/img/testimonial/testimonialProfile3_3.png", title: "Thien Thu" },
+    { img: "/assets/img/testimonial/testimonialProfile3_4.png", title: "Tran Vu" }
   ];
 
   // Text lấy từ i18n

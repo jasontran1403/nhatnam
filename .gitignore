@@ -33,3 +33,6 @@ coverage/
 
 # misc
 *.log
+
+
+public/assets/video/*.mp4

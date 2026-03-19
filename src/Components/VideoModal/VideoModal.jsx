@@ -1,20 +1,28 @@
-const VideoModal = ({ isTrue, iframeSrc, handelClose }) => {
-    return (
-        <div className={`cs_video_popup ${isTrue === true ? 'active' : ''}`}>
-          <div className="cs_video_popup-overlay"></div>
-          <div className="cs_video_popup-content">
-            <div className="cs_video_popup-layer"></div>
-            <div className="cs_video_popup-container">
-              <div className="cs_video_popup-align">
-                <div className="embed-responsive embed-responsive-16by9">
-                  <iframe className="embed-responsive-item" src={iframeSrc}></iframe>
-                </div>
-              </div>
-              <div className="cs_video_popup-close" onClick={handelClose}></div>
-            </div>
-          </div>
-        </div>            
-    );
+const VideoModal = ({ isTrue, videoSrc, handelClose }) => {
+  if (!isTrue) return null;
+
+  return (
+    <div className="video-modal">
+      <div className="video-modal-overlay" onClick={handelClose}></div>
+
+      <div className="video-modal-content">
+        <button className="close-btn" onClick={handelClose}>
+          ×
+        </button>
+
+        <video
+          controls
+          autoPlay
+          playsInline
+          preload="metadata"
+          className="video-modal-player"
+        >
+          <source src={videoSrc} type="video/mp4" />
+          Trình duyệt của bạn không hỗ trợ video.
+        </video>
+      </div>
+    </div>
+  );
 };
 
 export default VideoModal;

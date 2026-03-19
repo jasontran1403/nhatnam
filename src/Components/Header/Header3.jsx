@@ -96,7 +96,10 @@ export default function Header3({ variant }) {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (userDropdownOpen && !event.target.closest(".user-dropdown-container")) {
+      if (
+        userDropdownOpen &&
+        !event.target.closest(".user-dropdown-container")
+      ) {
         setUserDropdownOpen(false);
       }
     };
@@ -175,57 +178,58 @@ export default function Header3({ variant }) {
 
               <div className="cs_main_header_right">
                 <div className="header-btn d-flex align-items-center">
-                  {/* Search */}
-                  <button
-                    onClick={() => setSearchToggle(!searchToggle)}
-                    className="header-icon-btn search-icon-btn"
-                  >
-                    <i className="bi bi-search"></i>
-                  </button>
-
-                  {/* Cart */}
-                  <Link
-                    to="/cart"
-                    className="header-icon-btn cart-icon-btn position-relative"
-                  >
-                    <i className="bi bi-cart3"></i>
-                    {cartCount > 0 && (
-                      <span
-                        className="cart-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger d-flex align-items-center justify-content-center"
-                        style={{
-                          fontSize: "10px",
-                          minWidth: "24px",
-                          height: "24px",
-                          padding: "0 6px",
-                          lineHeight: "1",
-                        }}
+                  {isLoggedIn && (
+                    <>
+                      <button
+                        onClick={() => setSearchToggle(!searchToggle)}
+                        className="header-icon-btn search-icon-btn"
                       >
-                        {cartCount}
-                      </span>
-                    )}
-                  </Link>
+                        <i className="bi bi-search"></i>
+                      </button>
 
-                  {/* Wishlist */}
-                  <Link
-                    to="/wishlist"
-                    className="header-icon-btn cart-icon-btn position-relative"
-                  >
-                    <i className="bi bi-heart"></i>
-                    {wishlistCount > 0 && (
-                      <span
-                        className="heart-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger d-flex align-items-center justify-content-center"
-                        style={{
-                          fontSize: "10px",
-                          minWidth: "24px",
-                          height: "24px",
-                          padding: "0 6px",
-                          lineHeight: "1",
-                        }}
+                      <Link
+                        to="/cart"
+                        className="header-icon-btn cart-icon-btn position-relative"
                       >
-                        {wishlistCount}
-                      </span>
-                    )}
-                  </Link>
+                        <i className="bi bi-cart3"></i>
+                        {cartCount > 0 && (
+                          <span
+                            className="cart-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger d-flex align-items-center justify-content-center"
+                            style={{
+                              fontSize: "10px",
+                              minWidth: "24px",
+                              height: "24px",
+                              padding: "0 6px",
+                              lineHeight: "1",
+                            }}
+                          >
+                            {cartCount}
+                          </span>
+                        )}
+                      </Link>
+
+                      <Link
+                        to="/wishlist"
+                        className="header-icon-btn cart-icon-btn position-relative"
+                      >
+                        <i className="bi bi-heart"></i>
+                        {wishlistCount > 0 && (
+                          <span
+                            className="heart-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger d-flex align-items-center justify-content-center"
+                            style={{
+                              fontSize: "10px",
+                              minWidth: "24px",
+                              height: "24px",
+                              padding: "0 6px",
+                              lineHeight: "1",
+                            }}
+                          >
+                            {wishlistCount}
+                          </span>
+                        )}
+                      </Link>
+                    </>
+                  )}
                   <button onClick={toggleLang} className="header-icon-btn">
                     {i18n.language === "vi" ? "EN" : "VI"}
                   </button>
