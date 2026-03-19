@@ -23,7 +23,7 @@ const Offer4 = () => {
           <div className="row gy-4">
             {offerItems.map((item, i) => (
               <div key={i} className="col-lg-6 col-xl-4">
-                <div
+                {/* <div
                   className="offer-card style1 wow fadeInUp"
                   data-wow-delay="0.2s"
                   data-background="/assets/img/bg/offerBG1_1.jpg"
@@ -44,7 +44,7 @@ const Offer4 = () => {
                       <img src="/assets/img/shape/offerShape1_4.png" alt="shape" />
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             ))}
           </div>

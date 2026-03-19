@@ -22,12 +22,12 @@
   "popular_dishes": {
     "subtitle": "POPULAR DISHES",
     "title": "Our Most Popular Deals",
-    "order_now": "Order Now",
+    "order_now": "Details",
     "items": [
       { "name": "Sausages", "order_price_label": "Order Price" },
-      { "name": "Small Goods", "order_price_label": "Order Price" },
       { "name": "Richs", "order_price_label": "Order Price" },
-      { "name": "Hela", "order_price_label": "Order Price" }
+      { "name": "Hela Goods", "order_price_label": "Order Price" },
+      { "name": "Meat Products", "order_price_label": "Order Price" }
     ]
   },
     "about": {
@@ -47,7 +47,7 @@
     "button": "About Us"
   },
   "offer": {
-    "order_now": "Order Now",
+    "order_now": "Details",
     "items": [
       {
         "start_price": "Start price $28",
@@ -75,7 +75,7 @@
         "desc": "It is a long established fact that a reader will be distracted the"
       }
     ],
-    "order_now": "Order Now"
+    "order_now": "Details"
   },
    "faq": {
     "subtitle": "Enjoy Our Dishes",

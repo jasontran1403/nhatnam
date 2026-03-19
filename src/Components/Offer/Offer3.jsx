@@ -30,7 +30,7 @@ const Offer3 = () => {
                   <h6>{items[0]?.start_price}</h6>
                   <h3>{items[0]?.title}</h3>
                   <p>{items[0]?.note}</p>
-                  <Link to="/menu" className="theme-btn style4">
+                  <Link to="/about" className="theme-btn style4">
                     {t("offer.order_now")} <i className="bi bi-arrow-right"></i>
                   </Link>
                 </div>
@@ -59,7 +59,7 @@ const Offer3 = () => {
                   <h6 className="text-white">{items[1]?.start_price}</h6>
                   <h3>{items[1]?.title}</h3>
                   <p className="text-white">{items[1]?.note}</p>
-                  <Link to="/menu" className="theme-btn style4">
+                  <Link to="/about" className="theme-btn style4">
                     {t("offer.order_now")} <i className="bi bi-arrow-right"></i>
                   </Link>
                 </div>

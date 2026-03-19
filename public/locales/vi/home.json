@@ -22,32 +22,32 @@
   "popular_dishes": {
     "subtitle": "MÓN NỔI BẬT",
     "title": "Ưu đãi được yêu thích nhất",
-    "order_now": "Đặt ngay",
+    "order_now": "Xem Thêm",
     "items": [
       { "name": "Xúc xích", "order_price_label": "Giá đặt hàng" },
-      { "name": "Đồ nguội", "order_price_label": "Giá đặt hàng" },
-      { "name": "Richs", "order_price_label": "Giá đặt hàng" },
-      { "name": "Hela", "order_price_label": "Giá đặt hàng" }
+      { "name": "Kem Rich’s", "order_price_label": "Giá đặt hàng" },
+      { "name": "Gia vị Hela", "order_price_label": "Giá đặt hàng" },
+      { "name": "Sản phẩm từ thịt", "order_price_label": "Giá đặt hàng" }
     ]
   },
   "about": {
     "subtitle": "Về chúng tôi",
-    "title": "Chúng tôi đảm bảo thực phẩm khỏe mạnh & chất lượng cao",
-    "description": "Đây là một thực tế đã được chứng minh rằng người đọc sẽ bị phân tâm bởi nội dung có thể đọc được của trang khi nhìn vào bố cục.",
+    "title": "30 năm kinh nghiệm sản xuất và phân phối thực phẩm chất lượng cao.",
+    "description": "Từ năm 1997 chúng tôi tự hào là nhà cung cấp thực phẩm cho các nhà hàng khách sạn cao cấp trải dài từ Hạ Long đến Phú Quốc, đối tác hàng năm của Lễ Hội Bia Đức và là một điểm đến tin cậy của các Lãnh sứ quán – đại sứ quán tại Việt Nam.",
     "features": [
       {
-        "title": "Thực phẩm chất lượng cao",
-        "desc": "Phục vụ món ăn ngon & an toàn bởi đội ngũ thân thiện"
+        "title": "Nhà phân phối độc quyền gia vị HELA tại Việt Nam",
+        "desc": ""
       },
       {
-        "title": "Đầu bếp chuyên nghiệp",
-        "desc": "Phục vụ món ăn ngon & an toàn bởi đội ngũ thân thiện"
+        "title": "Nhà phân phối chiến lược kem pha chế Rich’s tại Tp.HCM",
+        "desc": ""
       }
     ],
     "button": "Xem thêm"
   },
-    "offer": {
-    "order_now": "Đặt ngay",
+  "offer": {
+    "order_now": "Xem Thêm",
     "items": [
       {
         "start_price": "Giá từ 28$",
@@ -61,7 +61,7 @@
       }
     ]
   },
-    "why_choose": {
+  "why_choose": {
     "subtitle": "Vì sao chọn chúng tôi",
     "title": "Câu chuyện của nhà hàng",
     "desc": "Đây là một thực tế đã được chứng minh rằng người đọc sẽ bị phân tâm bởi nội dung dễ đọc của một trang.",
@@ -75,7 +75,7 @@
         "desc": "Quy trình tối ưu giúp món ăn lên nhanh nhưng vẫn đảm bảo chất lượng."
       }
     ],
-    "order_now": "Đặt ngay"
+    "order_now": "Xem Thêm"
   },
   "faq": {
     "subtitle": "Thưởng thức món ngon",
@@ -106,7 +106,7 @@
       "seconds": "giây"
     }
   },
- "testimonial": {
+  "testimonial": {
     "subtitle": "Đánh giá",
     "title": "Khách hàng nói gì về chúng tôi",
     "designation": "Người đánh giá ẩm thực",
@@ -125,14 +125,14 @@
       }
     ]
   },
-    "cta_app": {
+  "cta_app": {
     "subtitle": "TẢI ỨNG DỤNG",
     "title": "Tải app đặt món và đặt ngay hôm nay!",
     "store_prefix": "Tải về trên",
     "app_store": "App Store",
     "google_play": "Google Play"
   },
-   "process": {
+  "process": {
     "subtitle": "Quy trình đặt món",
     "title": "Món ngon và giao nhanh trong một trải nghiệm",
     "steps": [
@@ -150,7 +150,7 @@
       }
     ]
   },
-    "blog": {
+  "blog": {
     "subtitle": "BLOG MỚI NHẤT",
     "title": "Tin tức & Bài viết mới",
     "meta": {
