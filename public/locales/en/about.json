@@ -19,37 +19,29 @@
     ],
     "order_now": "Details"
   },
-   "about2": {
+  "about2": {
     "subtitle": "About Us",
-    "title": "Variety of flavours from American cuisine",
-    "description": "Every dish is not just prepared, it is crafted with utmost precision and a deep understanding of flavor harmony. The experienced hands of our chefs make every bite memorable.",
+    "title": "Nhat Nam FineFood – Where Culinary Passion Comes Together",
+    "description": "With a mission to deliver exceptional culinary experiences, Nhat Nam FineFood proudly stands as the ideal destination for those who appreciate unique flavors and superior quality. We are committed to using fresh ingredients, refined recipes, and a team of experienced chefs to create delightful dishes that satisfy every palate. Join us in exploring a diverse world of cuisine and enjoy unforgettable moments at Nhat Nam FineFood.",
     "features": [
       {
-        "title": "Super quality food",
-        "desc": "Served our tasty food & good food by friendly staff."
+        "title": "Exceptional Food Quality",
+        "desc": "Serving delicious dishes with authentic flavors, delivered with friendliness and dedication."
       },
       {
-        "title": "Qualified Chef",
-        "desc": "Professional chefs ensuring quality in every step."
+        "title": "Experienced Chefs",
+        "desc": "A professional team ensuring excellence and consistency in every step of the process."
       }
     ],
-    "marquee": [
-      "Chicken pizza",
-      "Grilled chicken",
-      "Burger",
-      "Chicken pizza",
-      "Fresh pasta",
-      "Italiano french fry",
-      "Chicken fry"
-    ]
+    "marquee": ["Rich's Cream", "Hela Seasonings", "Sausages", "Meat Products"]
   },
-    "ctaBanner1": {
+  "ctaBanner1": {
     "tag": "WELCOME NHATNAMFOOD",
     "title": "TODAY SPECIAL FOOD",
     "desc": "Limited time offer",
     "button": "Details"
   },
-    "team": {
+  "team": {
     "subtitle": "OUR CHEF",
     "title": "Meet Our Expert Chef",
     "share": "Share",
@@ -58,7 +50,7 @@
       "chef_assistant": "Chef Assistant"
     }
   },
-    "testimonial": {
+  "testimonial": {
     "subtitle": "TESTIMONIALS",
     "title": "What Our Clients Say",
     "designation": {
@@ -66,7 +58,7 @@
     },
     "content": "Penatibus magnis dis parturient montes nascetur ridiculus mus. Ut id lorem ac enim vestibulum blandit nec sit amet felis. Fusce quis diam odio. Cras mattis mi quis tincidunt."
   },
-   "blog": {
+  "blog": {
     "subtitle": "LATEST NEWS",
     "title": "Our Latest Foods News",
     "date": {

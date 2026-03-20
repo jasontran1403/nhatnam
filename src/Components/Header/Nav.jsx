@@ -90,11 +90,11 @@ export default function Nav({
                 {t("pages.about")}
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/testimonial" onClick={() => setMobileToggle(false)}>
                 {t("pages.testimonial")}
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/faq" onClick={() => setMobileToggle(false)}>
                 {t("pages.faq")}

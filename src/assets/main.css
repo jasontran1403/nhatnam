@@ -6197,6 +6197,7 @@ input.main-search-input::placeholder {
 
 /* 17.Breadcumb */
 .breadcumb-wrapper {
+  min-height: 550px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

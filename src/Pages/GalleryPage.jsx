@@ -5,7 +5,7 @@ const GalleryPage = () => {
     return (
         <div>
             <BreadCumb
-                bgimg="/assets/img/bg/breadcumb_video.gif"
+                bgimg="/assets/img/bg/meat_banner.png"
                 Title="Meats Products"
             ></BreadCumb>   
             <Gallery2></Gallery2>         

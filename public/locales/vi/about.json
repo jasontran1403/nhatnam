@@ -21,8 +21,8 @@
   },
   "about2": {
     "subtitle": "Về chúng tôi",
-    "title": "Đa dạng hương vị từ ẩm thực Mỹ",
-    "description": "Mỗi món ăn không chỉ được chế biến mà còn được chăm chút tỉ mỉ với sự thấu hiểu sâu sắc về hương vị. Đôi tay giàu kinh nghiệm của các đầu bếp tạo nên sự hài hòa tinh tế trong từng món.",
+    "title": "Nhất Nam FineFood - Nơi hội tụ đam mê ẩm thực",
+    "description": "Với sứ mệnh mang đến trải nghiệm ẩm thực tuyệt vời, Nhất Nam FineFood tự hào là điểm đến lý tưởng cho những ai yêu thích hương vị độc đáo và chất lượng vượt trội. Chúng tôi cam kết sử dụng nguyên liệu tươi ngon, công thức chế biến tinh tế và đội ngũ đầu bếp giàu kinh nghiệm để tạo ra những món ăn hấp dẫn, đáp ứng mọi khẩu vị của khách hàng. Hãy cùng chúng tôi khám phá thế giới ẩm thực đa dạng và tận hưởng những trải nghiệm đáng nhớ tại Nhất Nam FineFood.",
     "features": [
       {
         "title": "Chất lượng món ăn vượt trội",
@@ -34,13 +34,10 @@
       }
     ],
     "marquee": [
-      "Pizza gà",
-      "Gà nướng",
-      "Burger",
-      "Pizza gà",
-      "Pasta tươi",
-      "Khoai tây chiên kiểu Ý",
-      "Gà chiên"
+      "Kem Rich's",
+      "Gia vị Hela",
+      "Xúc xích",
+      "Sản phẩm từ thịt"
     ]
   },
     "ctaBanner1": {

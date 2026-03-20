@@ -5,7 +5,7 @@ const HelaPage = () => {
     return (
         <div>
             <BreadCumb
-                bgimg="/assets/img/bg/hela_breadcump.jpg"
+                bgimg="/assets/img/bg/hela_breadcump.gif"
                 Title="Hela"
             ></BreadCumb>   
             <Gallery2></Gallery2>         
