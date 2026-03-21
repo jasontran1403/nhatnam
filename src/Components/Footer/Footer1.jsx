@@ -61,7 +61,7 @@ const Footer1 = () => {
             </div>
           </div>
 
-          <div className="row">
+          <div className="row margin-left-70">
             <div
               className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay=".2s"
@@ -77,17 +77,15 @@ const Footer1 = () => {
                   <p>{t("footer.about_text")}</p>
 
                   <div className="social-icon single-social with-text">
-                    <p className="follow-text">
-                      Theo dõi chúng tôi trên Facebook
-                    </p>
+                    <p className="follow-text">{t("footer.follow_us")}</p>
                     <a
-                      href="https://facebook.com/"
+                      href="https://www.facebook.com/share/1Dz7ovEbiu/?mibextid=wwXIfr"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="facebook"
                     >
                       <i className="bi bi-facebook"></i>
-                      <span style={{ color: 'white' }}>Facebook</span>
+                      <span style={{ color: "white" }}>Facebook</span>
                     </a>
                   </div>
                 </div>

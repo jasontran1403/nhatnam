@@ -15,7 +15,7 @@
   "footer.address_title": "Địa chỉ",
   "footer.address_value": "112/5 Phổ Quang, Phường Đức Nhuận, TP. Hồ Chí Minh",
   "footer.email_title": "Email hỗ trợ",
-  "footer.email_value": "Infor@nhatnamfinefoods.com.vn",
+  "footer.email_value": "Info@nhatnamfinefoods.com.vn",
   "footer.hotline_title": "Hotline",
   "footer.hotline_value": "028-38479216",
 
@@ -50,6 +50,9 @@
   "footer.brand": "NhatNam Food",
 
   "footer.terms": "Điều khoản",
-  "footer.privacy": "Chính sách bảo mật"
+  "footer.privacy": "Chính sách bảo mật",
+
+  "footer.follow_us": "Theo Dõi chúng tôi trên"
+
   
 }

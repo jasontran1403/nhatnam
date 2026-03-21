@@ -1,0 +1,128 @@
+{
+  "gallery": {
+    "sausage": [
+      {
+        "title": "Xúc xích truyền thống",
+        "subtitle": "Traditional Sausage",
+        "desc": "Sản phẩm xúc xích chất lượng cao, được chế biến từ nguyên liệu chọn lọc, phù hợp cho bữa ăn gia đình và nhà hàng."
+      },
+      {
+        "title": "Xúc xích hun khói",
+        "subtitle": "Smoked Sausage",
+        "desc": "Hương vị đậm đà, thơm đặc trưng, phù hợp dùng kèm bánh mì, salad hoặc món nướng."
+      },
+      {
+        "title": "Xúc xích cao cấp",
+        "subtitle": "Premium Sausage",
+        "desc": "Dòng sản phẩm cao cấp với chất lượng ổn định và hương vị nổi bật."
+      },
+      {
+        "title": "Xúc xích đặc biệt",
+        "subtitle": "Special Sausage",
+        "desc": "Lựa chọn hoàn hảo cho thực đơn đa dạng và hiện đại."
+      },
+      {
+        "title": "Xúc xích hương thảo mộc",
+        "subtitle": "Herb Sausage",
+        "desc": "Kết hợp nguyên liệu tự nhiên cùng gia vị thảo mộc tinh tế."
+      },
+      {
+        "title": "Xúc xích tiện lợi",
+        "subtitle": "Ready Sausage",
+        "desc": "Phù hợp cho các món ăn nhanh nhưng vẫn đảm bảo chất lượng."
+      },
+      {
+        "title": "Xúc xích nhà hàng",
+        "subtitle": "Restaurant Sausage",
+        "desc": "Thiết kế phù hợp cho nhu cầu bếp chuyên nghiệp và nhà hàng."
+      },
+      {
+        "title": "Xúc xích tiêu đen",
+        "subtitle": "Black Pepper Sausage",
+        "desc": "Hương vị cay nhẹ, thơm nồng và rất dễ kết hợp món ăn."
+      },
+      {
+        "title": "Xúc xích vị phô mai",
+        "subtitle": "Cheese Sausage",
+        "desc": "Béo nhẹ, thơm ngon, phù hợp với nhiều đối tượng khách hàng."
+      },
+      {
+        "title": "Xúc xích đặc sản",
+        "subtitle": "Signature Sausage",
+        "desc": "Dòng sản phẩm nổi bật trong bộ sưu tập của Nhất Nam."
+      },
+      {
+        "title": "Xúc xích bò",
+        "subtitle": "Beef Sausage",
+        "desc": "Đậm vị thịt bò, phù hợp cho món ăn phương Tây và fusion."
+      },
+      {
+        "title": "Xúc xích tổng hợp",
+        "subtitle": "Mixed Sausage",
+        "desc": "Giải pháp linh hoạt cho thực đơn đa dạng và sáng tạo."
+      }
+    ],
+    "meat": [
+      {
+        "title": "Thịt bò cao cấp",
+        "subtitle": "Tuyển chọn nhập khẩu",
+        "desc": "Sản phẩm thịt bò cao cấp với chất lượng ổn định, phù hợp cho nhà hàng, khách sạn và các bữa ăn tiêu chuẩn cao."
+      },
+      {
+        "title": "Thịt heo tươi",
+        "subtitle": "Chất lượng mỗi ngày",
+        "desc": "Nguồn thịt heo được lựa chọn kỹ lưỡng, đảm bảo độ tươi ngon và phù hợp cho nhiều cách chế biến khác nhau."
+      },
+      {
+        "title": "Phi lê gà",
+        "subtitle": "Mềm và sạch",
+        "desc": "Thịt gà phi lê mềm, dễ chế biến, thích hợp cho món áp chảo, nướng hoặc thực đơn lành mạnh."
+      },
+      {
+        "title": "Thịt bò vân mỡ",
+        "subtitle": "Kết cấu đậm đà",
+        "desc": "Vân mỡ đẹp, kết cấu thịt mềm và hương vị đậm đà, lý tưởng cho steak và món Âu."
+      },
+      {
+        "title": "Thịt cắt lát",
+        "subtitle": "Sẵn sàng chế biến",
+        "desc": "Thịt cắt lát tiện lợi, phù hợp cho lẩu, nướng và các món chế biến nhanh trong bếp hiện đại."
+      },
+      {
+        "title": "Thịt đông lạnh",
+        "subtitle": "Nguồn cung ổn định",
+        "desc": "Giải pháp bảo quản và cung ứng ổn định cho nhu cầu dài hạn của hệ thống bếp chuyên nghiệp."
+      },
+      {
+        "title": "Thịt cừu",
+        "subtitle": "Bộ sưu tập đặc biệt",
+        "desc": "Thịt cừu chất lượng cao dành cho thực đơn đặc biệt với hương vị đặc trưng và hấp dẫn."
+      },
+      {
+        "title": "Thịt dùng để quay",
+        "subtitle": "Lựa chọn của đầu bếp",
+        "desc": "Dòng sản phẩm phù hợp cho món quay, nướng hoặc trình bày trong thực đơn cao cấp."
+      },
+      {
+        "title": "Thịt sơ chế",
+        "subtitle": "Tiện lợi khi sử dụng",
+        "desc": "Các lựa chọn thịt sơ chế sẵn giúp tiết kiệm thời gian mà vẫn đảm bảo tính đồng đều khi phục vụ."
+      },
+      {
+        "title": "Dòng thịt đặc trưng",
+        "subtitle": "Tuyển chọn Nhất Nam",
+        "desc": "Bộ sưu tập sản phẩm thịt nổi bật, đại diện cho tiêu chuẩn chất lượng và độ tin cậy của Nhất Nam."
+      },
+      {
+        "title": "Thịt lọc xương",
+        "subtitle": "Dễ dàng chế biến",
+        "desc": "Thịt lọc xương tiện lợi, tối ưu cho nhà hàng và các mô hình bếp cần tốc độ xử lý cao."
+      },
+      {
+        "title": "Bộ sưu tập thịt tổng hợp",
+        "subtitle": "Linh hoạt cho thực đơn",
+        "desc": "Danh mục thịt đa dạng giúp mở rộng lựa chọn thực đơn và đáp ứng nhiều nhu cầu vận hành khác nhau."
+      }
+    ]
+  }
+}

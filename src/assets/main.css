@@ -14906,9 +14906,9 @@ table.woocommerce-product-attributes {
   background: rgba(255, 255, 255, 0.28);
 }
 
-.wcu-image{
+.wcu-image {
   border: 10px solid #ccc;
-    border-radius: 25px;
+  border-radius: 25px;
 }
 
 .social-icon.single-social.with-text {
@@ -14933,8 +14933,8 @@ table.woocommerce-product-attributes {
   color: #fff;
 }
 
-.follow-text{
-  margin : 15px 0;
+.follow-text {
+  margin: 15px 0;
   font-size: 20px;
   color: orange !important;
   font-weight: 800;
@@ -14997,4 +14997,337 @@ table.woocommerce-product-attributes {
 
 .nn-video-modal-close:hover {
   background: rgba(255, 255, 255, 0.28);
+}
+
+.wcu-thumb {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.wcu-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Arrow đẹp hơn */
+.wcu-thumb .slick-prev,
+.wcu-thumb .slick-next {
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+}
+
+.wcu-thumb .slick-prev:before,
+.wcu-thumb .slick-next:before {
+  font-size: 30px;
+  color: #fff;
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.custom-arrow.next {
+  right: 10px;
+}
+
+.custom-arrow.prev {
+  left: 10px;
+}
+
+.wcu-thumb-slider {
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.wcu-slide-item {
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.wcu-image {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  display: block;
+  border-radius: 28px;
+}
+
+.wcu-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.wcu-arrow:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.wcu-arrow-prev {
+  left: 16px;
+}
+
+.wcu-arrow-next {
+  right: 16px;
+}
+
+.wcu-arrow i {
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* Ẩn arrow mặc định của slick nếu còn sót */
+.wcu-thumb-slider .slick-prev:before,
+.wcu-thumb-slider .slick-next:before {
+  display: none;
+}
+
+.gallery-popup-trigger {
+  cursor: pointer;
+}
+
+.gallery-product-card {
+  cursor: pointer;
+}
+
+.gallery-card-info {
+  padding-top: 12px;
+}
+
+.gallery-card-info h5 {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0d1b2a;
+}
+
+.gallery-card-info p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #777;
+}
+
+/* MODAL */
+.gallery-detail-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+}
+
+.gallery-detail-modal .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+}
+
+.gallery-detail-modal .content {
+  position: relative;
+  z-index: 2;
+  width: min(1100px, 95%);
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+}
+
+.gallery-detail-modal .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 560px;
+}
+
+.gallery-detail-modal .image {
+  background: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.gallery-detail-modal .image img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.gallery-detail-modal .info {
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gallery-detail-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #d97706;
+}
+
+.gallery-detail-modal .info h3 {
+  margin-bottom: 10px;
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.gallery-detail-modal .info h6 {
+  margin-bottom: 18px;
+  font-size: 18px;
+  color: #d62828;
+}
+
+.gallery-detail-modal .info p {
+  margin-bottom: 0;
+  color: #555;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.gallery-detail-modal .close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 10;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: #111;
+  font-size: 26px;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* FLOAT ARROWS */
+.gallery-detail-modal .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.gallery-detail-modal .arrow:hover {
+  background: rgba(0, 0, 0, 0.78);
+}
+
+.gallery-detail-modal .arrow.left {
+  left: 14px;
+}
+
+.gallery-detail-modal .arrow.right {
+  right: 14px;
+}
+
+/* ANIMATION */
+.gallery-anim {
+  animation: galleryFadeIn 0.38s ease;
+}
+
+.gallery-anim-next {
+  animation: gallerySlideNext 0.38s ease;
+}
+
+.gallery-anim-prev {
+  animation: gallerySlidePrev 0.38s ease;
+}
+
+@keyframes galleryFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes gallerySlideNext {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes gallerySlidePrev {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 991px) {
+  .gallery-detail-modal .grid {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .gallery-detail-modal .image {
+    max-height: 360px;
+  }
+
+  .gallery-detail-modal .info {
+    padding: 28px 24px;
+  }
+
+  .gallery-detail-modal .info h3 {
+    font-size: 28px;
+  }
+}
+
+.gallery-product-card:hover .gallery-card-info h5 {
+  color: #d97706;
+}
+
+.margin-left-70 {
+  margin-left: 120px;
 }

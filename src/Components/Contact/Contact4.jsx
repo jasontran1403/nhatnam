@@ -27,7 +27,7 @@ const Contact4 = () => {
                     <img className="rounded-circle" src="/assets/img/icon/gmail2.png" alt="icon" />
                   </div>
                   <h3 className="title">{t("info.email.title")}</h3>
-                  <p>Infor@nhatnamfinefoods.com.vn</p>
+                  <p>Info@nhatnamfinefoods.com.vn</p>
                 </div>
               </div>
 

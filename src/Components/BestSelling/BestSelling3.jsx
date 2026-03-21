@@ -13,7 +13,7 @@ const BestSelling3 = () => {
     {
       img: "/assets/img/dishes/dishes6_2.png",
       sub_content: t("popular_dishes.items.1.sub_content"),
-      route: "/gallery",
+      route: "/meat",
     },
     {
       img: "/assets/img/dishes/dishes6_3.png",

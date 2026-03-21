@@ -69,7 +69,7 @@ const Blog2 = () => {
                     <div className="blog-content">
                       <div className="blog-meta">
                         <div className="item1">
-                          <h6>15</h6>
+                          <h6>22</h6>
                           <p>{t("blog.meta.month_august")}</p>
                         </div>
 

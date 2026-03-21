@@ -4,7 +4,7 @@ import {
 import Main from "../Layout/Main";
 import Home from "../Pages/Home";
 import AboutPage from "../Pages/AboutPage";
-import GalleryPage from "../Pages/GalleryPage";
+import MeatPage from "../Pages/MeatPage";
 import TestimonialPage from "../Pages/TestimonialPage";
 import FaqPage from "../Pages/FaqPage";
 import ContactPage from "../Pages/ContactPage";
@@ -36,8 +36,8 @@ export const router = createBrowserRouter([
         element: <AboutPage></AboutPage>,
       },
       {
-        path: "/gallery",
-        element: <GalleryPage></GalleryPage>,
+        path: "/meat",
+        element: <MeatPage></MeatPage>,
       },
 
       {
