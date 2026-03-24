@@ -1,6 +1,4 @@
-import {
-  createBrowserRouter,
-} from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import Home from "../Pages/Home";
 import AboutPage from "../Pages/AboutPage";
@@ -19,7 +17,7 @@ import WareHouse from "../Pages/WareHouse";
 import RichPage from "../Pages/RichPage";
 import SausagePage from "../Pages/SausagePage";
 import HelaPage from "../Pages/HelaPage";
-
+import ProductsGallery from "../Components/Gallery/ProductsGallery";
 
 export const router = createBrowserRouter([
   {
@@ -32,30 +30,13 @@ export const router = createBrowserRouter([
       },
 
       {
+        path: "/products",
+        element: <ProductsGallery/>,
+      },
+      {
         path: "/about",
         element: <AboutPage></AboutPage>,
       },
-      {
-        path: "/meat",
-        element: <MeatPage></MeatPage>,
-      },
-
-      {
-        path: "/rich",
-        element: <RichPage></RichPage>,
-      },
-
-      {
-        path: "/sausage",
-        element: <SausagePage></SausagePage>,
-      },
-
-      {
-        path: "/hela",
-        element: <HelaPage></HelaPage>
-      },
-
-
       {
         path: "/testimonial",
         element: <TestimonialPage></TestimonialPage>,

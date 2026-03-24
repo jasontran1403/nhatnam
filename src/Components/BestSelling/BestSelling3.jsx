@@ -8,24 +8,26 @@ const BestSelling3 = () => {
     {
       img: "/assets/img/dishes/dishes6_1.png",
       sub_content: t("popular_dishes.items.0.sub_content"),
-      route: "/sausage",
+      route: "/products?category=sausage",
     },
     {
       img: "/assets/img/dishes/dishes6_2.png",
       sub_content: t("popular_dishes.items.1.sub_content"),
-      route: "/meat",
+      route: "/products?category=meat",
     },
     {
       img: "/assets/img/dishes/dishes6_3.png",
       sub_content: t("popular_dishes.items.2.sub_content"),
-      route: "/hela",
+      route: "/products?category=hela",
     },
     {
       img: "/assets/img/dishes/dishes6_4.png",
       sub_content: t("popular_dishes.items.3.sub_content"),
-      route: "/rich",
+      route: "/products?category=rich",
     },
   ];
+
+  
   const itemsText = t("popular_dishes.items", { returnObjects: true });
 
   return (

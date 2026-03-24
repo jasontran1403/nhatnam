@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import ShopCard from "../Card/ShopCard";
 import { ProductService, STATUS_CODE } from "../../Utils/MainService";
 import "../../assets/Skeleton.css";

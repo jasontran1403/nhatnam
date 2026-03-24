@@ -123,6 +123,47 @@
         "subtitle": "Flexible Menu Use",
         "desc": "A diverse meat selection that expands menu options and supports a wide range of operational needs."
       }
-    ]
+    ],
+    "hela": [],
+    "rich": []
+  },
+  "gallery_labels": {
+    "sausage": "Sausage Collection",
+    "meat": "Meat Collection",
+    "hela": "Hela Collection",
+    "rich": "Rich Collection"
+  },
+  "gallery_categories": {
+    "all": "All Products",
+    "sausage": "Sausage",
+    "meat": "Meat",
+    "hela": "Hela",
+    "rich": "Rich"
+  },
+  "gallery_ui": {
+    "categories": "Categories",
+    "search": "Search",
+    "search_placeholder": "Search products...",
+    "showing_count_one": "Showing {{count}} product",
+    "showing_count_other": "Showing {{count}} products",
+    "grid_view": "Grid view",
+    "list_view": "List view",
+    "no_products": "No matching products found."
+  },
+  "gallery_sort": {
+    "default": "Default sorting",
+    "name_asc": "Name A-Z",
+    "name_desc": "Name Z-A",
+    "latest": "Latest"
+  },
+  "breadcumd": {
+    "home": "Home"
+  },
+  "gallery_breadcrumb": {
+    "all_title": "All Products",
+    "sausage_title": "Sausage Products",
+    "meat_title": "Meat Products",
+    "hela_title": "Hela Products",
+    "rich_title": "Rich Products"
   }
 }

@@ -1,36 +1,37 @@
 import { useEffect } from "react";
-import loadBackgroudImages from "./loadBackgroudImages";
 import { Link } from "react-router-dom";
-import Backdrop from "@mui/material/Backdrop";
+import { useTranslation } from "react-i18next";
+import loadBackgroudImages from "./loadBackgroudImages";
 
-const BreadCumb = ({Title,bgimg}) => {
-    
-    useEffect(() => {
-        loadBackgroudImages();
-      }, []);
+const BreadCumb = ({ Title, bgimg }) => {
+  const { t } = useTranslation("product");
 
-    return (
+  useEffect(() => {
+    loadBackgroudImages();
+  }, [bgimg]);
 
-        <div className="breadcumb-section">
-        <div className="breadcumb-wrapper" data-background={bgimg}>
-            <div className="container">
-                <div className="row">
-                    <div className="col-12">
-                        <div className="breadcumb-content">
-                            <h1 className="breadcumb-title">{Title}</h1>
-                            <ul className="breadcumb-menu">
-                                <li><Link to="/">Home</Link></li>
-                                <li className="text-white">/</li>
-                                <li className="active">{Title}</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <div className="breadcumb-section">
+      <div className="breadcumb-wrapper" data-background={bgimg}>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="breadcumb-content">
+                <h1 className="breadcumb-title">{Title}</h1>
+                <ul className="breadcumb-menu">
+                  <li>
+                    <Link to="/">{t("breadcrumb.home")}</Link>
+                  </li>
+                  <li className="text-white">/</li>
+                  <li className="active">{Title}</li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-
-    );
+  );
 };
 
 export default BreadCumb;

@@ -123,6 +123,79 @@
         "subtitle": "Linh hoạt cho thực đơn",
         "desc": "Danh mục thịt đa dạng giúp mở rộng lựa chọn thực đơn và đáp ứng nhiều nhu cầu vận hành khác nhau."
       }
-    ]
+    ],
+    "hela": [
+      {
+        "title": "Hela truyền thống",
+        "subtitle": "Hương vị cổ điển",
+        "desc": "Sản phẩm Hela với hương vị truyền thống, phù hợp cho các món ăn gia đình và nhà hàng."
+      },
+      {
+        "title": "Hela hun khói",
+        "subtitle": "Hương vị đậm đà",
+        "desc": "Hela được hun khói nhẹ, mang đến hương vị đặc trưng và thơm ngon."
+      },
+      {
+        "title": "Hela cao cấp",
+        "subtitle": "Chất lượng vượt trội",
+        "desc": "Dòng sản phẩm Hela cao cấp với chất lượng ổn định và hương vị nổi bật."
+      },
+      {
+        "title": "Hela đặc biệt",
+        "subtitle": "Lựa chọn hoàn hảo",
+        "desc": "Sản phẩm Hela đặc biệt, phù hợp cho thực đơn đa dạng và hiện đại."
+      },
+      {
+        "title": "Hela hương thảo mộc",
+        "subtitle": "Kết hợp tự nhiên",
+        "desc": "Hela kết hợp nguyên liệu tự nhiên cùng gia vị thảo mộc tinh tế."
+      },
+      {
+        "title": "Hela tiện lợi",
+        "subtitle": "Dùng ngay",
+        "desc": "Sản phẩm Hela tiện lợi, phù hợp cho các món ăn nhanh nhưng vẫn đảm bảo chất lượng."
+      }
+    ],
+    "rich": []
+  },
+  "gallery_labels": {
+    "sausage": "Bộ sưu tập xúc xích",
+    "meat": "Bộ sưu tập thịt",
+    "hela": "Bộ sưu tập Hela",
+    "rich": "Bộ sưu tập Rich"
+  },
+  "gallery_categories": {
+    "all": "Tất cả sản phẩm",
+    "sausage": "Xúc xích",
+    "meat": "Thịt",
+    "hela": "Hela",
+    "rich": "Rich"
+  },
+  "gallery_ui": {
+    "categories": "Danh mục",
+    "search": "Tìm kiếm",
+    "search_placeholder": "Tìm sản phẩm...",
+    "showing_count_one": "Hiển thị {{count}} sản phẩm",
+    "showing_count_other": "Hiển thị {{count}} sản phẩm",
+    "grid_view": "Dạng lưới",
+    "list_view": "Dạng danh sách",
+    "no_products": "Không tìm thấy sản phẩm phù hợp."
+  },
+  "gallery_sort": {
+    "default": "Sắp xếp mặc định",
+    "name_asc": "Tên A-Z",
+    "name_desc": "Tên Z-A",
+    "latest": "Mới nhất"
+  },
+  "breadcrumb": {
+    "home": "Trang chủ"
+  },
+
+  "gallery_breadcrumb": {
+    "all_title": "Tất cả sản phẩm",
+    "sausage_title": "Sản phẩm xúc xích",
+    "meat_title": "Sản phẩm thịt",
+    "hela_title": "Sản phẩm Hela",
+    "rich_title": "Sản phẩm Rich"
   }
 }
