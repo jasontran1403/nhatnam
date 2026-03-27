@@ -1,5 +1,5 @@
 import BreadCumb from "../Components/Common/BreadCumb";
-import GallerySausage from "../Components/Gallery/GallerySausage";
+import Gallery2 from "../Components/Gallery/Gallery2";
 
 const SausagePage = () => {
     return (
@@ -8,7 +8,7 @@ const SausagePage = () => {
                 bgimg="/assets/img/bg/sausage_breadcum.jpg"
                 Title="Sausage"
             ></BreadCumb>   
-            <GallerySausage></GallerySausage>         
+            <Gallery2></Gallery2>         
         </div>
     );
 };

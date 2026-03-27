@@ -126,37 +126,163 @@
     ],
     "hela": [
       {
-        "title": "Hela truyền thống",
-        "subtitle": "Hương vị cổ điển",
-        "desc": "Sản phẩm Hela với hương vị truyền thống, phù hợp cho các món ăn gia đình và nhà hàng."
+        "title": "Sốt Hela Nguyên Bản",
+        "subtitle": "Hương Vị Cổ Điển",
+        "desc": "Dòng sốt Hela đặc trưng với hương vị cân bằng, phù hợp cho món nướng, chấm và sử dụng hằng ngày trong bếp."
       },
       {
-        "title": "Hela hun khói",
-        "subtitle": "Hương vị đậm đà",
-        "desc": "Hela được hun khói nhẹ, mang đến hương vị đặc trưng và thơm ngon."
+        "title": "Hela Curry Ketchup",
+        "subtitle": "Phong Cách Đức",
+        "desc": "Dòng ketchup vị cà ri phổ biến, rất phù hợp dùng với xúc xích, khoai tây chiên và các món ăn phục vụ nhanh."
       },
       {
-        "title": "Hela cao cấp",
-        "subtitle": "Chất lượng vượt trội",
-        "desc": "Dòng sản phẩm Hela cao cấp với chất lượng ổn định và hương vị nổi bật."
+        "title": "Sốt BBQ Hela",
+        "subtitle": "Vị Hun Khói",
+        "desc": "Sốt barbecue đậm đà với hương khói đặc trưng, lý tưởng cho thịt nướng, món quay và ướp thực phẩm."
       },
       {
-        "title": "Hela đặc biệt",
-        "subtitle": "Lựa chọn hoàn hảo",
-        "desc": "Sản phẩm Hela đặc biệt, phù hợp cho thực đơn đa dạng và hiện đại."
+        "title": "Sốt Chili Hela",
+        "subtitle": "Cay Nhẹ",
+        "desc": "Dòng sốt cay nhẹ giúp tăng chiều sâu hương vị cho món ăn vặt, món thịt và các loại sandwich."
       },
       {
-        "title": "Hela hương thảo mộc",
-        "subtitle": "Kết hợp tự nhiên",
-        "desc": "Hela kết hợp nguyên liệu tự nhiên cùng gia vị thảo mộc tinh tế."
+        "title": "Sốt Tỏi Hela",
+        "subtitle": "Béo Mịn",
+        "desc": "Hương tỏi dịu cùng độ béo mượt, phù hợp với burger, khoai chiên và các bữa ăn tiện lợi."
       },
       {
-        "title": "Hela tiện lợi",
-        "subtitle": "Dùng ngay",
-        "desc": "Sản phẩm Hela tiện lợi, phù hợp cho các món ăn nhanh nhưng vẫn đảm bảo chất lượng."
+        "title": "Sốt Cay Hela",
+        "subtitle": "Đậm Vị",
+        "desc": "Dòng sốt cay mạnh hơn dành cho khách hàng yêu thích hương vị nổi bật và cảm giác đậm đà hơn."
+      },
+      {
+        "title": "Sốt Bò Bít Tết Hela",
+        "subtitle": "Kết Hợp Đậm Đà",
+        "desc": "Dòng sốt đậm vị được phát triển để dùng kèm steak, bò nướng và các món thịt cao cấp."
+      },
+      {
+        "title": "Sốt Ướp Hela",
+        "subtitle": "Tiện Lợi Nhà Bếp",
+        "desc": "Giải pháp sốt ướp tiện dụng giúp tăng hương vị và đảm bảo độ đồng đều trong chế biến chuyên nghiệp."
+      },
+      {
+        "title": "Sốt Hela Cao Cấp",
+        "subtitle": "Chất Lượng Chọn Lọc",
+        "desc": "Dòng sốt cao cấp dành cho nhà hàng và doanh nghiệp thực phẩm chú trọng sự ổn định về chất lượng."
+      },
+      {
+        "title": "Sốt Burger Hela",
+        "subtitle": "Lựa Chọn Fast Food",
+        "desc": "Dòng sốt đậm vị phù hợp cho burger, sandwich và các menu phục vụ nhanh hiện đại."
+      },
+      {
+        "title": "Sốt Mù Tạt Hela",
+        "subtitle": "Vị Chua Dịu",
+        "desc": "Sốt mù tạt cân bằng, thích hợp dùng với xúc xích, hotdog và các món nướng đa dạng."
+      },
+      {
+        "title": "Dòng Hela Đặc Trưng",
+        "subtitle": "Lựa Chọn Tin Cậy",
+        "desc": "Dòng sản phẩm đại diện của Hela, kết hợp giữa sự tiện lợi, ổn định và hương vị dễ nhận diện."
       }
     ],
-    "rich": []
+    "rich": [
+      {
+        "title": "Kem Whipping Rich",
+        "subtitle": "Kết Cấu Mịn",
+        "desc": "Dòng whipping cream mịn và ổn định, phù hợp cho bánh ngọt, món tráng miệng, đồ uống và ứng dụng bakery."
+      },
+      {
+        "title": "Kem Không Sữa Rich",
+        "subtitle": "Dùng Cho Bakery",
+        "desc": "Giải pháp kem không sữa đáng tin cậy cho trang trí, làm nhân và chế biến món tráng miệng chuyên nghiệp."
+      },
+      {
+        "title": "Kem Nấu Ăn Rich",
+        "subtitle": "Thiết Yếu Nhà Bếp",
+        "desc": "Dòng kem đa dụng dành cho súp, sốt, pasta và các hoạt động bếp nóng chuyên nghiệp."
+      },
+      {
+        "title": "Kem Topping Rich",
+        "subtitle": "Dễ Đánh Bông",
+        "desc": "Kem topping nhẹ và dễ đánh bông, phù hợp cho bánh kem, bánh ngọt và hoàn thiện đồ uống."
+      },
+      {
+        "title": "Nền Sữa Rich",
+        "subtitle": "Độ Béo Cân Bằng",
+        "desc": "Sản phẩm nền sữa béo mịn hỗ trợ nhiều công thức bánh và đồ uống khác nhau."
+      },
+      {
+        "title": "Kem Tráng Miệng Rich",
+        "subtitle": "Ứng Dụng Ngọt",
+        "desc": "Phù hợp cho mousse, pudding và các món tráng miệng nhiều lớp cần độ kem mượt và ổn định."
+      },
+      {
+        "title": "Kem Bakery Rich",
+        "subtitle": "Lựa Chọn Chuyên Nghiệp",
+        "desc": "Được phát triển cho tiệm bánh và bếp bánh cần sự đồng đều và khả năng hoàn thiện mượt mà."
+      },
+      {
+        "title": "Kem Foodservice Rich",
+        "subtitle": "Chất Lượng Ổn Định",
+        "desc": "Giải pháp kem tiện dụng cho nhà hàng, quán cà phê và hệ thống phục vụ thực phẩm quy mô lớn."
+      },
+      {
+        "title": "Kem Đồ Uống Rich",
+        "subtitle": "Phù Hợp Thức Uống",
+        "desc": "Phù hợp cho cà phê, đồ uống xay và các menu nước hiện đại cần điểm nhấn béo mịn."
+      },
+      {
+        "title": "Kem Cao Cấp Rich",
+        "subtitle": "Dòng Chọn Lọc",
+        "desc": "Dòng kem cao cấp dành cho doanh nghiệp ưu tiên chất lượng, hình thức và hương vị ổn định."
+      },
+      {
+        "title": "Kem Bánh Rich",
+        "subtitle": "Hoàn Thiện Mềm Mịn",
+        "desc": "Dòng kem mềm mịn cân bằng, phù hợp cho phủ bánh, trang trí và trình bày bánh ngọt."
+      },
+      {
+        "title": "Kem Làm Nhân Rich",
+        "subtitle": "Lớp Bên Trong",
+        "desc": "Giải pháp kem mượt thích hợp cho nhân bánh, bánh mì ngọt và các món tráng miệng nhiều lớp."
+      },
+      {
+        "title": "Nền Mousse Rich",
+        "subtitle": "Kết Cấu Nhẹ",
+        "desc": "Nền mousse ổn định giúp tạo nên các món tráng miệng nhẹ, mịn và hấp dẫn về hình thức."
+      },
+      {
+        "title": "Kem Icing Rich",
+        "subtitle": "Dùng Trang Trí",
+        "desc": "Được thiết kế cho công việc phủ kem và trang trí, giúp giữ form và đảm bảo tính thẩm mỹ."
+      },
+      {
+        "title": "Kem Pastry Rich",
+        "subtitle": "Hỗ Trợ Bakery",
+        "desc": "Dòng kem thân thiện với bakery, phù hợp cho bánh ngọt, pastry và các sản phẩm nướng cao cấp."
+      },
+      {
+        "title": "Kem Đa Năng Rich",
+        "subtitle": "Ứng Dụng Linh Hoạt",
+        "desc": "Giải pháp kem linh hoạt, phù hợp cho cả món ngọt lẫn món mặn trong gian bếp hiện đại."
+      },
+      {
+        "title": "Kem Đặc Trưng Rich",
+        "subtitle": "Dấu Ấn Thương Hiệu",
+        "desc": "Dòng kem đại diện của Rich, nổi bật nhờ sự tiện dụng, chất lượng ổn định và khả năng ứng dụng rộng."
+      },
+      {
+        "title": "Rich Chef Selection",
+        "subtitle": "Tiêu Chuẩn Nhà Bếp",
+        "desc": "Dòng kem hướng đến đầu bếp chuyên nghiệp, hỗ trợ chế biến hiệu quả và cho kết quả món ăn đồng đều."
+      },
+      {
+        "title": "Bộ Sưu Tập Kem Rich",
+        "subtitle": "Danh Mục Hoàn Chỉnh",
+        "desc": "Bộ sưu tập kem đầy đủ, hỗ trợ đa dạng nhu cầu cho bakery, món tráng miệng và đồ uống."
+      }
+    ]
   },
   "gallery_labels": {
     "sausage": "Bộ sưu tập xúc xích",
