@@ -32,7 +32,7 @@ const WhyChoose1 = () => {
       <div className="container">
         <div className="history-wrapper style1">
           <div className="row gx-60">
-            <div className="col-lg-8">
+            <div className="col-lg-7">
               <div className="history-thumb mt-5 mt-lg-0">
                 <img
                   className="thumb"

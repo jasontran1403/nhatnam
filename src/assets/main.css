@@ -6584,8 +6584,6 @@ input.main-search-input::placeholder {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  width: 56px;
-  height: 56px;
   line-height: 56px;
   text-align: center;
   background: var(--white);
@@ -6610,8 +6608,8 @@ input.main-search-input::placeholder {
   -o-transform: translate(-50%, -50%);
 }
 .gallery-thumb.style2 .icon img {
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 2rem;
+  height: 2rem;
 }
 .gallery-thumb.style2:before {
   opacity: 0;
@@ -9325,7 +9323,7 @@ input.main-search-input::placeholder {
 }
 .about-wrapper.style2 .about-us .about-thumb {
   position: relative;
-  margin-left: -400px;
+  margin-left: -180px;
 }
 .about-wrapper.style2 .about-us .video-wrap {
   position: absolute;
@@ -13267,6 +13265,8 @@ span.select2-selection.select2-selection--single:focus {
   .floating-lang-btn {
     display: none;
   }
+
+
 }
 
 /* optional: tránh bị đè bởi bottom nav */
@@ -13274,6 +13274,7 @@ span.select2-selection.select2-selection--single:focus {
   .floating-lang-btn {
     bottom: 80px;
   } /* nếu bạn có bottom bar */
+  
 }
 
 .lang-toast {
@@ -15573,3 +15574,4 @@ table.woocommerce-product-attributes {
     min-width: unset;
   }
 }
+

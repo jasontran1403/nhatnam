@@ -188,97 +188,97 @@
     ],
     "rich": [
       {
-        "title": "Rich Whipping Cream",
+        "title": "Rich's Whipping Cream",
         "subtitle": "Smooth Texture",
         "desc": "A smooth and stable whipping cream suitable for cakes, desserts, beverages, and bakery applications."
       },
       {
-        "title": "Rich Non-Dairy Cream",
+        "title": "Rich's Non-Dairy Cream",
         "subtitle": "Bakery Use",
         "desc": "A reliable non-dairy cream solution for decorating, filling, and professional dessert preparation."
       },
       {
-        "title": "Rich Cooking Cream",
+        "title": "Rich's Cooking Cream",
         "subtitle": "Kitchen Essential",
         "desc": "A versatile cream product designed for soups, sauces, pasta, and hot kitchen operations."
       },
       {
-        "title": "Rich Topping Cream",
+        "title": "Rich's Topping Cream",
         "subtitle": "Easy Whip",
         "desc": "Light and easy-to-whip topping cream, suitable for cakes, pastries, and beverage finishing."
       },
       {
-        "title": "Rich Milk Base",
+        "title": "Rich's Milk Base",
         "subtitle": "Creamy Balance",
         "desc": "A creamy milk-based product that supports a wide range of bakery and beverage recipes."
       },
       {
-        "title": "Rich Dessert Cream",
+        "title": "Rich's Dessert Cream",
         "subtitle": "Sweet Application",
         "desc": "Ideal for mousse, pudding, and layered desserts that require a stable and creamy texture."
       },
       {
-        "title": "Rich Bakery Cream",
+        "title": "Rich's Bakery Cream",
         "subtitle": "Professional Choice",
         "desc": "Developed for bakeries and pastry kitchens that need consistency and smooth finishing performance."
       },
       {
-        "title": "Rich Foodservice Cream",
+        "title": "Rich's Foodservice Cream",
         "subtitle": "Stable Quality",
         "desc": "A practical cream solution for restaurants, cafés, and large-scale foodservice operations."
       },
       {
-        "title": "Rich Beverage Cream",
+        "title": "Rich's Beverage Cream",
         "subtitle": "Drink Friendly",
         "desc": "Specially suited for coffee, blended drinks, and modern beverage menus requiring a creamy touch."
       },
       {
-        "title": "Rich Premium Cream",
+        "title": "Rich's Premium Cream",
         "subtitle": "Selected Range",
         "desc": "A premium cream line for businesses that prioritize quality, appearance, and stable taste."
       },
       {
-        "title": "Rich Cake Cream",
+        "title": "Rich's Cake Cream",
         "subtitle": "Soft Finish",
         "desc": "Soft and balanced cream created for cake coating, decoration, and pastry presentation."
       },
       {
-        "title": "Rich Filling Cream",
+        "title": "Rich's Filling Cream",
         "subtitle": "Inside Layer",
         "desc": "A smooth cream option perfect for cake filling, buns, and layered dessert applications."
       },
       {
-        "title": "Rich Mousse Base",
+        "title": "Rich's Mousse Base",
         "subtitle": "Light Texture",
         "desc": "A dependable mousse base that helps create light, creamy, and visually appealing desserts."
       },
       {
-        "title": "Rich Icing Cream",
+        "title": "Rich's Icing Cream",
         "subtitle": "Decorating Use",
         "desc": "Designed for icing and decoration work, helping maintain form and visual consistency."
       },
       {
-        "title": "Rich Pastry Cream",
+        "title": "Rich's Pastry Cream",
         "subtitle": "Bakery Support",
         "desc": "A bakery-friendly cream suited for pastries, rolls, and premium baked product lines."
       },
       {
-        "title": "Rich Multi-Purpose Cream",
+        "title": "Rich's Multi-Purpose Cream",
         "subtitle": "Flexible Use",
         "desc": "A flexible cream solution suitable for both sweet and savory preparations in modern kitchens."
       },
       {
-        "title": "Rich Signature Cream",
+        "title": "Rich's Signature Cream",
         "subtitle": "Brand Highlight",
-        "desc": "A representative Rich cream product line known for convenience, stable quality, and broad usability."
+        "desc": "A representative Rich's cream product line known for convenience, stable quality, and broad usability."
       },
       {
-        "title": "Rich Chef Selection",
+        "title": "Rich's Chef Selection",
         "subtitle": "Kitchen Standard",
         "desc": "A chef-oriented cream range developed for efficient preparation and consistent menu results."
       },
       {
-        "title": "Rich Cream Collection",
+        "title": "Rich's Cream Collection",
         "subtitle": "Complete Range",
         "desc": "A complete cream collection that supports diverse bakery, dessert, and beverage requirements."
       }
@@ -288,14 +288,14 @@
     "sausage": "Sausage Collection",
     "meat": "Meat Collection",
     "hela": "Hela Collection",
-    "rich": "Rich Collection"
+    "rich": "Rich's Collection"
   },
   "gallery_categories": {
     "all": "All Products",
     "sausage": "Sausage",
     "meat": "Meat",
     "hela": "Hela",
-    "rich": "Rich"
+    "rich": "Rich's"
   },
   "gallery_ui": {
     "categories": "Categories",
@@ -321,6 +321,6 @@
     "sausage_title": "Sausage Products",
     "meat_title": "Meat Products",
     "hela_title": "Hela Products",
-    "rich_title": "Rich Products"
+    "rich_title": "Rich's Products"
   }
 }

@@ -60,17 +60,16 @@ const Footer1 = () => {
               </div>
             </div>
           </div>
-
           <div className="row margin-left-70">
             <div
-              className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+              className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
               data-wow-delay=".2s"
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
                   {/* <Link to="/">
-                    <img src="/assets/img/logo/logoWhite.svg" alt="logo-img" />
-                  </Link> */}
+          <img src="/assets/img/logo/logoWhite.svg" alt="logo-img" />
+        </Link> */}
                 </div>
 
                 <div className="footer-content">
@@ -93,7 +92,7 @@ const Footer1 = () => {
             </div>
 
             <div
-              className=" col-lg-4 col-md-6 ps-xl-5 wow fadeInUp"
+              className="col-xl-3 col-lg-6 col-md-6 ps-xl-5 wow fadeInUp"
               data-wow-delay=".4s"
             >
               <div className="single-footer-widget">
@@ -115,6 +114,7 @@ const Footer1 = () => {
                       {t("footer.link.faq")}
                     </Link>
                   </li>
+
                   <li>
                     <Link to="/contact">
                       <i className="bi bi-chevron-double-right"></i>
@@ -125,50 +125,9 @@ const Footer1 = () => {
               </div>
             </div>
 
-            {/* <div className="col-xl-3 col-lg-4 col-md-6 ps-xl-5 wow fadeInUp" data-wow-delay=".4s">
-              <div className="single-footer-widget">
-                <div className="widget-head">
-                  <h3>{t("footer.our_menu")}</h3>
-                </div>
-
-                <ul className="list-area">
-                  <li>
-                    <Link to="/menu">
-                      <i className="bi bi-chevron-double-right"></i>
-                      {t("footer.menu.burger")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/menu">
-                      <i className="bi bi-chevron-double-right"></i>
-                      {t("footer.menu.pizza")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/menu">
-                      <i className="bi bi-chevron-double-right"></i>
-                      {t("footer.menu.fresh_food")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/menu">
-                      <i className="bi bi-chevron-double-right"></i>
-                      {t("footer.menu.vegetable")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/menu">
-                      <i className="bi bi-chevron-double-right"></i>
-                      {t("footer.menu.desserts")}
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div> */}
-
             <div
-              className="col-xl- col-lg-4 col-md-6 ps-xl-5 wow fadeInUp"
-              data-wow-delay=".4s"
+              className="col-xl-3 col-lg-6 col-md-6 ps-xl-5 wow fadeInUp"
+              data-wow-delay=".5s"
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
@@ -189,8 +148,19 @@ const Footer1 = () => {
                     </span>
                   </li>
                 </ul>
+              </div>
+            </div>
 
-                {/* <form className="mt-4">
+            <div
+              className="col-xl-3 col-lg-6 col-md-6 ps-xl-5 wow fadeInUp"
+              data-wow-delay=".6s"
+            >
+              <div className="single-footer-widget">
+                <div className="widget-head">
+                  <h3>{t("footer.email_us")}</h3>
+                </div>
+
+                <form className="mt-4">
                   <div className="form-control">
                     <input
                       className="email"
@@ -213,7 +183,7 @@ const Footer1 = () => {
                       <a href="contact.html">{t("footer.privacy_policy")}</a>
                     </label>
                   </div>
-                </form> */}
+                </form>
               </div>
             </div>
           </div>
