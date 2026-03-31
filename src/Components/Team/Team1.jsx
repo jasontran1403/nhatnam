@@ -24,9 +24,9 @@ const Team1 = () => {
 
   // Giữ data như cũ, chỉ đổi "content" sang key role để dịch
   const teamItems = [
-    { img: "/assets/img/chefe/chefeThumb1_1.png", title: "Ralph Edwards", roleKey: "chef_lead", facebook: "#", linkedin: "#" },
-    { img: "/assets/img/chefe/chefeThumb1_2.png", title: "Leslie Alexander", roleKey: "chef_assistant", facebook: "#", linkedin: "#" },
-    { img: "/assets/img/chefe/chefeThumb1_3.png", title: "Ronald Richards", roleKey: "chef_assistant", facebook: "#", linkedin: "#" },
+    { img: "/assets/img/chefe/chefeThumb1_1.png", title: "XXX", roleKey: "chef_lead", facebook: "#", linkedin: "#" },
+    { img: "/assets/img/chefe/chefeThumb1_2.png", title: "XXX", roleKey: "chef_assistant", facebook: "#", linkedin: "#" },
+    { img: "/assets/img/chefe/chefeThumb1_3.png", title: "XXX", roleKey: "chef_assistant", facebook: "#", linkedin: "#" },
   ];
 
   const logoItems = [
