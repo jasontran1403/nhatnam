@@ -234,7 +234,7 @@ export default function Header3({ variant }) {
                     {i18n.language === "vi" ? "EN" : "VI"}
                   </button>
 
-                  <div className="user-dropdown-container position-relative">
+                  {/* <div className="user-dropdown-container position-relative">
                     <button
                       onClick={handleUserIconClick}
                       className={`header-icon-btn login-icon-btn ${isLoggedIn ? "logged-in" : ""}`}
@@ -275,7 +275,7 @@ export default function Header3({ variant }) {
                         </button>
                       </div>
                     )}
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

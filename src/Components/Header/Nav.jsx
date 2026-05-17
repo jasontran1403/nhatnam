@@ -186,7 +186,7 @@ export default function Nav({
             </Link>
           </li>
 
-          <li className="menu-item">
+          {/* <li className="menu-item">
             <Link
               to="#"
               className={`d-flex align-items-center ${
@@ -203,7 +203,7 @@ export default function Nav({
                 "Đăng nhập / Đăng ký"
               )}
             </Link>
-          </li>
+          </li> */}
 
           {isLoggedIn && (
             <li className="menu-item">
