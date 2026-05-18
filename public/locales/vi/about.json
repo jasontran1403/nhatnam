@@ -40,22 +40,28 @@
       "Sản phẩm từ thịt"
     ]
   },
-    "ctaBanner1": {
+  "ctaBanner1": {
     "tag": "CHÀO MỪNG FRESHEAT",
     "title": "MÓN ĐẶC BIỆT HÔM NAY",
     "desc": "Ưu đãi có thời hạn",
     "button": "ĐẶT NGAY"
   },
-   "team": {
+  "team": {
     "subtitle": "ĐỘI NGŨ Nhất Nam",
     "title": "Gặp gỡ Đội ngũ của chúng tôi",
     "share": "Chia sẻ",
-    "roles": {
-      "chef_lead": "Bếp trưởng",
-      "chef_assistant": "Phụ bếp"
+    "members": {
+      "norbert": "Norbert Ehrbar",
+      "duc": "Tạ Lê Nam Đức",
+      "huong": "Madam Hương"
+    },
+    "positions": {
+      "food_consultant": "Cố vấn ẩm thực",
+      "finance_consultant": "Cố vấn tài chính",
+      "director": "Giám đốc"
     }
   },
-   "testimonial": {
+  "testimonial": {
     "subtitle": "CẢM NHẬN KHÁCH HÀNG",
     "title": "Khách hàng nói gì về chúng tôi",
     "designation": {
@@ -63,7 +69,7 @@
     },
     "content": "Penatibus magnis dis parturient montes nascetur ridiculus mus. Ut id lorem ac enim vestibulum blandit nec sit amet felis. Fusce quis diam odio. Cras mattis mi quis tincidunt."
   },
-   "blog": {
+  "blog": {
     "subtitle": "TIN MỚI NHẤT",
     "title": "Tin tức ẩm thực mới nhất",
     "date": {
@@ -76,12 +82,24 @@
     },
     "readMore": "Xem thêm",
     "items": [
-      { "title": "Thức Ăn Nhanh và sự tiện lợi mà nó đem lại" },
-      { "title": "Lợi ích cho sức khỏe từ Salad" },
-      { "title": "Đồ ăn nhanh tiện lợi" },
-      { "title": "Thức Ăn Nhanh và sự tiện lợi mà nó đem lại" },
-      { "title": "Lợi ích cho sức khỏe từ Salad" },
-      { "title": "Đồ ăn nhanh tiện lợi" }
+      {
+        "title": "Thức Ăn Nhanh và sự tiện lợi mà nó đem lại"
+      },
+      {
+        "title": "Lợi ích cho sức khỏe từ Salad"
+      },
+      {
+        "title": "Đồ ăn nhanh tiện lợi"
+      },
+      {
+        "title": "Thức Ăn Nhanh và sự tiện lợi mà nó đem lại"
+      },
+      {
+        "title": "Lợi ích cho sức khỏe từ Salad"
+      },
+      {
+        "title": "Đồ ăn nhanh tiện lợi"
+      }
     ]
   }
 }

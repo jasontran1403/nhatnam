@@ -24,9 +24,27 @@ const Team1 = () => {
 
   // Giữ data như cũ, chỉ đổi "content" sang key role để dịch
   const teamItems = [
-    { img: "/assets/img/chefe/chefeThumb1_1.png", title: "XXX", roleKey: "chef_lead", facebook: "#", linkedin: "#" },
-    { img: "/assets/img/chefe/chefeThumb1_2.png", title: "XXX", roleKey: "chef_assistant", facebook: "#", linkedin: "#" },
-    { img: "/assets/img/chefe/chefeThumb1_3.png", title: "XXX", roleKey: "chef_assistant", facebook: "#", linkedin: "#" },
+    {
+      img: "/assets/img/chefe/chefeThumb1_1.png",
+      roleKey: "food_consultant",
+      memberKey: "norbert",
+      facebook: "#",
+      linkedin: "#",
+    },
+    {
+      img: "/assets/img/chefe/chefeThumb1_2.png",
+      roleKey: "director",
+      memberKey: "duc",
+      facebook: "#",
+      linkedin: "#",
+    },
+    {
+      img: "/assets/img/chefe/chefeThumb1_3.png",
+      roleKey: "finance_consultant",
+      memberKey: "huong",
+      facebook: "#",
+      linkedin: "#",
+    },
   ];
 
   const logoItems = [
@@ -35,7 +53,6 @@ const Team1 = () => {
     { img: "/assets/img/logo/clientLogo1_3.png" },
     { img: "/assets/img/logo/clientLogo1_4.png" },
     { img: "/assets/img/logo/clientLogo1_5.png" },
-    { img: "/assets/img/logo/clientLogo1_6.png" },
     { img: "/assets/img/logo/clientLogo1_1.png" },
     { img: "/assets/img/logo/clientLogo1_2.png" },
   ];
@@ -89,9 +106,9 @@ const Team1 = () => {
 
                     <div className="chefe-content">
                       <Link to="/chef/chef-details">
-                        <h3>{item.title}</h3>
+                        <h3>{t(`team.positions.${item.roleKey}`)}</h3>
                       </Link>
-                      <p>{t(`team.roles.${item.roleKey}`)}</p>
+                      <p>{t(`team.members.${item.memberKey}`)}</p>
                     </div>
                   </div>
                 </div>
@@ -105,8 +122,12 @@ const Team1 = () => {
                 <Slider {...settings}>
                   {logoItems.map((item, i) => (
                     <div key={i} className="swiper-slide">
-                      <div className="client-img text-center">
-                        <img src={item.img} alt="logo" />
+                      <div className="chefe-thumb">
+                        <img
+                          src={item.img}
+                          alt="thumb"
+                          className={i === 2 ? "third-image" : ""}
+                        />
                       </div>
                     </div>
                   ))}

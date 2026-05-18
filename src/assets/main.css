@@ -6634,21 +6634,6 @@ input.main-search-input::placeholder {
   -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
 }
-.gallery-thumb.style2:hover img {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-}
-.gallery-thumb.style2:hover .icon {
-  opacity: 1;
-  visibility: visible;
-}
-.gallery-thumb.style2:hover:before {
-  opacity: 0.6;
-  visibility: visible;
-}
 
 /* 20.Testimonial */
 .testimonial-wrapper.style1 {
@@ -7129,8 +7114,14 @@ input.main-search-input::placeholder {
   -o-transform: translateX(-50%);
 }
 .chefe-card.style1 .chefe-thumb img {
-  width: 310px;
-  height: 297px;
+  width: 320px;
+  height: 210px;
+  object-fit: cover;
+}
+
+/* ảnh thứ 3 */
+.chefe-card.style1 .chefe-thumb img.third-image {
+  height: 150px!important;
 }
 .chefe-card.style1 .icon {
   position: relative;

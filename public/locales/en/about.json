@@ -33,7 +33,12 @@
         "desc": "A professional team ensuring excellence and consistency in every step of the process."
       }
     ],
-    "marquee": ["Rich's Cream", "Hela Seasonings", "Sausages", "Meat Products"]
+    "marquee": [
+      "Rich's Cream",
+      "Hela Seasonings",
+      "Sausages",
+      "Meat Products"
+    ]
   },
   "ctaBanner1": {
     "tag": "WELCOME NHATNAMFOOD",
@@ -45,9 +50,15 @@
     "subtitle": "Nhat Nam Core Team",
     "title": "Meet Our Team",
     "share": "Share",
-    "roles": {
-      "chef_lead": "YYY",
-      "chef_assistant": "YYY"
+    "members": {
+      "norbert": "Norbert Ehrbar",
+      "duc": "Ta Le Nam Duc",
+      "huong": "Madam Huong"
+    },
+    "positions": {
+      "food_consultant": "Food Consultant",
+      "finance_consultant": "Finance Consultant",
+      "director": "Director"
     }
   },
   "testimonial": {
@@ -71,12 +82,24 @@
     },
     "readMore": "Read More",
     "items": [
-      { "title": "Fast Food Frenzy a Taste of Convenience" },
-      { "title": "Benefits of health and safety measures" },
-      { "title": "Quick Cravings Unraveling Fast Food Delights" },
-      { "title": "Fast Food Frenzy a Taste of Convenience" },
-      { "title": "Benefits of health and safety measures" },
-      { "title": "Quick Cravings Unraveling Fast Food Delights" }
+      {
+        "title": "Fast Food Frenzy a Taste of Convenience"
+      },
+      {
+        "title": "Benefits of health and safety measures"
+      },
+      {
+        "title": "Quick Cravings Unraveling Fast Food Delights"
+      },
+      {
+        "title": "Fast Food Frenzy a Taste of Convenience"
+      },
+      {
+        "title": "Benefits of health and safety measures"
+      },
+      {
+        "title": "Quick Cravings Unraveling Fast Food Delights"
+      }
     ]
   }
 }
