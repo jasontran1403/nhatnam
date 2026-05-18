@@ -244,7 +244,7 @@ export default function ProductsGallery() {
                               {lang==="vi"?(item.category.nameVi||item.category.name):item.category.name}
                             </span>
                           )}
-                          <h5>{item.title}</h5>
+                          
                           {item.titleAlt && <p style={{fontSize:12,color:'#999',margin:0}}>{item.titleAlt}</p>}
                         </div>
                       </div>
@@ -292,9 +292,7 @@ export default function ProductsGallery() {
           <div className="overlay" onClick={handleClose}></div>
           <div className="content">
             <button className="close" onClick={handleClose}>×</button>
-            <button className="arrow left" onClick={prev}>‹</button>
-            <button className="arrow right" onClick={next}>›</button>
-            <div key={`${currentIndex}-${animateKey}`} className={`grid gallery-anim gallery-anim-${direction}`}>
+            <div className={`grid gallery-anim gallery-anim-${direction}`}>
               <div className="image"><img src={currentItem.img} alt={currentItem.title}/></div>
               <div className="info">
                 {currentItem.category && (
@@ -302,7 +300,6 @@ export default function ProductsGallery() {
                     {lang==="vi"?(currentItem.category.nameVi||currentItem.category.name):currentItem.category.name}
                   </span>
                 )}
-                <h3>{currentItem.title}</h3>
                 {currentItem.titleAlt && <h6 style={{color:'#999'}}>{currentItem.titleAlt}</h6>}
                 <div dangerouslySetInnerHTML={{__html:currentItem.desc}}/>
               </div>
