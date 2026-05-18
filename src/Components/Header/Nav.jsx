@@ -91,6 +91,11 @@ export default function Nav({
                   </Link>
                 </li>
                 <li>
+                  <Link to="/products" onClick={closeMobileMenu}>
+                    {t("pages.products")}
+                  </Link>
+                </li>
+                <li>
                   <Link to="/faq" onClick={closeMobileMenu}>
                     {t("pages.faq")}
                   </Link>
@@ -109,6 +114,11 @@ export default function Nav({
           <li className="menu-item">
             <Link to="/about" onClick={closeMobileMenu}>
               {t("pages.about")}
+            </Link>
+          </li>
+          <li className="menu-item">
+            <Link to="/products" onClick={closeMobileMenu}>
+              {t("pages.products")}
             </Link>
           </li>
 
